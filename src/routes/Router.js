@@ -12,15 +12,15 @@ const AppRouter = () => {
     <>
       <Router>
         <Navigation />
-        {/* <Suspense fallback={<div>Loading...</div>}> */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/certificates" element={<Certificates />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        {/* </Suspense> */}
+        <Suspense fallback={<div>포트폴리오를 불러오고 있습니다...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/certificates" element={<Certificates />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Suspense>
       </Router>
     </>
   );
