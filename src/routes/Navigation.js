@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "../routes/Navigation.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navigation() {
   return (
-    <nav className={styles.navTop}>
+    <nav className="navTop">
       <ul>
         <li>
           <Link to="/">Home</Link>

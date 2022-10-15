@@ -6,8 +6,11 @@ import "@fontsource/roboto/700.css";
 
 function App() {
   return (
-    <div className="App">
-      <AppRouter />
+    <div className="appA">
+      <div className="appTop">
+        <img src={"./images/HomeTop.JPEG"} alt="Home Page Top Image" />
+        <AppRouter />
+      </div>
     </div>
   );
 }
