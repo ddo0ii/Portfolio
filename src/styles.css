@@ -3,9 +3,19 @@
   margin: 0;
 }
 
+/* Loading */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* App */
 .appA {
   background-color: black;
+  color: violet;
 }
 .appTop img {
   max-width: 100%;
@@ -13,12 +23,30 @@
 }
 
 /* Navigation */
-.navTop ul {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 10px 50px 10px;
+}
+.nav a {
+  text-decoration: none;
+}
+.navLeft span {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+.navRight ul {
   display: flex;
   justify-content: end;
-  margin-top: 50px;
   list-style: none;
 }
-.navTop li {
+.navRight li {
   margin-right: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+.navRight span {
+  color: white;
 }
