@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 /* Loading */
@@ -20,33 +22,4 @@
 .appTop img {
   max-width: 100%;
   height: auto;
-}
-
-/* Navigation */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 50px 10px 50px 10px;
-}
-.nav a {
-  text-decoration: none;
-}
-.navLeft span {
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-}
-.navRight ul {
-  display: flex;
-  justify-content: end;
-  list-style: none;
-}
-.navRight li {
-  margin-right: 20px;
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
-}
-.navRight span {
-  color: white;
 }
