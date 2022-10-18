@@ -1,6 +1,6 @@
 import React from "react";
 
-const Certificates = () => {
+function Certificates() {
   return (
     <div>
       <h1>Certificates & Prize</h1>
@@ -45,6 +45,6 @@ const Certificates = () => {
       or send it.
     </div>
   );
-};
+}
 
 export default Certificates;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+function Home() {
   return (
     <div>
       <img
@@ -50,6 +50,6 @@ const Home = () => {
       or send it.
     </div>
   );
-};
+}
 
 export default Home;

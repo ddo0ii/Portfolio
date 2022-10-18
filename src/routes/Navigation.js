@@ -1,10 +1,5 @@
-import * as React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Projects from "../pages/Projects";
-import Certificates from "../pages/Certificates";
-import Contact from "../pages/Contact";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
@@ -18,21 +13,53 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-
-const drawerWidth = 240;
-const navItems = [
-  { id: 1, name: "Home", to: "#home" },
-  { id: 2, name: "About", to: "#about" },
-  { id: 3, name: "Projects", to: "#projects" },
-  { id: 4, name: "Certificates", to: "#certificates" },
-  { id: 5, name: "Contact", to: "#contact" },
-];
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Projects from "../pages/Projects";
+import Certificates from "../pages/Certificates";
+import Contact from "../pages/Contact";
 
 function Navigation() {
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const homeRef = useRef();
+  const aboutRef = useRef();
+  const projectsRef = useRef();
+  const certificatesRef = useRef();
+  const contactRef = useRef();
+
+  const homeClick = (e) => {
+    e.preventDefault();
+    homeRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const aboutClick = (e) => {
+    e.preventDefault();
+    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const projectsClick = (e) => {
+    e.preventDefault();
+    projectsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const certificatesClick = (e) => {
+    e.preventDefault();
+    certificatesRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+  const contactClick = (e) => {
+    e.preventDefault();
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+
+  const drawerWidth = 240;
+  const navItems = [
+    { id: 1, name: "Home", to: homeClick },
+    { id: 2, name: "About", to: aboutClick },
+    { id: 3, name: "Projects", to: projectsClick },
+    { id: 4, name: "Certificates", to: certificatesClick },
+    { id: 5, name: "Contact", to: contactClick },
+  ];
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -43,10 +70,8 @@ function Navigation() {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.id} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText>
-                <Link to={item.to}>{item.name}</Link>
-              </ListItemText>
+            <ListItemButton onClick={item.to} sx={{ textAlign: "center" }}>
+              <ListItemText>{item.name}</ListItemText>
             </ListItemButton>
           </ListItem>
         ))}
@@ -67,9 +92,8 @@ function Navigation() {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item.id} sx={{ color: "#fff" }}>
-                {/* <Link to={item.to}>{item.name}</Link> */}
-                <a href={item.to}>{item.name}</a>
+              <Button onClick={item.to} key={item.id} sx={{ color: "#fff" }}>
+                {item.name}
               </Button>
             ))}
           </Box>
@@ -103,24 +127,24 @@ function Navigation() {
           {drawer}
         </Drawer>
       </Box>
-      <Box component="main">
-        <div id="home">
+      <Box>
+        <div ref={homeRef}>
           <Toolbar />
           <Home />
         </div>
-        <div id="about">
+        <div ref={aboutRef}>
           <Toolbar />
           <About />
         </div>
-        <div id="projects">
+        <div ref={projectsRef}>
           <Toolbar />
           <Projects />
         </div>
-        <div id="certificates">
+        <div ref={certificatesRef}>
           <Toolbar />
           <Certificates />
         </div>
-        <div id="contact">
+        <div ref={contactRef}>
           <Toolbar />
           <Contact />
         </div>

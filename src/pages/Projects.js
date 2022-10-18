@@ -1,6 +1,6 @@
 import React from "react";
 
-const Projects = () => {
+function Projects() {
   return (
     <div>
       <h1>Projects</h1>
@@ -26,6 +26,6 @@ const Projects = () => {
       or send it.
     </div>
   );
-};
+}
 
 export default Projects;

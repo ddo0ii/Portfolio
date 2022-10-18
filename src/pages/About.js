@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+function About() {
   return (
     <div>
       <h1>About - Activities</h1>
@@ -45,6 +45,6 @@ const About = () => {
       or send it.
     </div>
   );
-};
+}
 
 export default About;
