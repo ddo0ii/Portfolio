@@ -1,10 +1,5 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Projects from "../pages/Projects";
-import Certificates from "../pages/Certificates";
-import Contact from "../pages/Contact";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
@@ -21,11 +16,11 @@ import Button from "@mui/material/Button";
 
 const drawerWidth = 240;
 const navItems = [
-  { id: 1, name: "Home", to: "#home" },
-  { id: 2, name: "About", to: "#about" },
-  { id: 3, name: "Projects", to: "#projects" },
-  { id: 4, name: "Certificates", to: "#certificates" },
-  { id: 5, name: "Contact", to: "#contact" },
+  { id: 1, name: "Home", to: "/" },
+  { id: 2, name: "About", to: "/about" },
+  { id: 3, name: "Projects", to: "/projects" },
+  { id: 4, name: "Certificates", to: "/certificates" },
+  { id: 5, name: "Contact", to: "/contact" },
 ];
 
 function Navigation() {
@@ -68,8 +63,7 @@ function Navigation() {
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button key={item.id} sx={{ color: "#fff" }}>
-                {/* <Link to={item.to}>{item.name}</Link> */}
-                <a href={item.to}>{item.name}</a>
+                <Link to={item.to}>{item.name}</Link>
               </Button>
             ))}
           </Box>
@@ -102,28 +96,6 @@ function Navigation() {
         >
           {drawer}
         </Drawer>
-      </Box>
-      <Box component="main">
-        <div id="home">
-          <Toolbar />
-          <Home />
-        </div>
-        <div id="about">
-          <Toolbar />
-          <About />
-        </div>
-        <div id="projects">
-          <Toolbar />
-          <Projects />
-        </div>
-        <div id="certificates">
-          <Toolbar />
-          <Certificates />
-        </div>
-        <div id="contact">
-          <Toolbar />
-          <Contact />
-        </div>
       </Box>
     </Box>
   );
