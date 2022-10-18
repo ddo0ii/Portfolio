@@ -16,7 +16,6 @@ function App() {
     <div className="appA">
       {init ? (
         <div className="appTop">
-          <img src={"./images/HomeTop.JPEG"} alt="Home Page Top Image" />
           <AppRouter />
         </div>
       ) : (
