@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
@@ -26,25 +25,23 @@ function Navigation() {
   const certificatesRef = useRef();
   const contactRef = useRef();
 
-  const homeClick = (e) => {
-    e.preventDefault();
-    homeRef.current.scrollIntoView({ behavior: "smooth" });
+  const homeClick = () => {
+    window.scrollTo({ behavior: "smooth", top: homeRef.current.offsetTop });
   };
-  const aboutClick = (e) => {
-    e.preventDefault();
-    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+  const aboutClick = () => {
+    window.scrollTo({ behavior: "smooth", top: aboutRef.current.offsetTop });
   };
-  const projectsClick = (e) => {
-    e.preventDefault();
-    projectsRef.current.scrollIntoView({ behavior: "smooth" });
+  const projectsClick = () => {
+    window.scrollTo({ behavior: "smooth", top: projectsRef.current.offsetTop });
   };
-  const certificatesClick = (e) => {
-    e.preventDefault();
-    certificatesRef.current.scrollIntoView({ behavior: "smooth" });
+  const certificatesClick = () => {
+    window.scrollTo({
+      behavior: "smooth",
+      top: certificatesRef.current.offsetTop,
+    });
   };
-  const contactClick = (e) => {
-    e.preventDefault();
-    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  const contactClick = () => {
+    window.scrollTo({ behavior: "smooth", top: contactRef.current.offsetTop });
   };
 
   const [mobileOpen, setMobileOpen] = useState(false);
