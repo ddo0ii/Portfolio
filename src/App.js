@@ -6,6 +6,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 
 function App() {
   const [init, setInit] = useState(false);
@@ -15,8 +16,10 @@ function App() {
   return (
     <div className="appA">
       {init ? (
-        <div className="appTop">
-          <AppRouter />
+        <div>
+          <Container>
+            <AppRouter />
+          </Container>
         </div>
       ) : (
         <Box className="loading" sx={{ display: "flex" }}>
