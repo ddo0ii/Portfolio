@@ -1,13 +1,14 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./Navigation";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Projects from "../pages/Projects";
-import Certificates from "../pages/Certificates";
-import Contact from "../pages/Contact";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
+// import Home from "../pages/Home";
+// import About from "../pages/About";
+// import Career from "../pages/Career";
+// import Projects from "../pages/Projects";
+// import Activities from "../pages/Activities";
+// import ALC from "../pages/ALC";
+// import Box from "@mui/material/Box";
+// import Toolbar from "@mui/material/Toolbar";
 
 const AppRouter = () => {
   return (
@@ -20,9 +21,10 @@ const AppRouter = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/career" element={<Career />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/certificates" element={<Certificates />} />
-              <Route path="/contact" element={<Contact />} />
+              <Route path="/activities" element={<Activities />} />
+              <Route path="/alc" element={<ALC />} />
             </Routes>
           </Suspense>
         </Box> */}

@@ -5,7 +5,6 @@ function About() {
   return (
     <div>
       <Container>
-        {" "}
         <h1>About - Activities</h1>
         <span>
           Key Takeaways A formal letter should include details about why you’re

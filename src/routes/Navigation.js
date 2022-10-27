@@ -15,16 +15,18 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Home from "../pages/Home";
 import About from "../pages/About";
+import Career from "../pages/Career";
 import Projects from "../pages/Projects";
-import Certificates from "../pages/Certificates";
-import Contact from "../pages/Contact";
+import Activities from "../pages/Activities";
+import ALC from "../pages/ALC";
 
 function Navigation() {
   const homeRef = useRef();
   const aboutRef = useRef();
+  const careerRef = useRef();
   const projectsRef = useRef();
-  const certificatesRef = useRef();
-  const contactRef = useRef();
+  const activitiesRef = useRef();
+  const alcRef = useRef();
 
   const homeClick = () => {
     window.scrollTo({ behavior: "smooth", top: homeRef.current.offsetTop });
@@ -32,17 +34,23 @@ function Navigation() {
   const aboutClick = () => {
     window.scrollTo({ behavior: "smooth", top: aboutRef.current.offsetTop });
   };
+  const careerClick = () => {
+    window.scrollTo({ behavior: "smooth", top: careerRef.current.offsetTop });
+  };
   const projectsClick = () => {
     window.scrollTo({ behavior: "smooth", top: projectsRef.current.offsetTop });
   };
-  const certificatesClick = () => {
+  const activitiesClick = () => {
     window.scrollTo({
       behavior: "smooth",
-      top: certificatesRef.current.offsetTop,
+      top: activitiesRef.current.offsetTop,
     });
   };
-  const contactClick = () => {
-    window.scrollTo({ behavior: "smooth", top: contactRef.current.offsetTop });
+  const alcClick = () => {
+    window.scrollTo({
+      behavior: "smooth",
+      top: alcRef.current.offsetTop,
+    });
   };
 
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -54,9 +62,10 @@ function Navigation() {
   const navItems = [
     { id: 1, name: "Home", to: homeClick },
     { id: 2, name: "About", to: aboutClick },
-    { id: 3, name: "Projects", to: projectsClick },
-    { id: 4, name: "Certificates", to: certificatesClick },
-    { id: 5, name: "Contact", to: contactClick },
+    { id: 3, name: "Career", to: careerClick },
+    { id: 4, name: "Projects", to: projectsClick },
+    { id: 5, name: "Activities", to: activitiesClick },
+    { id: 6, name: "ALC", to: alcClick },
   ];
 
   const drawer = (
@@ -136,17 +145,21 @@ function Navigation() {
           <Toolbar />
           <About />
         </div>
+        <div ref={careerRef}>
+          <Toolbar />
+          <Career />
+        </div>
         <div ref={projectsRef}>
           <Toolbar />
           <Projects />
         </div>
-        <div ref={certificatesRef}>
+        <div ref={activitiesRef}>
           <Toolbar />
-          <Certificates />
+          <Activities />
         </div>
-        <div ref={contactRef}>
+        <div ref={alcRef}>
           <Toolbar />
-          <Contact />
+          <ALC />
         </div>
       </Box>
     </Box>
