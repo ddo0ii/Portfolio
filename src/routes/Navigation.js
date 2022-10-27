@@ -21,13 +21,13 @@ import Activities from "../pages/Activities";
 import ALC from "../pages/ALC";
 
 function Navigation() {
+  // Navigation 클릭 시 이동
   const homeRef = useRef();
   const aboutRef = useRef();
   const careerRef = useRef();
   const projectsRef = useRef();
   const activitiesRef = useRef();
   const alcRef = useRef();
-
   const homeClick = () => {
     window.scrollTo({ behavior: "smooth", top: homeRef.current.offsetTop });
   };
@@ -53,11 +53,22 @@ function Navigation() {
     });
   };
 
+  // Scroll시 App bar color 변경
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
+
+  // drawer
   const [mobileOpen, setMobileOpen] = useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-
   const drawerWidth = 240;
   const navItems = [
     { id: 1, name: "Home", to: homeClick },
@@ -67,11 +78,10 @@ function Navigation() {
     { id: 5, name: "Activities", to: activitiesClick },
     { id: 6, name: "ALC", to: alcClick },
   ];
-
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        DDO_0II
+        DDO0II
       </Typography>
       <Divider />
       <List>
@@ -88,7 +98,11 @@ function Navigation() {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav">
+      <AppBar
+        component="nav"
+        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+        className={colorChange ? "navbar colorChange" : "navbar"}
+      >
         <Container>
           <Toolbar>
             <Typography
@@ -96,7 +110,7 @@ function Navigation() {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
-              DDO_0II
+              DDO0II
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
@@ -138,7 +152,6 @@ function Navigation() {
       </Box>
       <Box>
         <div ref={homeRef}>
-          <Toolbar />
           <Home />
         </div>
         <div ref={aboutRef}>

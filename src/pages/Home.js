@@ -10,7 +10,6 @@ function Home() {
         alt="Home Page Top Image"
       />
       <Container>
-        {" "}
         <h1>Home page - intro, contact connection link</h1>
         <span>
           Key Takeaways A formal letter should include details about why you’re

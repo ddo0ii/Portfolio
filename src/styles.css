@@ -2,7 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  /* text-decoration: none; */
+}
+
+body {
+  background-color: black;
 }
 
 /* Loading */
@@ -16,6 +20,15 @@
 
 /* App */
 .appA {
-  background-color: black;
-  color: violet;
+  color: white;
+}
+
+/* Navigation */
+.navbar {
+  background-color: yellow;
+}
+
+.navbar.colorChange {
+  background-color: #222222;
+  box-shadow: 5px 5px 5px 5px gray;
 }
