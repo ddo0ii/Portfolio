@@ -30,5 +30,6 @@ body {
 
 .navbar.colorChange {
   background-color: #222222;
-  box-shadow: 5px 5px 5px 5px gray;
+  /* box-shadow: 5px 5px 5px 5px rgb(0, 0, 0); */
+  box-shadow: 0px 3px 3px black;
 }

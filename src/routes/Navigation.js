@@ -100,8 +100,8 @@ function Navigation() {
     <Box sx={{ display: "flex" }}>
       <AppBar
         component="nav"
-        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
         className={colorChange ? "navbar colorChange" : "navbar"}
+        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
       >
         <Container>
           <Toolbar>
