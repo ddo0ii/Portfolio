@@ -21,6 +21,8 @@ body {
 /* App */
 .appA {
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 /* Navigation */
@@ -32,4 +34,14 @@ body {
   background-color: #222222;
   /* box-shadow: 5px 5px 5px 5px rgb(0, 0, 0); */
   box-shadow: 0px 3px 3px black;
+}
+
+/* Home */
+.homePage {
+  border: yellow;
+  height: 100vh;
+  max-width: 100%;
+  background-image: url("/public/images/HomeTop.jpg");
+  background-size: cover;
+  background-position: center;
 }

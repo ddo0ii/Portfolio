@@ -1,58 +1,15 @@
 import React from "react";
 import Container from "@mui/material/Container";
+import { Toolbar } from "@mui/material";
 
 function Home() {
   return (
-    <div>
-      <img
-        src={"./images/HomeTop.jpg"}
-        style={{ maxWidth: "100%", height: "auto" }}
-        alt="Home Page Top Image"
-      />
+    <div className="homePage">
       <Container>
-        <h1>Home page - intro, contact connection link</h1>
-        <span>
-          Key Takeaways A formal letter should include details about why you’re
-          writing, an expression of your appreciation to the recipient for
-          considering your request, and your contact information. Correspondence
-          can be sent as a written letter or in an email. When sending an email
-          message, list the reason you are writing in the subject line of the
-          message. When writing a professional letter, carefully proofread and
-          spellcheck before you print or send it. Key Takeaways A formal letter
-          should include details about why you’re writing, an expression of your
-          appreciation to the recipient for considering your request, and your
-          contact information. Correspondence can be sent as a written letter or
-          in an email. When sending an email message, list the reason you are
-          writing in the subject line of the message. When writing a
-          professional letter, carefully proofread and spellcheck before you
-          print or send it. Key Takeaways A formal letter should include details
-          about why you’re writing, an expression of your appreciation to the
-          recipient for considering your request, and your contact information.
-          Correspondence can be sent as a written letter or in an email. When
-          sending an email message, list the reason you are writing in the
-          subject line of the message. When writing a professional letter,
-          carefully proofread and spellcheck before you print or send it.Key
-          Takeaways A formal letter should include details about why you’re
-          writing, an expression of your appreciation to the recipient for
-          considering your request, and your contact information. Correspondence
-          can be sent as a written letter or in an email. When sending an email
-          message, list the reason you are writing in the subject line of the
-          message. When writing a professional letter, carefully proofread and
-          spellcheck before you print or send it. Key Takeaways A formal letter
-          should include details about why you’re writing, an expression of your
-          appreciation to the recipient for considering your request, and your
-          contact information. Correspondence can be sent as a written letter or
-          in an email. When sending an email message, list the reason you are
-          writing in the subject line of the message. When writing a
-          professional letter, carefully proofread and spellcheck before you
-          print or send it. Key Takeaways A formal letter should include details
-          about why you’re writing, an expression of your appreciation to the
-          recipient for considering your request, and your contact information.
-          Correspondence can be sent as a written letter or in an email. When
-          sending an email message, list the reason you are writing in the
-          subject line of the message. When writing a professional letter,
-          carefully proofread and spellcheck before you print or send it.
-        </span>
+        <Toolbar />
+        <h5>Hi I’m</h5>
+        <h1>SOYEONG KWON</h1>
+        <h3>FRONT-END WEB DEVELOPER</h3>
       </Container>
     </div>
   );
