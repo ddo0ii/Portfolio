@@ -17,15 +17,10 @@ function Home() {
     <Box className="homePage">
       <Container>
         <Toolbar />
-        {/* <Typography
-          align="left"
-          sx={{ typography: { sm: "subtitle1", xs: "overline" } }}
-        >
-          Hi I’m
-        </Typography> */}
         <Typography
           align="center"
           gutterBottom
+          color="primary"
           sx={{ typography: { sm: "h1", xs: "h4" } }}
         >
           SOYEONG KWON
@@ -33,11 +28,11 @@ function Home() {
         <Typography
           align="center"
           gutterBottom
+          color="secondary"
           sx={{ typography: { sm: "h4", xs: "body1" } }}
         >
           FRONT-END WEB DEVELOPER
         </Typography>
-
         <Box align="center">
           <Box
             className="contactIcons"
