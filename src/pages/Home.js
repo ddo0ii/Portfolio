@@ -26,7 +26,14 @@ function Home() {
         >
           FRONT-END WEB DEVELOPER
         </Typography>
-        <ContactIcons />
+        <Box
+          className="homeContactIcons"
+          sx={{
+            fontSize: { sm: "25px", xs: "18px" },
+          }}
+        >
+          <ContactIcons />
+        </Box>
       </Container>
     </Box>
   );

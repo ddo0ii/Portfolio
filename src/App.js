@@ -12,18 +12,19 @@ const theme = createTheme({
   palette: {
     primary: {
       // light: will be calculated from palette.primary.main,
-      // main: "#C27D5B",
+      main: "#C27D5B",
       // dark: will be calculated from palette.primary.main,
-      contrastText: "#C27D5B",
+      // contrastText: "#C27D5B",
     },
     secondary: {
-      contrastText: "#DEDEDE",
+      main: "#DEDEDE",
+      // contrastText: "#DEDEDE",
     },
     custom: {
-      light: "#ffa726",
-      main: "#f57c00",
-      dark: "#ef6c00",
-      contrastText: "rgba(0, 0, 0, 0.87)",
+      // light: "#ffa726",
+      main: "#959595",
+      // dark: "#ef6c00",
+      // contrastText: "rgba(0, 0, 0, 0.87)",
     },
     contrastThreshold: 3,
     tonalOffset: 0.2,

@@ -26,7 +26,7 @@ body {
 
 /* Navigation */
 .navbar {
-  background-color: transparent;
+  background-color: red;
 }
 
 .navbar.colorChange {
@@ -48,10 +48,30 @@ body {
   min-height: 100vh;
 }
 
-.contactIcons {
+.homeContactIcons {
   width: 35%;
+  margin: auto;
+}
+
+.contactIcons {
   display: flex;
   justify-content: space-between;
+  color: #959595;
 }
+
 .contactIcon {
+}
+
+/* About */
+.profileImg {
+  width: 80%;
+}
+
+.aboutContact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutContactIcons {
 }

@@ -11,29 +11,22 @@ import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 
 function ContactIcons() {
   return (
-    <Box align="center">
-      <Box
-        className="contactIcons"
-        sx={{
-          fontSize: { sm: "25px", xs: "18px" },
-        }}
-      >
-        <div className="contactIcon">
-          <FontAwesomeIcon icon={faInstagram} />
-        </div>
-        <div className="contactIcon">
-          <FontAwesomeIcon icon={faEnvelope} />
-        </div>
-        <div className="contactIcon">
-          <FontAwesomeIcon icon={faGithub} />
-        </div>
-        <div className="contactIcon">
-          <FontAwesomeIcon icon={faBloggerB} />
-        </div>
-        <div className="contactIcon">
-          <FontAwesomeIcon icon={faMobileScreenButton} />
-        </div>
-      </Box>
+    <Box className="contactIcons">
+      <div className="contactIcon">
+        <FontAwesomeIcon icon={faInstagram} />
+      </div>
+      <div className="contactIcon">
+        <FontAwesomeIcon icon={faEnvelope} />
+      </div>
+      <div className="contactIcon">
+        <FontAwesomeIcon icon={faGithub} />
+      </div>
+      <div className="contactIcon">
+        <FontAwesomeIcon icon={faBloggerB} />
+      </div>
+      <div className="contactIcon">
+        <FontAwesomeIcon icon={faMobileScreenButton} />
+      </div>
     </Box>
   );
 }

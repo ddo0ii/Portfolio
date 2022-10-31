@@ -114,7 +114,7 @@ function Navigation() {
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
-                <Button onClick={item.to} key={item.id} sx={{ color: "#fff" }}>
+                <Button onClick={item.to} key={item.id} color="secondary">
                   {item.name}
                 </Button>
               ))}
