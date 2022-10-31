@@ -14,7 +14,7 @@ import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
-    <div className="homePage">
+    <Box className="homePage">
       <Container>
         <Toolbar />
         {/* <Typography
@@ -63,7 +63,7 @@ function Home() {
           </Box>
         </Box>
       </Container>
-    </div>
+    </Box>
   );
 }
 
