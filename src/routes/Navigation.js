@@ -151,29 +151,29 @@ function Navigation() {
         </Drawer>
       </Box>
       <Box>
-        <div ref={homeRef}>
+        <Box ref={homeRef}>
           <Home />
-        </div>
-        <div ref={aboutRef}>
+        </Box>
+        <Box ref={aboutRef}>
           <Toolbar />
           <About />
-        </div>
-        <div ref={careerRef}>
+        </Box>
+        <Box ref={careerRef}>
           <Toolbar />
           <Career />
-        </div>
-        <div ref={projectsRef}>
+        </Box>
+        <Box ref={projectsRef}>
           <Toolbar />
           <Projects />
-        </div>
-        <div ref={activitiesRef}>
+        </Box>
+        <Box ref={activitiesRef}>
           <Toolbar />
           <Activities />
-        </div>
-        <div ref={alcRef}>
+        </Box>
+        <Box ref={alcRef}>
           <Toolbar />
           <ALC />
-        </div>
+        </Box>
       </Box>
     </Box>
   );
