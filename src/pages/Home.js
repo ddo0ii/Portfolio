@@ -16,13 +16,15 @@ function Home() {
           color="primary"
           sx={{ typography: { sm: "h1", xs: "h4" } }}
         >
-          SOYEONG KWON
+          <b>SOYEONG KWON</b>
         </Typography>
         <Typography
           align="center"
           gutterBottom
           color="secondary"
-          sx={{ typography: { sm: "h4", xs: "body1" } }}
+          sx={{
+            typography: { sm: "h4", xs: "body1" },
+          }}
         >
           FRONT-END WEB DEVELOPER
         </Typography>

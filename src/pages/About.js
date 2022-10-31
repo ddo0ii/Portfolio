@@ -9,6 +9,7 @@ import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import ContactIcons from "../components/ContactIcons";
+import Divider from "@mui/material/Divider";
 
 function createData(subject, content) {
   return { subject, content };
@@ -99,15 +100,29 @@ function About() {
                   </TableBody>
                 </Table>
               </TableContainer>
-              <Grid className="aboutContact" container spacing={1}>
-                <Grid item xs={5} sm={3}>
+              <Grid className="aboutContact" container>
+                <Grid item xs={4} sm={2}>
                   <Box>
                     <Typography color="primary" sx={{ fontWeight: "bold" }}>
                       Contact Me
                     </Typography>
                   </Box>
                 </Grid>
-                <Grid item xs={6} sm={5}>
+                <Grid
+                  item
+                  xs={2}
+                  sm={2}
+                  sx={{
+                    pr: { sm: "30px", xs: "13px" },
+                    pl: { sm: "5px", xs: "0px" },
+                  }}
+                >
+                  <Divider
+                    color="#C27D5B"
+                    // sx={{ borderBottomWidth: 2 }}
+                  />
+                </Grid>
+                <Grid item xs={6} sm={4}>
                   <Box
                     sx={{
                       fontSize: { sm: "20px", xs: "13px" },
