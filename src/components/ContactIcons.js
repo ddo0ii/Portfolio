@@ -7,13 +7,13 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function ContactIcons() {
   return (
     <Box className="contactIcons">
       <div className="contactIcon">
-        <FontAwesomeIcon icon={faInstagram} />
+        <FontAwesomeIcon icon={faPhone} />
       </div>
       <div className="contactIcon">
         <FontAwesomeIcon icon={faEnvelope} />
@@ -25,7 +25,7 @@ function ContactIcons() {
         <FontAwesomeIcon icon={faBloggerB} />
       </div>
       <div className="contactIcon">
-        <FontAwesomeIcon icon={faMobileScreenButton} />
+        <FontAwesomeIcon icon={faInstagram} />
       </div>
     </Box>
   );

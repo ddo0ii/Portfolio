@@ -113,7 +113,7 @@ function About() {
                   xs={2}
                   sm={2}
                   sx={{
-                    pr: { sm: "30px", xs: "13px" },
+                    pr: { sm: "30px", xs: "20px" },
                     pl: { sm: "5px", xs: "0px" },
                   }}
                 >
