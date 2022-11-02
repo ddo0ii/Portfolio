@@ -1,6 +1,6 @@
 import React from "react";
-import CareerTabs from "../components/CareerTabs";
-import { Box, Container, Divider, Grid, Typography } from "@mui/material";
+import { Box, Container, Divider, Typography } from "@mui/material";
+import CareerTimeline from "../components/CareerTimeline";
 
 function Career() {
   return (
@@ -12,40 +12,29 @@ function Career() {
       }}
     >
       <Container>
-        <Box>
-          <Grid className="title" container>
-            <Grid
-              item
-              xs={1}
-              sm={1}
-              sx={{
-                pr: { sm: "20px", xs: "10px" },
-                pl: { sm: "45px", xs: "0px" },
-              }}
-            >
-              <Divider
-                color="#C27D5B"
-                sx={{
-                  borderBottomWidth: { sm: 3, xs: 1.5 },
-                }}
-              />
-            </Grid>
-            <Grid item xs={6} sm={4}>
-              <Typography
-                color="#C27D5B"
-                sx={{
-                  fontSize: 10,
-                  letterSpacing: "5px",
-                }}
-              >
-                CAREER PATH
-              </Typography>
-            </Grid>
-          </Grid>
+        <Box className="title">
+          <Divider
+            color="#C27D5B"
+            sx={{
+              borderBottomWidth: { sm: 3, xs: 1.5 },
+              width: { sm: 30, xs: 20 },
+              mr: { sm: 3, xs: 2 },
+            }}
+          />
+          <Typography
+            color="#C27D5B"
+            sx={{
+              fontSize: 10,
+              letterSpacing: "5px",
+            }}
+          >
+            CAREER PATH
+          </Typography>
         </Box>
-        <Typography>CAREER PATH</Typography>
-        <Typography>EDUCATION & WORK EXPERIENCE</Typography>
-        <CareerTabs />
+        <Typography variant="h3">
+          <b>EXPERIENCE & EDUCATION</b>
+        </Typography>
+        <CareerTimeline />
       </Container>
     </Box>
   );
