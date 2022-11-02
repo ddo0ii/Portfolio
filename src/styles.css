@@ -34,6 +34,19 @@ body {
   box-shadow: 0px 3px 3px black;
 }
 
+/* Title */
+.title {
+  display: flex;
+  align-items: center;
+}
+
+/* Contact */
+.contactIcons {
+  display: flex;
+  justify-content: space-between;
+  color: #959595;
+}
+
 /* Home */
 .homePage {
   height: 100vh;
@@ -53,15 +66,6 @@ body {
   margin: auto;
 }
 
-.contactIcons {
-  display: flex;
-  justify-content: space-between;
-  color: #959595;
-}
-
-.contactIcon {
-}
-
 /* About */
 .profileImg {
   width: 80%;
@@ -71,7 +75,4 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-}
-
-.aboutContactIcons {
 }

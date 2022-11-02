@@ -49,47 +49,47 @@ function CareerTabs() {
     <Box
       sx={{
         flexGrow: 1,
-        bgcolor: "background.paper",
+        // bgcolor: "background.paper",
         display: "flex",
-        height: 224,
+        // height: 224,
       }}
     >
       <Tabs
         orientation="vertical"
-        variant="scrollable"
+        // variant="scrollable"
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
-        sx={{ borderRight: 1, borderColor: "divider" }}
+        sx={
+          {
+            //borderRight: 1,
+            //borderColor: "divider",
+          }
+        }
       >
-        <Tab label="Item One" {...a11yProps(0)} />
-        <Tab label="Item Two" {...a11yProps(1)} />
-        <Tab label="Item Three" {...a11yProps(2)} />
-        <Tab label="Item Four" {...a11yProps(3)} />
-        <Tab label="Item Five" {...a11yProps(4)} />
-        <Tab label="Item Six" {...a11yProps(5)} />
-        <Tab label="Item Seven" {...a11yProps(6)} />
+        <Tab label="Work" {...a11yProps(0)} />
+        <Tab label="Intership" {...a11yProps(1)} />
+        <Tab label="Education" {...a11yProps(2)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        Item One
+        Item Onesdfsdf
       </TabPanel>
       <TabPanel value={value} index={1}>
         Item Two
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        Item Four
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        Item Five
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        Item Six
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        Item Seven
+        <Typography>Handong Global Univ.</Typography>
+        <Typography>
+          Computer Engineering (Science and Electrical Engineering)
+        </Typography>
+        <Typography>March 2015 - February 2020</Typography>
+        <Typography>시선 (소외된 이웃을 위한 IT 솔루션 연구 학회)</Typography>
+        <Typography>March 2017 - July 2018</Typography>
+        <Typography>Student for Christ(학생신앙운동) 동아리</Typography>
+        <Typography>March 2015 - February 2020</Typography>
+        <Typography>Angang Girls' High School </Typography>
+        <Typography>Natural Sciences</Typography>
+        <Typography>March 2012 - February 2015</Typography>
       </TabPanel>
     </Box>
   );

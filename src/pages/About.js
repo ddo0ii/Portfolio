@@ -27,16 +27,15 @@ const rows = [
 
 function About() {
   return (
-    <Box className="aboutPage">
+    <Box
+      className="aboutPage"
+      sx={{
+        pt: { sm: "50px", xs: "20px" },
+        pb: { sm: "50px", xs: "20px" },
+      }}
+    >
       <Container>
-        <Grid
-          container
-          spacing={1}
-          sx={{
-            mt: { sm: 4, xs: 0 },
-            mb: { sm: 5, xs: 3 },
-          }}
-        >
+        <Grid container spacing={1}>
           <Grid item xs={12} sm={5}>
             <Box p={2}>
               <Typography align="center">
