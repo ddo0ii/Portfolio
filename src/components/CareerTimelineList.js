@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Chip, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import CareerTimelineContent from "./CareerTimelineContent";
 
 const CareerTimelineList = ({ careerList }) => {

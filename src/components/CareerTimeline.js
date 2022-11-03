@@ -1,11 +1,7 @@
 import React from "react";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineDot from "@mui/lab/TimelineDot";
-import { WorkOutline } from "@mui/icons-material";
+
 import CareerTimelineList from "./CareerTimelineList";
+import { Box } from "@mui/system";
 
 const dummyList = [
   {
@@ -32,25 +28,6 @@ const dummyList = [
 ];
 
 function CareerTimeline() {
-  return (
-    <Timeline
-      sx={{
-        [`& .${timelineItemClasses.root}:before`]: {
-          flex: 0,
-          padding: 0,
-        },
-      }}
-    >
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot color="primary">
-            <WorkOutline sx={{ p: 0.6, color: "white" }} />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <CareerTimelineList careerList={dummyList} />
-      </TimelineItem>
-    </Timeline>
-  );
+  return <CareerTimelineList careerList={dummyList} />;
 }
 export default CareerTimeline;
