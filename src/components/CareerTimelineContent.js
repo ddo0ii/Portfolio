@@ -3,6 +3,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import { Box, Chip, Typography } from "@mui/material";
 
 function CareerTimelineContent({
+  id,
   timeDate,
   timeTitle,
   timeSubTitle,
