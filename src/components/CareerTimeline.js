@@ -1,94 +1,70 @@
 import React from "react";
 import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
-import Typography from "@mui/material/Typography";
+import { DevicesOutlined } from "@mui/icons-material";
+import { Box, Chip, Typography } from "@mui/material";
 
 function CareerTimeline() {
   return (
-    <Timeline position="alternate">
+    <Timeline
+      sx={{
+        [`& .${timelineItemClasses.root}:before`]: {
+          flex: 0,
+          padding: 0,
+        },
+      }}
+    >
       <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          align="right"
-          variant="body2"
-          color="text.secondary"
-        >
-          9:30 am
-        </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineConnector />
           <TimelineDot>
-            <FastfoodIcon />
+            <DevicesOutlined sx={{ p: 0.6 }} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Box sx={{ mb: 2 }}>
+            <Chip
+              label="March 2015 - February 2020"
+              size="small"
+              sx={{
+                backgroundColor: "#252525",
+                color: "#DEDEDE",
+                fontSize: "10px",
+                fontWeight: "bold",
+              }}
+            />
+          </Box>
           <Typography variant="h6" component="span">
-            Eat
+            Handong Global Univ.
           </Typography>
-          <Typography>Because you need strength</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          variant="body2"
-          color="text.secondary"
-        >
-          10:00 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary">
-            <LaptopMacIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            Code
+          <Typography>
+            Computer Engineering (Science and Electrical Engineering)
           </Typography>
-          <Typography>Because it&apos;s awesome!</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <HotelIcon />
-          </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            Sleep
-          </Typography>
-          <Typography>Because you need rest</Typography>
+          <Box sx={{ mt: 2, ml: 1 }}>
+            <Typography sx={{ fontSize: "14px" }}>
+              시선 (소외된 이웃을 위한 IT 솔루션 연구 학회)
+            </Typography>
+            <Typography sx={{ fontWeight: "100", fontSize: "11px", mb: 1 }}>
+              March 2017 - July 2018
+            </Typography>
+            <Typography sx={{ fontSize: "14px" }}>
+              Student for Christ(학생신앙운동) 동아리
+            </Typography>
+            <Typography sx={{ fontWeight: "100", fontSize: "11px", mb: 1 }}>
+              March 2015 - February 2020
+            </Typography>
+          </Box>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-          <TimelineDot color="secondary">
-            <RepeatIcon />
-          </TimelineDot>
-          <TimelineConnector />
+          <TimelineDot />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            Repeat
-          </Typography>
-          <Typography>Because this is the life you love!</Typography>
-        </TimelineContent>
+        <TimelineContent>Code</TimelineContent>
       </TimelineItem>
     </Timeline>
   );
