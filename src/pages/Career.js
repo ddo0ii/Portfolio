@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Container, Divider, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import CareerTimeline from "../components/CareerTimeline";
+import TopTitle from "../components/TopTitle";
 
 function Career() {
   return (
@@ -13,33 +14,7 @@ function Career() {
     >
       <Container>
         <Box sx={{ p: { sm: 0, xs: 2 } }}>
-          <Box className="title">
-            <Box className="smallTitle">
-              <Divider
-                color="#C27D5B"
-                sx={{
-                  borderBottomWidth: { sm: 3, xs: 1.5 },
-                  width: { sm: 30, xs: 20 },
-                  mr: { sm: 3, xs: 2 },
-                }}
-              />
-              <Typography
-                color="#C27D5B"
-                sx={{
-                  fontSize: 10,
-                  letterSpacing: "5px",
-                }}
-              >
-                CAREER PATH
-              </Typography>
-            </Box>
-            <Typography
-              sx={{ typography: { sm: "h3", xs: "h4" } }}
-              gutterBottom
-            >
-              <b>EXPERIENCE & EDUCATION</b>
-            </Typography>
-          </Box>
+          <TopTitle subTitle="CAREER PATH" realTitle="EXPERIENCE & EDUCATION" />
         </Box>
         <CareerTimeline />
       </Container>
