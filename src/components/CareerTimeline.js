@@ -20,8 +20,8 @@ function CareerTimeline() {
     >
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot>
-            <DevicesOutlined sx={{ p: 0.6 }} />
+          <TimelineDot color="primary">
+            <DevicesOutlined sx={{ p: 0.6, color: "white" }} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
@@ -38,23 +38,41 @@ function CareerTimeline() {
               }}
             />
           </Box>
-          <Typography variant="h6" component="span">
+          <Typography
+            sx={{ typography: { sm: "h6", xs: "subtitle1" } }}
+            component="span"
+          >
             Handong Global Univ.
           </Typography>
-          <Typography>
+          <Typography
+            color="#959595"
+            sx={{ typography: { sm: "body1", xs: "body2" } }}
+          >
             Computer Engineering (Science and Electrical Engineering)
           </Typography>
-          <Box sx={{ mt: 2, ml: 1 }}>
-            <Typography sx={{ fontSize: "14px" }}>
+          <Box color="#959595" sx={{ mt: 2, ml: 1 }}>
+            <Typography sx={{ fontSize: { sm: "14px", xs: "11px" } }}>
               시선 (소외된 이웃을 위한 IT 솔루션 연구 학회)
             </Typography>
-            <Typography sx={{ fontWeight: "100", fontSize: "11px", mb: 1 }}>
+            <Typography
+              sx={{
+                fontWeight: "100",
+                fontSize: { sm: "11px", xs: "10px" },
+                mb: 1,
+              }}
+            >
               March 2017 - July 2018
             </Typography>
-            <Typography sx={{ fontSize: "14px" }}>
+            <Typography sx={{ fontSize: { sm: "14px", xs: "11px" } }}>
               Student for Christ(학생신앙운동) 동아리
             </Typography>
-            <Typography sx={{ fontWeight: "100", fontSize: "11px", mb: 1 }}>
+            <Typography
+              sx={{
+                fontWeight: "100",
+                fontSize: { sm: "11px", xs: "10px" },
+                mb: 1,
+              }}
+            >
               March 2015 - February 2020
             </Typography>
           </Box>

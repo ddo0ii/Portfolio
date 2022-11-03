@@ -35,7 +35,7 @@ body {
 }
 
 /* Title */
-.title {
+.smallTitle {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
