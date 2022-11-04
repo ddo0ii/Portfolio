@@ -6,8 +6,12 @@ import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
 import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
 
-const blue = {
-  50: "#F0F7FF",
+const colors = {
+  1: "#C27D5B",
+  2: "#DEDEDE",
+  3: "#959595",
+  4: "#3F3F3F",
+  5: "#f7ad88",
   100: "#C2E0FF",
   200: "#80BFFF",
   300: "#66B2FF",
@@ -34,31 +38,26 @@ const grey = {
 
 const Tab = styled(TabUnstyled)`
   font-family: IBM Plex Sans, sans-serif;
-  color: #fff;
+  color: ${colors[2]};
   cursor: pointer;
   font-size: 0.875rem;
   font-weight: 600;
   background-color: transparent;
-  width: 100%;
-  padding: 10px 12px;
+  /* width: 100%; */
+  padding: 10px 15px;
   margin: 6px 6px;
   border: none;
-  border-radius: 7px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
 
   &:hover {
-    background-color: ${blue[400]};
-  }
-
-  &:focus {
-    color: #fff;
-    outline: 3px solid ${blue[200]};
+    background-color: ${colors[5]};
   }
 
   &.${tabUnstyledClasses.selected} {
-    background-color: #fff;
-    color: ${blue[600]};
+    background-color: ${colors[4]};
+    color: ${colors[1]};
   }
 
   &.${buttonUnstyledClasses.disabled} {
@@ -73,26 +72,23 @@ const TabPanel = styled(TabPanelUnstyled)(
   font-family: IBM Plex Sans, sans-serif;
   font-size: 0.875rem;
   padding: 20px 12px;
-  background: ${theme.palette.mode === "dark" ? grey[900] : "#fff"};
+//   background: ${theme.palette.mode === "dark" ? grey[900] : "#fff"};
   border: 1px solid ${theme.palette.mode === "dark" ? grey[700] : grey[200]};
-  border-radius: 12px;
-  opacity: 0.6;
+//   border-radius: 12px;
+//   opacity: 0.6;
   `
 );
 
 const TabsList = styled(TabsListUnstyled)(
   ({ theme }) => `
-  min-width: 400px;
-  background-color: ${blue[500]};
-  border-radius: 12px;
+//   min-width: 400px;
+//   background-color: ${colors[500]};
+//   border-radius: 12px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: space-between;
-  box-shadow: 0px 4px 30px ${
-    theme.palette.mode === "dark" ? grey[900] : grey[200]
-  };
   `
 );
 
@@ -100,13 +96,15 @@ function ProjectTabs() {
   return (
     <TabsUnstyled defaultValue={0}>
       <TabsList>
-        <Tab>My account</Tab>
-        <Tab>Profile</Tab>
-        <Tab>Language</Tab>
+        <Tab>All</Tab>
+        <Tab>Web Develop</Tab>
+        <Tab>App Develop</Tab>
+        <Tab>Design</Tab>
       </TabsList>
       <TabPanel value={0}>My account page</TabPanel>
       <TabPanel value={1}>Profile page</TabPanel>
       <TabPanel value={2}>Language page</TabPanel>
+      <TabPanel value={3}>Design page</TabPanel>
     </TabsUnstyled>
   );
 }
