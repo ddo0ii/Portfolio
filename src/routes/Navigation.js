@@ -158,11 +158,11 @@ function Navigation() {
           <Toolbar />
           <About />
         </Box>
-        <Box ref={careerRef}>
+        <Box ref={careerRef} sx={{ backgroundColor: "#161617" }}>
           <Toolbar />
           <Career />
         </Box>
-        <Box ref={projectsRef}>
+        <Box ref={projectsRef} sx={{ backgroundColor: "#0F0F0F" }}>
           <Toolbar />
           <Projects />
         </Box>
@@ -170,7 +170,7 @@ function Navigation() {
           <Toolbar />
           <Activities />
         </Box>
-        <Box ref={alcRef}>
+        <Box ref={alcRef} sx={{ backgroundColor: "#161617" }}>
           <Toolbar />
           <ALC />
         </Box>

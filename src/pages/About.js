@@ -31,7 +31,7 @@ function About() {
       className="aboutPage"
       sx={{
         pt: { sm: "50px", xs: "20px" },
-        pb: { sm: "50px", xs: "20px" },
+        pb: { sm: "100px", xs: "80px" },
       }}
     >
       <Container>

@@ -8,7 +8,7 @@ function Career() {
     <Box
       sx={{
         backgroundColor: "#161617",
-        pt: { sm: "100px", xs: "80px" },
+        pt: { sm: "50px", xs: "20px" },
         pb: { sm: "100px", xs: "80px" },
       }}
     >
