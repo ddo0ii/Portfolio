@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container } from "@mui/material";
 import TopTitle from "../components/TopTitle";
+import ProjectTabs from "../components/ProjectTabs";
 
 function Projects() {
   return (
@@ -14,6 +15,7 @@ function Projects() {
         <Box sx={{ p: { sm: 0, xs: 2 } }}>
           <TopTitle subTitle="MY PORTFOLIO" realTitle="PROJECTS" />
         </Box>
+        <ProjectTabs />
       </Container>
     </Box>
   );
