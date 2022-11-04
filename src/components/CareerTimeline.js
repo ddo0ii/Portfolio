@@ -1,7 +1,9 @@
+import { Grid, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
 import CareerTimelineList from "./CareerTimelineList";
 
-const dummyList = [
+const dummyList1 = [
   {
     id: 1,
     timeDate: "August 1, 2020 - August 31, 2022",
@@ -33,8 +35,10 @@ const dummyList = [
     content2: "",
     content2Date: "",
   },
+];
+const dummyList2 = [
   {
-    id: 4,
+    id: 1,
     timeDate: "March 2015 - February 2020",
     timeTitle: "Handong Global Univ.",
     timeSubTitle: "Computer Engineering (Science and Electrical Engineering)",
@@ -44,7 +48,7 @@ const dummyList = [
     content2Date: "March 2015 - February 2020",
   },
   {
-    id: 5,
+    id: 2,
     timeDate: "March 2012 - February 2015",
     timeTitle: "Angang Girls'High School",
     timeSubTitle: "Natural Sciences",
@@ -56,6 +60,29 @@ const dummyList = [
 ];
 
 function CareerTimeline() {
-  return <CareerTimelineList careerList={dummyList} />;
+  return (
+    <Grid container spacing={1} sx={{ mt: { sm: "5", xs: "0" } }}>
+      <Grid item xs={12} sm={6}>
+        <Box>
+          <Typography
+            sx={{
+              typography: { sm: "h6", xs: "subtitle1" },
+            }}
+          >
+            <b>EXPERIENCE</b>
+          </Typography>
+          <CareerTimelineList careerList={dummyList1} />
+        </Box>
+      </Grid>
+      <Grid item xs={12} sm={6}>
+        <Box>
+          <Typography sx={{ typography: { sm: "h6", xs: "subtitle1" } }}>
+            <b>EDUCATION</b>
+          </Typography>
+          <CareerTimelineList careerList={dummyList2} />
+        </Box>
+      </Grid>
+    </Grid>
+  );
 }
 export default CareerTimeline;
