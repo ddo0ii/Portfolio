@@ -11,12 +11,10 @@ function ALC() {
       }}
     >
       <Container>
-        <Box sx={{ p: { sm: 0, xs: 2 } }}>
-          <TopTitle
-            subTitle="QUALIFICATION"
-            realTitle="AWARD & LICENSE & CERTIFICATE"
-          />
-        </Box>
+        <TopTitle
+          subTitle="QUALIFICATION"
+          realTitle="AWARD & LICENSE & CERTIFICATE"
+        />
       </Container>
     </Box>
   );

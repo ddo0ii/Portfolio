@@ -3,7 +3,7 @@ import { Box, Divider, Typography } from "@mui/material";
 
 function TopTitle({ subTitle, realTitle }) {
   return (
-    <Box className="title">
+    <Box className="title" sx={{ p: { sm: 0, xs: 2 }, mb: { sm: 5, xs: 0 } }}>
       <Box className="smallTitle">
         <Divider
           color="#C27D5B"

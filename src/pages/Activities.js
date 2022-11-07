@@ -11,9 +11,7 @@ function Activities() {
       }}
     >
       <Container>
-        <Box sx={{ p: { sm: 0, xs: 2 } }}>
-          <TopTitle subTitle="MY PRACTICAL EXPERIENCE" realTitle="ACTIVITIES" />
-        </Box>
+        <TopTitle subTitle="MY PRACTICAL EXPERIENCE" realTitle="ACTIVITIES" />
       </Container>
     </Box>
   );

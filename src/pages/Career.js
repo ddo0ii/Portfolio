@@ -13,9 +13,7 @@ function Career() {
       }}
     >
       <Container>
-        <Box sx={{ p: { sm: 0, xs: 2 } }}>
-          <TopTitle subTitle="CAREER PATH" realTitle="EXPERIENCE & EDUCATION" />
-        </Box>
+        <TopTitle subTitle="CAREER PATH" realTitle="EXPERIENCE & EDUCATION" />
         <CareerTimeline />
       </Container>
     </Box>

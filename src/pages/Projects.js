@@ -12,7 +12,7 @@ function Projects() {
       }}
     >
       <Container>
-        <Box sx={{ p: { sm: 0, xs: 2 } }}>
+        <Box sx={{ p: { sm: 0, xs: 2 }, mb: { sm: 5, xs: 0 } }}>
           <TopTitle subTitle="MY PORTFOLIO" realTitle="PROJECTS" />
         </Box>
         <ProjectTabs />
