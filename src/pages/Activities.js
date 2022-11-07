@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container } from "@mui/material";
 import TopTitle from "../components/TopTitle";
+import ActivitiesList from "../components/ActivitiesList";
 
 function Activities() {
   return (
@@ -12,6 +13,7 @@ function Activities() {
     >
       <Container>
         <TopTitle subTitle="MY PRACTICAL EXPERIENCE" realTitle="ACTIVITIES" />
+        <ActivitiesList />
       </Container>
     </Box>
   );
