@@ -5,6 +5,7 @@ import TabsListUnstyled from "@mui/base/TabsListUnstyled";
 import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
 import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
+import ProjectBox from "./ProjectBox";
 
 const colors = {
   1: "#C27D5B",
@@ -101,7 +102,18 @@ function ProjectTabs() {
         <Tab>App Develop</Tab>
         <Tab>Design</Tab>
       </TabsList>
-      <TabPanel value={0}>My account page</TabPanel>
+      <TabPanel value={0}>
+        <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
+      </TabPanel>
       <TabPanel value={1}>Profile page</TabPanel>
       <TabPanel value={2}>Language page</TabPanel>
       <TabPanel value={3}>Design page</TabPanel>
