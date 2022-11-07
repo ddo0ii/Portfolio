@@ -6,6 +6,7 @@ import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
 import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
 import ProjectBox from "./ProjectBox";
+import { Grid } from "@mui/material";
 
 const colors = {
   1: "#C27D5B",
@@ -104,18 +105,23 @@ function ProjectTabs() {
       </TabsList>
       <TabPanel
         value={0}
-        sx={{
+        sx={
+          {
+            /*
           display: "flex",
           flexWrap: "wrap",
-          justifyContent: "space-around",
-        }}
+           justifyContent: "space-around",
+          */
+          }
+        }
       >
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
+        <Grid container spacing={3}>
+          <ProjectBox />
+          <ProjectBox />
+          <ProjectBox />
+          <ProjectBox />
+          <ProjectBox />
+        </Grid>
       </TabPanel>
       <TabPanel value={1}>Profile page</TabPanel>
       <TabPanel value={2}>Language page</TabPanel>

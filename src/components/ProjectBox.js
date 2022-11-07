@@ -4,12 +4,13 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
+  Grid,
   Typography,
 } from "@mui/material";
 
 function ProjectBox() {
   return (
-    <div>
+    <Grid item xs={4}>
       <Card elevation={8} sx={{ maxWidth: 300, mb: 5, borderRadius: 0 }}>
         <CardActionArea>
           <CardMedia
@@ -56,7 +57,7 @@ function ProjectBox() {
           </CardContent>
         </CardActionArea>
       </Card>
-    </div>
+    </Grid>
   );
 }
 
