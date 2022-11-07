@@ -10,7 +10,12 @@ import {
 
 function ProjectBox() {
   return (
-    <Grid item xs={4}>
+    <Grid
+      item
+      xs={12}
+      sm={4}
+      sx={{ display: "flex", justifyContent: "center" }}
+    >
       <Card elevation={8} sx={{ maxWidth: 300, mb: 5, borderRadius: 0 }}>
         <CardActionArea>
           <CardMedia
