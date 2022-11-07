@@ -16,6 +16,9 @@ function ProjectBox() {
           height="250"
           image="./images/projectImg/project1.jpg"
           alt="green iguana"
+          sx={{
+            filter: "brightness(50%)",
+          }}
         />
         <CardContent>
           <Typography gutterBottom variant="h6" component="div">
