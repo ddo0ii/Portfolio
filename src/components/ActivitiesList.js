@@ -4,16 +4,13 @@ import {
   ImageList,
   ImageListItem,
   ImageListItemBar,
-  ListSubheader,
 } from "@mui/material";
 import InfoIcon from "@mui/icons-material/Info";
 
 function ActivitiesList() {
   return (
     <ImageList>
-      <ImageListItem key="Subheader" cols={3}>
-        <ListSubheader component="div">December</ListSubheader>
-      </ImageListItem>
+      <ImageListItem key="Subheader" cols={3}></ImageListItem>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img
@@ -45,10 +42,10 @@ export default ActivitiesList;
 const itemData = [
   {
     img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "Breakfast",
-    author: "@bkristastucchio",
-    rows: 2,
-    cols: 2,
+    title: "Student for Christ(학생신앙운동) 동아리",
+    author: "Mar 2015 - Feb 2020",
+    // rows: 2,
+    // cols: 2,
     featured: true,
   },
   {
@@ -65,20 +62,20 @@ const itemData = [
     img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
     title: "Coffee",
     author: "@nolanissac",
-    cols: 2,
+    // cols: 2,
   },
   {
     img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
     title: "Hats",
     author: "@hjrc33",
-    cols: 2,
+    // cols: 2,
   },
   {
     img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
     title: "Honey",
     author: "@arwinneil",
-    rows: 2,
-    cols: 2,
+    // rows: 2,
+    // cols: 2,
     featured: true,
   },
   {
@@ -95,8 +92,8 @@ const itemData = [
     img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
     title: "Mushrooms",
     author: "@silverdalex",
-    rows: 2,
-    cols: 2,
+    // rows: 2,
+    // cols: 2,
   },
   {
     img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
@@ -112,6 +109,6 @@ const itemData = [
     img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
     title: "Bike",
     author: "@southside_customs",
-    cols: 2,
+    // cols: 2,
   },
 ];
