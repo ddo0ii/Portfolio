@@ -74,7 +74,7 @@ const TabPanel = styled(TabPanelUnstyled)(
   font-size: 0.875rem;
   padding: 20px 12px;
 //   background: ${theme.palette.mode === "dark" ? grey[900] : "#fff"};
-  border: 1px solid ${theme.palette.mode === "dark" ? grey[700] : grey[200]};
+  // border: 1px solid ${theme.palette.mode === "dark" ? grey[700] : grey[200]};
 //   border-radius: 12px;
 //   opacity: 0.6;
   `
@@ -102,11 +102,14 @@ function ProjectTabs() {
         <Tab>App Develop</Tab>
         <Tab>Design</Tab>
       </TabsList>
-      <TabPanel value={0}>
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
-        <ProjectBox />
+      <TabPanel
+        value={0}
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
+        }}
+      >
         <ProjectBox />
         <ProjectBox />
         <ProjectBox />
