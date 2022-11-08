@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Container } from "@mui/material";
 import TopTitle from "../components/TopTitle";
+import ALCList from "../components/ALCList";
 
 function ALC() {
   return (
@@ -15,6 +16,7 @@ function ALC() {
           subTitle="QUALIFICATION"
           realTitle="AWARD & LICENSE & CERTIFICATE"
         />
+        <ALCList />
       </Container>
     </Box>
   );
