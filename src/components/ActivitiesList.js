@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  IconButton,
-  ImageList,
-  ImageListItem,
-  ImageListItemBar,
-} from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
+import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
@@ -20,20 +14,12 @@ function ActivitiesList() {
             src={item.img}
             alt={item.title}
             loading="lazy"
-            style={{ filter: "brightness(50%)" }}
+            style={{ filter: "brightness(30%)" }}
           />
           <ImageListItemBar
             title={item.title}
             subtitle={item.actiTime}
             sx={{ backgroundColor: "transparent" }}
-            // actionIcon={
-            //   <IconButton
-            //     sx={{ color: "rgba(255, 255, 255, 0.54)" }}
-            //     aria-label={`info about ${item.title}`}
-            //   >
-            //     <InfoIcon />
-            //   </IconButton>
-            // }
           />
         </ImageListItem>
       ))}
