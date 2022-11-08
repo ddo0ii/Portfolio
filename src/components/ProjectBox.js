@@ -16,7 +16,10 @@ function ProjectBox() {
       sm={4}
       sx={{ display: "flex", justifyContent: "center" }}
     >
-      <Card elevation={8} sx={{ maxWidth: 300, mb: 5, borderRadius: 0 }}>
+      <Card
+        elevation={10}
+        sx={{ maxWidth: 300, mb: { sm: 5, xs: 0 }, borderRadius: 0 }}
+      >
         <CardActionArea>
           <CardMedia
             component="img"

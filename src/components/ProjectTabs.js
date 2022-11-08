@@ -115,7 +115,7 @@ function ProjectTabs() {
           }
         }
       >
-        <Grid container spacing={3}>
+        <Grid container spacing={1}>
           <ProjectBox />
           <ProjectBox />
           <ProjectBox />
