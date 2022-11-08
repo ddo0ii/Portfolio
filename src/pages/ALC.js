@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import TopTitle from "../components/TopTitle";
 import ALCList from "../components/ALCList";
 
@@ -16,7 +16,14 @@ function ALC() {
           subTitle="QUALIFICATION"
           realTitle="AWARD & LICENSE & CERTIFICATE"
         />
-        <ALCList />
+        <Grid container rowSpacing={1} columnSpacing={0.5}>
+          <ALCList />
+          <ALCList />
+          <ALCList />
+          <ALCList />
+          <ALCList />
+          <ALCList />
+        </Grid>
       </Container>
     </Box>
   );
