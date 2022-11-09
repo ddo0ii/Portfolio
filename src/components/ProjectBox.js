@@ -24,7 +24,7 @@ function ProjectBox() {
           <CardMedia
             component="img"
             height="300"
-            image="./images/projectImg/project1.jpg"
+            image={`${process.env.PUBLIC_URL}/images/projectImg/project1.jpg`}
             alt="green iguana"
             sx={{
               filter: "brightness(50%)",

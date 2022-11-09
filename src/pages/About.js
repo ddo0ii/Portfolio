@@ -41,7 +41,7 @@ function About() {
               <Typography align="center">
                 <img
                   className="profileImg"
-                  src={"./images/ProfileImg.jpg"}
+                  src={`${process.env.PUBLIC_URL}/images/ProfileImg.jpg`}
                   alt="Profile Image"
                 />
               </Typography>

@@ -22,7 +22,6 @@ function ALC() {
           <ALCList />
           <ALCList />
           <ALCList />
-          <ALCList />
         </Grid>
       </Container>
     </Box>

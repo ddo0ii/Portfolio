@@ -1,6 +1,6 @@
 import React from "react";
-import TimelineContent from "@mui/lab/TimelineContent";
 import { Box, Chip, Typography } from "@mui/material";
+import TimelineContent from "@mui/lab/TimelineContent";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
