@@ -1,14 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
+  Button,
   Card,
   CardActionArea,
   CardContent,
   CardMedia,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
   Grid,
   Typography,
 } from "@mui/material";
 
 function ProjectBox() {
+  const [open, setOpen] = useState(false);
+  const [scroll, setScroll] = useState("paper");
+
+  const handleClickOpen = (scrollType) => () => {
+    setOpen(true);
+    setScroll(scrollType);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const descriptionElementRef = useRef(null);
+  useEffect(() => {
+    if (open) {
+      const { current: descriptionElement } = descriptionElementRef;
+      if (descriptionElement !== null) {
+        descriptionElement.focus();
+      }
+    }
+  }, [open]);
+
   return (
     <Grid
       item
@@ -18,6 +46,7 @@ function ProjectBox() {
     >
       <Card
         elevation={10}
+        onClick={handleClickOpen("body")}
         sx={{ maxWidth: 300, mb: { sm: 5, xs: 0 }, borderRadius: 0 }}
       >
         <CardActionArea>
@@ -65,6 +94,27 @@ function ProjectBox() {
           </CardContent>
         </CardActionArea>
       </Card>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        scroll={scroll}
+        aria-labelledby="scroll-dialog-title"
+        aria-describedby="scroll-dialog-description"
+      >
+        <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
+        <DialogContent dividers={scroll === "paper"}>
+          <DialogContentText
+            id="scroll-dialog-description"
+            ref={descriptionElementRef}
+            tabIndex={-1}
+          >
+            hello
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClose}>Close</Button>
+        </DialogActions>
+      </Dialog>
     </Grid>
   );
 }
