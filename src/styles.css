@@ -77,3 +77,17 @@ body {
   display: flex;
   align-items: center;
 }
+
+/* Project */
+.projectDialogTop {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/public/images/HomeTop.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

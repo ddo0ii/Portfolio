@@ -13,6 +13,7 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
+import ProjectDialog from "./ProjectDialog";
 
 function ProjectBox() {
   const [open, setOpen] = useState(false);
@@ -95,25 +96,27 @@ function ProjectBox() {
         </CardActionArea>
       </Card>
       <Dialog
+        maxWidth="lg"
         open={open}
         onClose={handleClose}
         scroll={scroll}
-        aria-labelledby="scroll-dialog-title"
-        aria-describedby="scroll-dialog-description"
+        // aria-labelledby="scroll-dialog-title"
+        // aria-describedby="scroll-dialog-description"
       >
-        <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-        <DialogContent dividers={scroll === "paper"}>
+        <ProjectDialog />
+        {/* <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle> */}
+        {/* <DialogContent dividers={scroll === "paper"}>
           <DialogContentText
             id="scroll-dialog-description"
             ref={descriptionElementRef}
             tabIndex={-1}
           >
-            hello
+            <Box>Hello</Box>
           </DialogContentText>
-        </DialogContent>
-        <DialogActions>
+        </DialogContent> */}
+        {/* <DialogActions>
           <Button onClick={handleClose}>Close</Button>
-        </DialogActions>
+        </DialogActions> */}
       </Dialog>
     </Grid>
   );
