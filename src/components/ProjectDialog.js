@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
+import ReactPlayer from "react-player";
 
 const TopImage = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -195,6 +196,21 @@ function ProjectDialog() {
             }}
             alt="The house from the offer."
             src={`${process.env.PUBLIC_URL}/images/projectImg/project1_1.jpg`}
+          />
+          <ReactPlayer
+            className="player"
+            url={"https://youtu.be/5CEzAd3kDtg"}
+            // width="100%"
+            width="700px"
+            heigth="700px"
+            // playing={true}
+            // muted={true}
+            controls={true}
+            // sx={{
+            //   display: "flex",
+            //   justifyContent: "center",
+            //   alignItems: "center",
+            // }}
           />
         </Container>
       </Box>
