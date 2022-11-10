@@ -145,6 +145,33 @@ function ProjectDialog() {
           </Grid>
         </Container>
       </Box>
+      <Box
+        sx={{
+          pt: { sm: "100px", xs: "80px" },
+          pb: { sm: "100px", xs: "80px" },
+        }}
+      >
+        <Container>
+          <Typography
+            className="pjDetail"
+            sx={{
+              typography: { sm: "body2", xs: "overline" },
+              pb: { sm: "10px", xs: "5px" },
+            }}
+          >
+            DEFINING THE PROBLEM
+          </Typography>
+          <Typography
+            className="pjDetailContent"
+            sx={{
+              typography: { sm: "subtitle1", xs: "body2" },
+            }}
+          >
+            부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록
+            깔끔한 디자인으로 기획하고 구상하여 제작하였다.
+          </Typography>
+        </Container>
+      </Box>
     </div>
   );
 }
