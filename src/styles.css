@@ -94,3 +94,11 @@ body {
   align-items: center;
   min-height: 50vh;
 }
+
+.pjDetail {
+  color: #9b9b9b;
+}
+
+.pjDetailContent {
+  color: #dedede;
+}

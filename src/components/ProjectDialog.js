@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 
@@ -9,7 +9,7 @@ const TopImage = styled.div`
 
 function ProjectDialog() {
   return (
-    <div>
+    <div style={{ backgroundColor: "black" }}>
       <TopImage className="projectDialogTop">
         <Container>
           <Typography
@@ -57,6 +57,94 @@ function ProjectDialog() {
           </Typography>
         </Container>
       </TopImage>
+      <Box
+        sx={{
+          pt: { sm: "100px", xs: "80px" },
+          pb: { sm: "100px", xs: "80px" },
+        }}
+      >
+        <Container>
+          <Grid container spacing={3}>
+            <Grid item sm={3} xs={6}>
+              <Typography
+                className="pjDetail"
+                sx={{
+                  typography: { sm: "body2", xs: "overline" },
+                  pb: { sm: "10px", xs: "5px" },
+                }}
+              >
+                LANGUAGE & TOOL
+              </Typography>
+              <Typography
+                className="pjDetailContent"
+                sx={{
+                  typography: { sm: "subtitle1", xs: "body2" },
+                }}
+              >
+                Vue.js, Nuxt.js, <br />
+                Daum 도로명주소 API
+              </Typography>
+            </Grid>
+            <Grid item sm={3} xs={6}>
+              <Typography
+                className="pjDetail"
+                sx={{
+                  typography: { sm: "body2", xs: "overline" },
+                  pb: { sm: "10px", xs: "5px" },
+                }}
+              >
+                ROLE
+              </Typography>
+              <Typography
+                className="pjDetailContent"
+                sx={{
+                  typography: { sm: "subtitle1", xs: "body2" },
+                }}
+              >
+                기획 및 제작
+              </Typography>
+            </Grid>
+            <Grid item sm={3} xs={6}>
+              <Typography
+                className="pjDetail"
+                sx={{
+                  typography: { sm: "body2", xs: "overline" },
+                  pb: { sm: "10px", xs: "5px" },
+                }}
+              >
+                INDUSTRY
+              </Typography>
+              <Typography
+                className="pjDetailContent"
+                sx={{
+                  typography: { sm: "subtitle1", xs: "body2" },
+                }}
+              >
+                Solo
+              </Typography>
+            </Grid>
+            <Grid item sm={3} xs={6}>
+              <Typography
+                className="pjDetail"
+                sx={{
+                  typography: { sm: "body2", xs: "overline" },
+                  pb: { sm: "10px", xs: "5px" },
+                }}
+              >
+                DURATION
+              </Typography>
+              <Typography
+                className="pjDetailContent"
+                sx={{
+                  typography: { sm: "subtitle1", xs: "body2" },
+                }}
+              >
+                2 Months
+              </Typography>
+            </Grid>
+          </Grid>
+        </Container>
+      </Box>
     </div>
   );
 }
