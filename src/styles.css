@@ -80,8 +80,8 @@ body {
 
 /* Project */
 .projectDialogTop {
-  height: 100vh;
-  width: 100vw;
+  /* height: 50vh; */
+  /* width: 100%; */
   background-image: url("/public/images/HomeTop.jpg");
   background-size: cover;
   background-position: center;
@@ -89,5 +89,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }

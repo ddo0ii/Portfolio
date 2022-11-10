@@ -96,7 +96,8 @@ function ProjectBox() {
         </CardActionArea>
       </Card>
       <Dialog
-        maxWidth="lg"
+        fullWidth={true}
+        maxWidth="xl"
         open={open}
         onClose={handleClose}
         scroll={scroll}
@@ -104,6 +105,7 @@ function ProjectBox() {
         // aria-describedby="scroll-dialog-description"
       >
         <ProjectDialog />
+        {/* hello */}
         {/* <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle> */}
         {/* <DialogContent dividers={scroll === "paper"}>
           <DialogContentText
