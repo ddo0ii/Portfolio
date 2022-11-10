@@ -80,14 +80,13 @@ body {
 
 /* Project */
 .projectDialogTop {
-  /* height: 50vh; */
-  /* width: 100%; */
-  background-image: url("/public/images/HomeTop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/public/images/projectImg/project1.jpg");
   background-size: cover;
   background-position: center;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
+  min-height: 50vh;
 }
