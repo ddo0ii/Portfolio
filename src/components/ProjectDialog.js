@@ -172,6 +172,32 @@ function ProjectDialog() {
           </Typography>
         </Container>
       </Box>
+      <Box
+        sx={{
+          pt: { sm: "100px", xs: "80px" },
+          pb: { sm: "100px", xs: "80px" },
+        }}
+      >
+        <Container>
+          <Typography
+            className="pjDetail"
+            sx={{
+              typography: { sm: "body2", xs: "overline" },
+              pb: { sm: "10px", xs: "5px" },
+            }}
+          >
+            LAUNCH PROTOTYPE
+          </Typography>
+          <Box
+            component="img"
+            sx={{
+              width: "100%",
+            }}
+            alt="The house from the offer."
+            src={`${process.env.PUBLIC_URL}/images/projectImg/project1_1.jpg`}
+          />
+        </Container>
+      </Box>
     </div>
   );
 }
