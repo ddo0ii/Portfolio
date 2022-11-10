@@ -1,10 +1,16 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
+import styled from "styled-components";
+
+const TopImage = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(${process.env.PUBLIC_URL + "/images/projectImg/project1.jpg"});
+`;
 
 function ProjectDialog() {
   return (
     <div>
-      <Box className="projectDialogTop">
+      <TopImage className="projectDialogTop">
         <Container>
           <Typography
             align="center"
@@ -50,7 +56,7 @@ function ProjectDialog() {
             DECEMBER 2019 - FEBRUARY 2020
           </Typography>
         </Container>
-      </Box>
+      </TopImage>
     </div>
   );
 }
