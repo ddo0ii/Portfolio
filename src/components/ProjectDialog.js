@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
@@ -10,7 +10,7 @@ const TopImage = styled.div`
 
 function ProjectDialog() {
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div style={{ backgroundColor: "#0F0F0F" }}>
       <TopImage className="projectDialogTop">
         <Container>
           <Typography
@@ -19,7 +19,7 @@ function ProjectDialog() {
             sx={{
               fontSize: { sm: "14px", xs: "7px" },
               letterSpacing: "4px",
-              mt: { sm: 20, xs: 10 },
+              mt: { sm: 20, xs: 0 },
             }}
           >
             PROJECT
@@ -51,7 +51,7 @@ function ProjectDialog() {
             color="#989796"
             sx={{
               typography: { sm: "h6", xs: "overline" },
-              mb: { sm: 15, xs: 8 },
+              mb: { sm: 15, xs: 0 },
             }}
           >
             DECEMBER 2019 - FEBRUARY 2020
@@ -61,7 +61,7 @@ function ProjectDialog() {
       <Box
         sx={{
           pt: { sm: "100px", xs: "80px" },
-          pb: { sm: "100px", xs: "80px" },
+          pb: { sm: "100px", xs: "0px" },
         }}
       >
         <Container>
@@ -149,7 +149,7 @@ function ProjectDialog() {
       <Box
         sx={{
           pt: { sm: "100px", xs: "80px" },
-          pb: { sm: "100px", xs: "80px" },
+          pb: { sm: "100px", xs: "0px" },
         }}
       >
         <Container>
@@ -176,7 +176,7 @@ function ProjectDialog() {
       <Box
         sx={{
           pt: { sm: "100px", xs: "80px" },
-          pb: { sm: "100px", xs: "80px" },
+          pb: { sm: "50px", xs: "0px" },
         }}
       >
         <Container>
@@ -197,21 +197,25 @@ function ProjectDialog() {
             alt="The house from the offer."
             src={`${process.env.PUBLIC_URL}/images/projectImg/project1_1.jpg`}
           />
-          <ReactPlayer
-            className="player"
-            url={"https://youtu.be/5CEzAd3kDtg"}
-            // width="100%"
-            width="700px"
-            heigth="700px"
-            // playing={true}
-            // muted={true}
-            controls={true}
-            // sx={{
-            //   display: "flex",
-            //   justifyContent: "center",
-            //   alignItems: "center",
-            // }}
-          />
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              pt: { sm: 2, xs: 1 },
+            }}
+          >
+            <ReactPlayer
+              className="player"
+              url={"https://www.youtube.com/embed/5CEzAd3kDtg"}
+              // width="100%"
+              width="700px"
+              heigth="700px"
+              // playing={true}
+              // muted={true}
+              controls={true}
+            />
+          </Box>
         </Container>
       </Box>
     </div>

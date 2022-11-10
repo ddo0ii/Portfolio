@@ -11,6 +11,7 @@ import {
   DialogContentText,
   DialogTitle,
   Grid,
+  Paper,
   Typography,
 } from "@mui/material";
 import ProjectDialog from "./ProjectDialog";
@@ -95,19 +96,23 @@ function ProjectBox() {
           </CardContent>
         </CardActionArea>
       </Card>
-      <Dialog
-        fullWidth={true}
-        maxWidth="xl"
-        open={open}
-        onClose={handleClose}
-        scroll={scroll}
-        // aria-labelledby="scroll-dialog-title"
-        // aria-describedby="scroll-dialog-description"
-      >
-        <ProjectDialog />
-        {/* hello */}
-        {/* <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle> */}
-        {/* <DialogContent dividers={scroll === "paper"}>
+      <Paper elevation={10}>
+        <Dialog
+          fullWidth={true}
+          maxWidth="xl"
+          open={open}
+          onClose={handleClose}
+          scroll={scroll}
+          // aria-labelledby="scroll-dialog-title"
+          // aria-describedby="scroll-dialog-description"
+        >
+          <ProjectDialog />
+          <DialogActions sx={{ backgroundColor: "#0F0F0F" }}>
+            <Button onClick={handleClose}>Close</Button>
+          </DialogActions>
+          {/* hello */}
+          {/* <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle> */}
+          {/* <DialogContent dividers={scroll === "paper"}>
           <DialogContentText
             id="scroll-dialog-description"
             ref={descriptionElementRef}
@@ -116,10 +121,8 @@ function ProjectBox() {
             <Box>Hello</Box>
           </DialogContentText>
         </DialogContent> */}
-        {/* <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
-        </DialogActions> */}
-      </Dialog>
+        </Dialog>
+      </Paper>
     </Grid>
   );
 }
