@@ -71,14 +71,14 @@ function ProjectBox({
       <Card
         elevation={10}
         onClick={handleClickOpen("body")}
-        sx={{ maxWidth: 300, mb: { sm: 5, xs: 0 }, borderRadius: 0 }}
+        sx={{ maxWidth: 300, borderRadius: 0 }}
       >
         <CardActionArea>
           <CardMedia
             component="img"
             height="300"
             image={process.env.PUBLIC_URL + pjImage}
-            alt="green iguana"
+            alt={`${pjTitle} Image`}
             sx={{
               filter: "brightness(50%)",
             }}

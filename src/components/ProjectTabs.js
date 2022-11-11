@@ -103,23 +103,42 @@ function ProjectTabs({ projectList }) {
         <Tab>App Develop</Tab>
         <Tab>Design</Tab>
       </TabsList>
-      {projectList.map((it) => (
-        <Box key={it.id}>
-          <TabPanel value={0}>
-            <ProjectBox {...it} />
-          </TabPanel>
-          <TabPanel value={1}>
-            <ProjectBox {...it} />
-            {it.pjType == "Web Develop" ? <ProjectBox {...it} /> : ""}
-          </TabPanel>
-          <TabPanel value={2}>
-            {it.pjType == "App Develop" ? <ProjectBox {...it} /> : ""}
-          </TabPanel>
-          <TabPanel value={3}>
-            {it.pjType == "Design" ? <ProjectBox {...it} /> : ""}
-          </TabPanel>
-        </Box>
-      ))}
+      <Box sx={{ mb: { sm: 5, xs: 0 } }}>
+        {projectList.map((it) => (
+          <Box key={it.id}>
+            <TabPanel value={0}>
+              <ProjectBox {...it} />
+            </TabPanel>
+            <TabPanel value={1}>
+              {it.pjType === "Web Develop" ? (
+                <ProjectBox {...it} />
+              ) : (
+                <Box sx={{ display: "none" }}>
+                  <ProjectBox {...it} />
+                </Box>
+              )}
+            </TabPanel>
+            <TabPanel value={2}>
+              {it.pjType == "App Develop" ? (
+                <ProjectBox {...it} />
+              ) : (
+                <Box sx={{ display: "none" }}>
+                  <ProjectBox {...it} />
+                </Box>
+              )}
+            </TabPanel>
+            <TabPanel value={3}>
+              {it.pjType == "Design" ? (
+                <ProjectBox {...it} />
+              ) : (
+                <Box sx={{ display: "none" }}>
+                  <ProjectBox {...it} />
+                </Box>
+              )}
+            </TabPanel>
+          </Box>
+        ))}
+      </Box>
     </TabsUnstyled>
   );
 }
