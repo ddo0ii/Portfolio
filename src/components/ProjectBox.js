@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
+  Box,
   Button,
   Card,
   CardActionArea,
@@ -62,12 +63,7 @@ function ProjectBox({
   }, [open]);
 
   return (
-    <Grid
-      item
-      xs={12}
-      sm={4}
-      sx={{ display: "flex", justifyContent: "center" }}
-    >
+    <Box>
       <Card
         elevation={10}
         onClick={handleClickOpen("body")}
@@ -182,7 +178,7 @@ function ProjectBox({
           </DialogActions>
         </Dialog>
       </Paper>
-    </Grid>
+    </Box>
   );
 }
 

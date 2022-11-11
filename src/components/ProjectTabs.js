@@ -103,22 +103,24 @@ function ProjectTabs({ projectList }) {
         <Tab>App Develop</Tab>
         <Tab>Design</Tab>
       </TabsList>
-      {projectList.map((it) => (
-        <Box key={it.id}>
-          <TabPanel value={0}>
-            <ProjectBox {...it} />
-          </TabPanel>
-          <TabPanel value={1}>
-            {it.pjType === "Web Develop" ? <ProjectBox {...it} /> : null}
-          </TabPanel>
-          <TabPanel value={2}>
-            {it.pjType == "App Develop" ? <ProjectBox {...it} /> : null}
-          </TabPanel>
-          <TabPanel value={3}>
-            {it.pjType == "Design" ? <ProjectBox {...it} /> : null}
-          </TabPanel>
-        </Box>
-      ))}
+      <Grid container>
+        {projectList.map((it) => (
+          <Box key={it.id}>
+            <TabPanel value={0}>
+              <ProjectBox {...it} />
+            </TabPanel>
+            <TabPanel value={1}>
+              {it.pjType === "Web Develop" ? <ProjectBox {...it} /> : null}
+            </TabPanel>
+            <TabPanel value={2}>
+              {it.pjType == "App Develop" ? <ProjectBox {...it} /> : null}
+            </TabPanel>
+            <TabPanel value={3}>
+              {it.pjType == "Design" ? <ProjectBox {...it} /> : null}
+            </TabPanel>
+          </Box>
+        ))}
+      </Grid>
     </TabsUnstyled>
   );
 }
