@@ -77,7 +77,7 @@ function ProjectBox({
           <CardMedia
             component="img"
             height="300"
-            image={`${process.env.PUBLIC_URL}/images/projectImg/project1.jpg`}
+            image={process.env.PUBLIC_URL + pjImage}
             alt="green iguana"
             sx={{
               filter: "brightness(50%)",
@@ -85,7 +85,7 @@ function ProjectBox({
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div">
-              부동산계싼기
+              {pjTitle}
             </Typography>
             <Typography
               variant="caption"
@@ -99,7 +99,7 @@ function ProjectBox({
                 mr: 1,
               }}
             >
-              Vue.js
+              {pjDeContent1_1}
             </Typography>
             <Typography
               variant="caption"
@@ -113,7 +113,35 @@ function ProjectBox({
                 mr: 1,
               }}
             >
-              Nuxt.js
+              {pjDeContent1_2}
+            </Typography>
+            <Typography
+              variant="caption"
+              color="text.secondary"
+              sx={{
+                border: 1,
+                borderColor: "#E8E8E8",
+                p: "2px",
+                pl: 1,
+                pr: 1,
+                mr: 1,
+              }}
+            >
+              {pjDeContent1_3}
+            </Typography>
+            <Typography
+              variant="caption"
+              color="text.secondary"
+              sx={{
+                border: 1,
+                borderColor: "#E8E8E8",
+                p: "2px",
+                pl: 1,
+                pr: 1,
+                mr: 1,
+              }}
+            >
+              {pjDeContent1_4}
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -126,7 +154,29 @@ function ProjectBox({
           onClose={handleClose}
           scroll={scroll}
         >
-          <ProjectDialog />
+          <ProjectDialog
+            id={id}
+            pjType={pjType}
+            pjImage={pjImage}
+            pjTitle={pjTitle}
+            pjSubTitle={pjSubTitle}
+            pjDuration={pjDuration}
+            pjDeTitle1={pjDeTitle1}
+            pjDeContent1_1={pjDeContent1_1}
+            pjDeContent1_2={pjDeContent1_2}
+            pjDeContent1_3={pjDeContent1_3}
+            pjDeContent1_4={pjDeContent1_4}
+            pjDeTitle2={pjDeTitle2}
+            pjDeContent2={pjDeContent2}
+            pjDeTitle3={pjDeTitle3}
+            pjDeContent3={pjDeContent3}
+            pjDeTitle4={pjDeTitle4}
+            pjDeContent4={pjDeContent4}
+            pjDef={pjDef}
+            pjPrototype={pjPrototype}
+            pjpjPrototypeAlt={pjpjPrototypeAlt}
+            pjVideo={pjVideo}
+          />
           <DialogActions sx={{ backgroundColor: "#0F0F0F" }}>
             <Button onClick={handleClose}>Close</Button>
           </DialogActions>

@@ -3,12 +3,34 @@ import React from "react";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
 
-const TopImage = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(${process.env.PUBLIC_URL + "/images/projectImg/project1.jpg"});
-`;
+function ProjectDialog({
+  id,
+  pjType,
+  pjImage,
+  pjTitle,
+  pjSubTitle,
+  pjDuration,
+  pjDeTitle1,
+  pjDeContent1_1,
+  pjDeContent1_2,
+  pjDeContent1_3,
+  pjDeContent1_4,
+  pjDeTitle2,
+  pjDeContent2,
+  pjDeTitle3,
+  pjDeContent3,
+  pjDeTitle4,
+  pjDeContent4,
+  pjDef,
+  pjPrototype,
+  pjpjPrototypeAlt,
+  pjVideo,
+}) {
+  const TopImage = styled.div`
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(${process.env.PUBLIC_URL + pjImage});
+  `;
 
-function ProjectDialog() {
   return (
     <div style={{ backgroundColor: "#0F0F0F" }}>
       <TopImage className="projectDialogTop">
@@ -34,7 +56,7 @@ function ProjectDialog() {
               mt: { sm: 2, xs: 1 },
             }}
           >
-            <b>부동산 계산기</b>
+            <b>{pjTitle}</b>
           </Typography>
           <Typography
             align="center"
@@ -44,7 +66,7 @@ function ProjectDialog() {
               mt: { sm: 3, xs: 2 },
             }}
           >
-            케이페이스 인턴(개발팀)
+            {pjSubTitle}
           </Typography>
           <Typography
             align="center"
@@ -54,7 +76,7 @@ function ProjectDialog() {
               mb: { sm: 15, xs: 0 },
             }}
           >
-            DECEMBER 2019 - FEBRUARY 2020
+            {pjDuration}
           </Typography>
         </Container>
       </TopImage>
@@ -74,7 +96,7 @@ function ProjectDialog() {
                   pb: { sm: "10px", xs: "5px" },
                 }}
               >
-                LANGUAGE & TOOL
+                {pjDeTitle1}
               </Typography>
               <Typography
                 className="pjDetailContent"
@@ -82,8 +104,8 @@ function ProjectDialog() {
                   typography: { sm: "subtitle1", xs: "body2" },
                 }}
               >
-                Vue.js, Nuxt.js, <br />
-                Daum 도로명주소 API
+                {pjDeContent1_1} {pjDeContent1_2}, <br />
+                {pjDeContent1_3} {pjDeContent1_4}
               </Typography>
             </Grid>
             <Grid item sm={3} xs={6}>
@@ -94,7 +116,7 @@ function ProjectDialog() {
                   pb: { sm: "10px", xs: "5px" },
                 }}
               >
-                ROLE
+                {pjDeTitle2}
               </Typography>
               <Typography
                 className="pjDetailContent"
@@ -102,7 +124,7 @@ function ProjectDialog() {
                   typography: { sm: "subtitle1", xs: "body2" },
                 }}
               >
-                기획 및 제작
+                {pjDeContent2}
               </Typography>
             </Grid>
             <Grid item sm={3} xs={6}>
@@ -113,7 +135,7 @@ function ProjectDialog() {
                   pb: { sm: "10px", xs: "5px" },
                 }}
               >
-                INDUSTRY
+                {pjDeTitle3}
               </Typography>
               <Typography
                 className="pjDetailContent"
@@ -121,7 +143,7 @@ function ProjectDialog() {
                   typography: { sm: "subtitle1", xs: "body2" },
                 }}
               >
-                Solo
+                {pjDeContent3}
               </Typography>
             </Grid>
             <Grid item sm={3} xs={6}>
@@ -132,7 +154,7 @@ function ProjectDialog() {
                   pb: { sm: "10px", xs: "5px" },
                 }}
               >
-                DURATION
+                {pjDeTitle4}
               </Typography>
               <Typography
                 className="pjDetailContent"
@@ -140,7 +162,7 @@ function ProjectDialog() {
                   typography: { sm: "subtitle1", xs: "body2" },
                 }}
               >
-                2 Months
+                {pjDeContent4}
               </Typography>
             </Grid>
           </Grid>
@@ -168,8 +190,7 @@ function ProjectDialog() {
               typography: { sm: "subtitle1", xs: "body2" },
             }}
           >
-            부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록
-            깔끔한 디자인으로 기획하고 구상하여 제작하였다.
+            {pjDef}
           </Typography>
         </Container>
       </Box>
@@ -194,8 +215,8 @@ function ProjectDialog() {
             sx={{
               width: "100%",
             }}
-            alt="The house from the offer."
-            src={`${process.env.PUBLIC_URL}/images/projectImg/project1_1.jpg`}
+            alt={pjpjPrototypeAlt}
+            src={`${process.env.PUBLIC_URL + pjPrototype}`}
           />
           <Box
             sx={{
@@ -207,7 +228,7 @@ function ProjectDialog() {
           >
             <ReactPlayer
               className="player"
-              url={"https://www.youtube.com/embed/5CEzAd3kDtg"}
+              url={pjVideo}
               // width="100%"
               width="700px"
               heigth="700px"

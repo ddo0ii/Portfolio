@@ -111,7 +111,7 @@ const projectData = [
     pjDeContent1_1: "Vue.js",
     pjDeContent1_2: "Nuxt.js",
     pjDeContent1_3: "Daum 도로명주소 API",
-    pjDeContent1_4: "HTML",
+    pjDeContent1_4: "",
     pjDeTitle2: "ROLE",
     pjDeContent2: "기획 및 제작",
     pjDeTitle3: "INDUSTRY",
