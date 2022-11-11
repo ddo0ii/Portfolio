@@ -19,6 +19,8 @@ import Career from "../pages/Career";
 import Projects from "../pages/Projects";
 import Activities from "../pages/Activities";
 import ALC from "../pages/ALC";
+import ContactIcons from "../components/ContactIcons";
+import { Grid } from "@mui/material";
 
 function Navigation() {
   // Navigation 클릭 시 이동
@@ -173,6 +175,53 @@ function Navigation() {
         <Box ref={alcRef} sx={{ backgroundColor: "#161617" }}>
           <Toolbar />
           <ALC />
+        </Box>
+        <Box sx={{ display: { sm: "inline", xs: "none" } }}>
+          <Box
+            sx={{
+              pt: { sm: "100px", xs: "80px" },
+              pb: { sm: "100px", xs: "80px" },
+            }}
+          >
+            <Container>
+              <Typography
+                variant="h6"
+                component="div"
+                align="center"
+                color="primary"
+                sx={{ mb: 3 }}
+              >
+                DDO0II
+              </Typography>
+              <Box align="center" sx={{ display: "block" }}>
+                {navItems.map((item) => (
+                  <Button
+                    onClick={item.to}
+                    key={item.id}
+                    size="large"
+                    color="secondary"
+                    sx={{
+                      pl: 3,
+                      pr: 3,
+                    }}
+                  >
+                    {item.name}
+                  </Button>
+                ))}
+              </Box>
+              <Divider color="#DEDEDE" sx={{ mt: 5, mb: 3 }} />
+              <Grid container spacing={1}>
+                <Grid item sm={8}>
+                  <Typography color="#959595" sx={{ fontSize: "13px" }}>
+                    Copyright @ Soyeong Kwon 2022, All rights reserved
+                  </Typography>
+                </Grid>
+                <Grid item sm={4}>
+                  <ContactIcons />
+                </Grid>
+              </Grid>
+            </Container>
+          </Box>
         </Box>
       </Box>
     </Box>
