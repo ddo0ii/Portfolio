@@ -16,7 +16,29 @@ import {
 } from "@mui/material";
 import ProjectDialog from "./ProjectDialog";
 
-function ProjectBox() {
+function ProjectBox({
+  id,
+  pjType,
+  pjImage,
+  pjTitle,
+  pjSubTitle,
+  pjDuration,
+  pjDeTitle1,
+  pjDeContent1_1,
+  pjDeContent1_2,
+  pjDeContent1_3,
+  pjDeContent1_4,
+  pjDeTitle2,
+  pjDeContent2,
+  pjDeTitle3,
+  pjDeContent3,
+  pjDeTitle4,
+  pjDeContent4,
+  pjDef,
+  pjPrototype,
+  pjpjPrototypeAlt,
+  pjVideo,
+}) {
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState("paper");
 
@@ -63,7 +85,7 @@ function ProjectBox() {
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div">
-              Land Transfer Tax Calculator
+              부동산계싼기
             </Typography>
             <Typography
               variant="caption"
@@ -103,24 +125,11 @@ function ProjectBox() {
           open={open}
           onClose={handleClose}
           scroll={scroll}
-          // aria-labelledby="scroll-dialog-title"
-          // aria-describedby="scroll-dialog-description"
         >
           <ProjectDialog />
           <DialogActions sx={{ backgroundColor: "#0F0F0F" }}>
             <Button onClick={handleClose}>Close</Button>
           </DialogActions>
-          {/* hello */}
-          {/* <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle> */}
-          {/* <DialogContent dividers={scroll === "paper"}>
-          <DialogContentText
-            id="scroll-dialog-description"
-            ref={descriptionElementRef}
-            tabIndex={-1}
-          >
-            <Box>Hello</Box>
-          </DialogContentText>
-        </DialogContent> */}
         </Dialog>
       </Paper>
     </Grid>

@@ -6,7 +6,7 @@ import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
 import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
 import ProjectBox from "./ProjectBox";
-import { Grid } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 
 const colors = {
   1: "#C27D5B",
@@ -94,7 +94,7 @@ const TabsList = styled(TabsListUnstyled)(
   `
 );
 
-function ProjectTabs() {
+function ProjectTabs({ projectList }) {
   return (
     <TabsUnstyled defaultValue={0}>
       <TabsList>
@@ -103,29 +103,23 @@ function ProjectTabs() {
         <Tab>App Develop</Tab>
         <Tab>Design</Tab>
       </TabsList>
-      <TabPanel
-        value={0}
-        sx={
-          {
-            /*
-          display: "flex",
-          flexWrap: "wrap",
-           justifyContent: "space-around",
-          */
-          }
-        }
-      >
-        <Grid container spacing={1}>
-          <ProjectBox />
-          <ProjectBox />
-          <ProjectBox />
-          <ProjectBox />
-          <ProjectBox />
-        </Grid>
-      </TabPanel>
-      <TabPanel value={1}>Profile page</TabPanel>
-      <TabPanel value={2}>Language page</TabPanel>
-      <TabPanel value={3}>Design page</TabPanel>
+      {projectList.map((it) => (
+        <Box key={it.id}>
+          <TabPanel value={0}>
+            <ProjectBox {...it} />
+          </TabPanel>
+          <TabPanel value={1}>
+            <ProjectBox {...it} />
+            {it.pjType == "Web Develop" ? <ProjectBox {...it} /> : ""}
+          </TabPanel>
+          <TabPanel value={2}>
+            {it.pjType == "App Develop" ? <ProjectBox {...it} /> : ""}
+          </TabPanel>
+          <TabPanel value={3}>
+            {it.pjType == "Design" ? <ProjectBox {...it} /> : ""}
+          </TabPanel>
+        </Box>
+      ))}
     </TabsUnstyled>
   );
 }
