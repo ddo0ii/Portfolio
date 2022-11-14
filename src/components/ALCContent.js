@@ -71,7 +71,7 @@ function ALCContent({
       sm={4}
       xs={12}
       sx={{
-        "&:hover": { backgroundColor: "black" },
+        "&:hover": { backgroundColor: "black", cursor: "pointer" },
       }}
     >
       <Box
