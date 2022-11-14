@@ -54,9 +54,9 @@ const projectData = [
   },
   {
     id: 3,
-    pjType: "Web Develop",
+    pjType: "Design",
     pjImage: "/images/projectImg/project1.jpg",
-    pjTitle: "부동산 계산기",
+    pjTitle: "부동산 계산기 Design",
     pjSubTitle: "케이페이스 인턴(개발팀)",
     pjDuration: "DECEMBER 2019 - FEBRUARY 2020",
     pjDeTitle1: "LANGUAGE & TOOL",

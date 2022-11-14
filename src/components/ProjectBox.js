@@ -67,7 +67,10 @@ function ProjectBox({
       <Card
         elevation={10}
         onClick={handleClickOpen("body")}
-        sx={{ maxWidth: 300, borderRadius: 0 }}
+        sx={{
+          maxWidth: 300,
+          borderRadius: 0,
+        }}
       >
         <CardActionArea>
           <CardMedia
