@@ -25,7 +25,7 @@ const projectData = [
     pjDef:
       "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 깔끔한 디자인으로 기획하고 구상하여 제작하였다.",
     pjPrototype: "/images/projectImg/project1_1.jpg",
-    pjpjPrototypeAlt: "부동산 계산기 화면",
+    pjPrototypeAlt: "부동산 계산기 화면",
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
   {
@@ -49,7 +49,7 @@ const projectData = [
     pjDef:
       "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 깔끔한 디자인으로 기획하고 구상하여 제작하였다.",
     pjPrototype: "/images/projectImg/project1_1.jpg",
-    pjpjPrototypeAlt: "부동산 계산기 화면",
+    pjPrototypeAlt: "부동산 계산기 화면",
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
   {
@@ -73,7 +73,7 @@ const projectData = [
     pjDef:
       "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 깔끔한 디자인으로 기획하고 구상하여 제작하였다.",
     pjPrototype: "/images/projectImg/project1_1.jpg",
-    pjpjPrototypeAlt: "부동산 계산기 화면",
+    pjPrototypeAlt: "부동산 계산기 화면",
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
   {
@@ -97,7 +97,7 @@ const projectData = [
     pjDef:
       "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 깔끔한 디자인으로 기획하고 구상하여 제작하였다.",
     pjPrototype: "/images/projectImg/project1_1.jpg",
-    pjpjPrototypeAlt: "부동산 계산기 화면",
+    pjPrototypeAlt: "부동산 계산기 화면",
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
   {
@@ -121,7 +121,7 @@ const projectData = [
     pjDef:
       "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 깔끔한 디자인으로 기획하고 구상하여 제작하였다.",
     pjPrototype: "/images/projectImg/project1_1.jpg",
-    pjpjPrototypeAlt: "부동산 계산기 화면",
+    pjPrototypeAlt: "부동산 계산기 화면",
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
 ];

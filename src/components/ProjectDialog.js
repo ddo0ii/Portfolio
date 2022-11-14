@@ -23,7 +23,7 @@ function ProjectDialog({
   pjDeContent4,
   pjDef,
   pjPrototype,
-  pjpjPrototypeAlt,
+  pjPrototypeAlt,
   pjVideo,
 }) {
   const TopImage = styled.div`
@@ -104,7 +104,7 @@ function ProjectDialog({
                   typography: { sm: "subtitle1", xs: "body2" },
                 }}
               >
-                {pjDeContent1_1} {pjDeContent1_2}, <br />
+                {pjDeContent1_1} {pjDeContent1_2} <br />
                 {pjDeContent1_3} {pjDeContent1_4}
               </Typography>
             </Grid>
@@ -215,7 +215,7 @@ function ProjectDialog({
             sx={{
               width: "100%",
             }}
-            alt={pjpjPrototypeAlt}
+            alt={pjPrototypeAlt}
             src={`${process.env.PUBLIC_URL + pjPrototype}`}
           />
           <Box

@@ -37,7 +37,7 @@ function ProjectBox({
   pjDeContent4,
   pjDef,
   pjPrototype,
-  pjpjPrototypeAlt,
+  pjPrototypeAlt,
   pjVideo,
 }) {
   const [open, setOpen] = useState(false);
@@ -172,7 +172,7 @@ function ProjectBox({
             pjDeContent4={pjDeContent4}
             pjDef={pjDef}
             pjPrototype={pjPrototype}
-            pjpjPrototypeAlt={pjpjPrototypeAlt}
+            pjPrototypeAlt={pjPrototypeAlt}
             pjVideo={pjVideo}
           />
           <DialogActions sx={{ backgroundColor: "#0F0F0F" }}>
