@@ -1,18 +1,21 @@
 import React, { useRef, useState } from "react";
-import Container from "@mui/material/Container";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  Divider,
+  Drawer,
+  Grid,
+  IconButton,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Career from "../pages/Career";
@@ -20,7 +23,6 @@ import Projects from "../pages/Projects";
 import Activities from "../pages/Activities";
 import ALC from "../pages/ALC";
 import ContactIcons from "../components/ContactIcons";
-import { Grid } from "@mui/material";
 
 function Navigation() {
   // Navigation 클릭 시 이동

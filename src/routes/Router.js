@@ -1,14 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./Navigation";
-// import Home from "../pages/Home";
-// import About from "../pages/About";
-// import Career from "../pages/Career";
-// import Projects from "../pages/Projects";
-// import Activities from "../pages/Activities";
-// import ALC from "../pages/ALC";
-// import Box from "@mui/material/Box";
-// import Toolbar from "@mui/material/Toolbar";
 
 const AppRouter = () => {
   return (
