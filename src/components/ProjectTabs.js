@@ -103,10 +103,11 @@ function ProjectTabs({ projectList }) {
         <Tab>App Develop</Tab>
         <Tab>Design</Tab>
       </TabsList>
+
       <Box>
         <Grid container spacing={1}>
           {projectList.map((it) => (
-            <Box>
+            <Box key={it.id}>
               <TabPanel value={0}>
                 <ProjectBox {...it} />
               </TabPanel>
