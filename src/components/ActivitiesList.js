@@ -1,27 +1,97 @@
-import React from "react";
-import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
+import React, { useEffect, useRef, useState } from "react";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  ImageList,
+  ImageListItem,
+  ImageListItemBar,
+  Paper,
+} from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import ActivitiesDialog from "./ActivitiesDialog";
+import { Box } from "@mui/system";
 
 function ActivitiesList() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
+
+  const [open, setOpen] = useState(false);
+  const [scroll, setScroll] = useState("paper");
+
+  const handleClickOpen = (scrollType) => () => {
+    setOpen(true);
+    setScroll(scrollType);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const descriptionElementRef = useRef(null);
+  useEffect(() => {
+    if (open) {
+      const { current: descriptionElement } = descriptionElementRef;
+      if (descriptionElement !== null) {
+        descriptionElement.focus();
+      }
+    }
+  }, [open]);
+
   return (
     <ImageList cols={matches ? 3 : 1}>
       {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={item.img}
-            alt={item.title}
-            loading="lazy"
-            style={{ filter: "brightness(30%)" }}
-          />
-          <ImageListItemBar
-            title={item.title}
-            subtitle={item.actiTime}
-            sx={{ backgroundColor: "transparent" }}
-          />
-        </ImageListItem>
+        <Box key={item.id}>
+          <ImageListItem onClick={handleClickOpen("body")}>
+            <img
+              src={process.env.PUBLIC_URL + item.actImage}
+              alt={item.actTitle}
+              loading="lazy"
+              style={{ filter: "brightness(30%)" }}
+            />
+            <ImageListItemBar
+              title={item.actTitle}
+              subtitle={item.actSubTitle}
+              sx={{ backgroundColor: "transparent" }}
+            />
+          </ImageListItem>
+          <Paper elevation={10}>
+            <Dialog
+              fullWidth={true}
+              maxWidth="xl"
+              open={open}
+              onClose={handleClose}
+              scroll={scroll}
+            >
+              <ActivitiesDialog
+                id={item.id}
+                actImage={item.actImage}
+                actTitle={item.actTitle}
+                actSubTitle={item.actSubTitle}
+                actOrganizer={item.actOrganizer}
+                actDate={item.actDate}
+                actDeTitle1={item.actDeTitle1}
+                actDeContent1_1={item.actDeContent1_1}
+                actDeContent1_2={item.actDeContent1_2}
+                actDeContent1_3={item.actDeContent1_3}
+                actDeContent1_4={item.actDeContent1_4}
+                actDeTitle2={item.actDeTitle2}
+                actDeContent2={item.actDeContent2}
+                actDeTitle3={item.actDeTitle3}
+                actDeContent3={item.actDeContent3}
+                actDeTitle4={item.actDeTitle4}
+                actDeContent4={item.actDeContent4}
+                actDef={item.actDef}
+                actPrototypeAlt={item.actPrototypeAlt}
+                actPrototype={item.actPrototype}
+              />
+              <DialogActions sx={{ backgroundColor: "#0F0F0F" }}>
+                <Button onClick={handleClose}>Close</Button>
+              </DialogActions>
+            </Dialog>
+          </Paper>
+        </Box>
       ))}
     </ImageList>
   );
@@ -31,63 +101,95 @@ export default ActivitiesList;
 
 const itemData = [
   {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "Student for Christ(학생신앙운동) 동아리",
-    actiTime: "Mar 2015 - Feb 2020",
+    id: 1,
+    actImage: "/images/projectImg/project1.jpg",
+    actTitle: "국경 없는 과학자 기술자 회장상11",
+    actSubTitle: "제 10회 소외된 90%를 위한 창의설계 경진대회",
+    actOrganizer: "과학기술정보통신부",
+    actDate: "DECEMBER 2019 - FEBRUARY 2020",
+    actDeTitle1: "LANGUAGE & TOOL",
+    actDeContent1_1: "Vue.js",
+    actDeContent1_2: "Nuxt.js",
+    actDeContent1_3: "Daum 도로명주소 API",
+    actDeContent1_4: "HTML",
+    actDeTitle2: "ROLE",
+    actDeContent2: "기획 및 제작",
+    actDeTitle3: "INDUSTRY",
+    actDeContent3: "Solo",
+    actDeTitle4: "DURATION",
+    actDeContent4: "2 Months",
+    actDef:
+      "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 깔끔한 디자인으로 기획하고 구상하여 제작하였다.",
+    actPrototypeAlt: "actPrototypeAlt",
+    actPrototype: "/images/projectImg/project1_1.jpg",
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Burger",
-    actiTime: "@rollelflex_graphy726",
+    id: 2,
+    actImage: "/images/projectImg/project1.jpg",
+    actTitle: "국경 없는 과학자 기술자 회장상22",
+    actSubTitle: "제 10회 소외된 90%를 위한 창의설계 경진대회",
+    actOrganizer: "과학기술정보통신부",
+    actDate: "DECEMBER 2019 - FEBRUARY 2020",
+    actDeTitle1: "LANGUAGE & TOOL",
+    actDeContent1_1: "Vue.js",
+    actDeContent1_2: "Nuxt.js",
+    actDeContent1_3: "Daum 도로명주소 API",
+    actDeContent1_4: "HTML",
+    actDeTitle2: "ROLE",
+    actDeContent2: "기획 및 제작",
+    actDeTitle3: "INDUSTRY",
+    actDeContent3: "Solo",
+    actDeTitle4: "DURATION",
+    actDeContent4: "2 Months",
+    actDef:
+      "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 깔끔한 디자인으로 기획하고 구상하여 제작하였다.",
+    actPrototypeAlt: "actPrototypeAlt",
+    actPrototype: "/images/projectImg/project1_1.jpg",
   },
   {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
-    title: "Camera",
-    actiTime: "@helloimnik",
+    id: 3,
+    actImage: "/images/projectImg/project1.jpg",
+    actTitle: "국경 없는 과학자 기술자 회장상33",
+    actSubTitle: "제 10회 소외된 90%를 위한 창의설계 경진대회",
+    actOrganizer: "과학기술정보통신부",
+    actDate: "DECEMBER 2019 - FEBRUARY 2020",
+    actDeTitle1: "LANGUAGE & TOOL",
+    actDeContent1_1: "Vue.js",
+    actDeContent1_2: "Nuxt.js",
+    actDeContent1_3: "Daum 도로명주소 API",
+    actDeContent1_4: "HTML",
+    actDeTitle2: "ROLE",
+    actDeContent2: "기획 및 제작",
+    actDeTitle3: "INDUSTRY",
+    actDeContent3: "Solo",
+    actDeTitle4: "DURATION",
+    actDeContent4: "2 Months",
+    actDef:
+      "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 깔끔한 디자인으로 기획하고 구상하여 제작하였다.",
+    actPrototypeAlt: "actPrototypeAlt",
+    actPrototype: "/images/projectImg/project1_1.jpg",
   },
   {
-    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
-    title: "Coffee",
-    actiTime: "@nolanissac",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
-    title: "Hats",
-    actiTime: "@hjrc33",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
-    title: "Honey",
-    actiTime: "@arwinneil",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
-    title: "Basketball",
-    actiTime: "@tjdragotta",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
-    title: "Fern",
-    actiTime: "@katie_wasserman",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
-    title: "Mushrooms",
-    actiTime: "@silverdalex",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
-    title: "Tomato basil",
-    actiTime: "@shelleypauls",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
-    title: "Sea star",
-    actiTime: "@peterlaster",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
-    title: "Bike",
-    actiTime: "@southside_customs",
+    id: 4,
+    actImage: "/images/projectImg/project1.jpg",
+    actTitle: "국경 없는 과학자 기술자 회장상44",
+    actSubTitle: "제 10회 소외된 90%를 위한 창의설계 경진대회",
+    actOrganizer: "과학기술정보통신부",
+    actDate: "DECEMBER 2019 - FEBRUARY 2020",
+    actDeTitle1: "LANGUAGE & TOOL",
+    actDeContent1_1: "Vue.js",
+    actDeContent1_2: "Nuxt.js",
+    actDeContent1_3: "Daum 도로명주소 API",
+    actDeContent1_4: "HTML",
+    actDeTitle2: "ROLE",
+    actDeContent2: "기획 및 제작",
+    actDeTitle3: "INDUSTRY",
+    actDeContent3: "Solo",
+    actDeTitle4: "DURATION",
+    actDeContent4: "2 Months",
+    actDef:
+      "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 깔끔한 디자인으로 기획하고 구상하여 제작하였다.",
+    actPrototypeAlt: "actPrototypeAlt",
+    actPrototype: "/images/projectImg/project1_1.jpg",
   },
 ];
