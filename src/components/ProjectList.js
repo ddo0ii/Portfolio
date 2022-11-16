@@ -1,15 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import {
-  Box,
-  Button,
-  Dialog,
-  DialogActions,
-  Grid,
-  ImageList,
-  ImageListItem,
-  ImageListItemBar,
-  Paper,
-} from "@mui/material";
+import { Box, Grid, ImageList } from "@mui/material";
 import { styled } from "@mui/system";
 import TabsUnstyled from "@mui/base/TabsUnstyled";
 import TabsListUnstyled from "@mui/base/TabsListUnstyled";
@@ -18,8 +8,7 @@ import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import ProjectDialog from "./ProjectDialog";
-import ProjectBoxs from "./ProjectBoxs";
+import ProjectBox from "./ProjectBoxs";
 
 const colors = {
   1: "#C27D5B",
@@ -112,16 +101,6 @@ function ProjectList() {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   const [open, setOpen] = useState(false);
-  const [scroll, setScroll] = useState("paper");
-
-  const handleClickOpen = (scrollType) => () => {
-    setOpen(true);
-    setScroll(scrollType);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   const descriptionElementRef = useRef(null);
   useEffect(() => {
@@ -147,18 +126,18 @@ function ProjectList() {
             <Grid container spacing={1}>
               {itemData1.map((item) => (
                 <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBoxs {...item} />
+                  <ProjectBox {...item} />
                 </Grid>
               ))}
 
               {itemData2.map((item) => (
                 <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBoxs {...item} />
+                  <ProjectBox {...item} />
                 </Grid>
               ))}
               {itemData3.map((item) => (
                 <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBoxs {...item} />
+                  <ProjectBox {...item} />
                 </Grid>
               ))}
             </Grid>
@@ -167,7 +146,7 @@ function ProjectList() {
             <Grid container spacing={1}>
               {itemData1.map((item) => (
                 <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBoxs {...item} />
+                  <ProjectBox {...item} />
                 </Grid>
               ))}
             </Grid>
@@ -176,7 +155,7 @@ function ProjectList() {
             <Grid container spacing={1}>
               {itemData2.map((item) => (
                 <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBoxs {...item} />
+                  <ProjectBox {...item} />
                 </Grid>
               ))}
             </Grid>
@@ -185,7 +164,7 @@ function ProjectList() {
             <Grid container spacing={1}>
               {itemData3.map((item) => (
                 <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBoxs {...item} />
+                  <ProjectBox {...item} />
                 </Grid>
               ))}
             </Grid>

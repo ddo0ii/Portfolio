@@ -13,7 +13,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import ProjectDialog from "./ProjectDialog";
 
-function ProjectBoxs({
+function ProjectBox({
   id,
   pjType,
   pjImage,
@@ -73,7 +73,8 @@ function ProjectBoxs({
         <ImageListItemBar
           title={pjTitle}
           subtitle={pjSubTitle}
-          sx={{ backgroundColor: "transparent" }}
+          position="below"
+          sx={{ color: "black", backgroundColor: "white" }}
         />
       </ImageListItem>
       <Paper elevation={10}>
@@ -116,4 +117,4 @@ function ProjectBoxs({
   );
 }
 
-export default ProjectBoxs;
+export default ProjectBox;
