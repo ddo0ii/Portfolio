@@ -1,7 +1,7 @@
+import { Gradient } from "@mui/icons-material";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
-import ReactPlayer from "react-player";
 
 function ALCDialog({
   id,
@@ -25,14 +25,20 @@ function ALCDialog({
   alcPrototypeAlt,
   alcPrototype,
 }) {
-  const TopImage = styled.div`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url(${process.env.PUBLIC_URL + alcImage});
-  `;
-
   return (
-    <div style={{ backgroundColor: "#0F0F0F" }}>
-      <TopImage className="projectDialogTop">
+    <div
+      style={{
+        backgroundColor: "#0F0F0F",
+      }}
+    >
+      <Box
+        className="projectDialogTop"
+        sx={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${
+            process.env.PUBLIC_URL + alcImage
+          })`,
+        }}
+      >
         <Container>
           <Typography
             align="center"
@@ -88,7 +94,7 @@ function ALCDialog({
             {alcDate}
           </Typography>
         </Container>
-      </TopImage>
+      </Box>
       <Box
         sx={{
           pt: { sm: "100px", xs: "80px" },
