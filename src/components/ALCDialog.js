@@ -1,7 +1,5 @@
-import { Gradient } from "@mui/icons-material";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import styled from "styled-components";
 
 function ALCDialog({
   id,
@@ -26,11 +24,7 @@ function ALCDialog({
   alcPrototype,
 }) {
   return (
-    <div
-      style={{
-        backgroundColor: "#0F0F0F",
-      }}
-    >
+    <div style={{ backgroundColor: "#0F0F0F" }}>
       <Box
         className="projectDialogTop"
         sx={{

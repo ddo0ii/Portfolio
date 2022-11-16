@@ -1,6 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import styled from "styled-components";
 
 function ActivitiesDialog({
   id,
@@ -24,14 +23,16 @@ function ActivitiesDialog({
   actPrototypeAlt,
   actPrototype,
 }) {
-  const TopImage = styled.div`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url(${process.env.PUBLIC_URL + actImage});
-  `;
-
   return (
     <div style={{ backgroundColor: "#0F0F0F" }}>
-      <TopImage className="projectDialogTop">
+      <Box
+        className="projectDialogTop"
+        sx={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${
+            process.env.PUBLIC_URL + actImage
+          })`,
+        }}
+      >
         <Container>
           <Typography
             align="center"
@@ -70,6 +71,16 @@ function ActivitiesDialog({
             align="center"
             color="#989796"
             sx={{
+              typography: { sm: "h5", xs: "body2" },
+              mt: { sm: 3, xs: 2 },
+            }}
+          >
+            {actOrganizer}
+          </Typography>
+          <Typography
+            align="center"
+            color="#989796"
+            sx={{
               typography: { sm: "h6", xs: "overline" },
               mb: { sm: 15, xs: 0 },
             }}
@@ -77,7 +88,7 @@ function ActivitiesDialog({
             {actDate}
           </Typography>
         </Container>
-      </TopImage>
+      </Box>
       <Box
         sx={{
           pt: { sm: "100px", xs: "80px" },
