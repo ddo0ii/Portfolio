@@ -1,6 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import styled from "styled-components";
 import ReactPlayer from "react-player";
 
 function ProjectDialog({
@@ -26,14 +25,16 @@ function ProjectDialog({
   pjPrototypeAlt,
   pjVideo,
 }) {
-  const TopImage = styled.div`
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url(${process.env.PUBLIC_URL + pjImage});
-  `;
-
   return (
     <div style={{ backgroundColor: "#0F0F0F" }}>
-      <TopImage className="projectDialogTop">
+      <Box
+        className="projectDialogTop"
+        sx={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${
+            process.env.PUBLIC_URL + pjImage
+          })`,
+        }}
+      >
         <Container>
           <Typography
             align="center"
@@ -79,7 +80,7 @@ function ProjectDialog({
             {pjDuration}
           </Typography>
         </Container>
-      </TopImage>
+      </Box>
       <Box
         sx={{
           pt: { sm: "100px", xs: "80px" },
