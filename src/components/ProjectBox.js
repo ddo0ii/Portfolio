@@ -2,12 +2,17 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   Box,
   Button,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
   Dialog,
   DialogActions,
   Grid,
   ImageListItem,
   ImageListItemBar,
   Paper,
+  Typography,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -63,20 +68,89 @@ function ProjectBox({
 
   return (
     <Box>
-      <ImageListItem onClick={handleClickOpen("body")}>
-        <img
-          src={process.env.PUBLIC_URL + pjImage}
-          alt={pjTitle}
-          loading="lazy"
-          style={{ filter: "brightness(30%)" }}
-        />
-        <ImageListItemBar
-          title={pjTitle}
-          subtitle={pjSubTitle}
-          position="below"
-          sx={{ color: "black", backgroundColor: "white" }}
-        />
-      </ImageListItem>
+      <Card
+        elevation={10}
+        onClick={handleClickOpen("body")}
+        sx={{
+          //maxWidth: 300,
+          borderRadius: 0,
+        }}
+      >
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            height="300"
+            image={process.env.PUBLIC_URL + pjImage}
+            alt={`${pjTitle} Image`}
+            sx={{
+              filter: "brightness(50%)",
+            }}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h6" component="div">
+              {pjTitle}
+            </Typography>
+            <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+              <Box
+                color="text.secondary"
+                sx={{
+                  border: 1,
+                  borderColor: "#E8E8E8",
+                  p: "2px",
+                  pl: 1,
+                  pr: 1,
+                  mr: 1,
+                  mb: 1,
+                }}
+              >
+                {pjDeContent1_1}
+              </Box>
+              <Box
+                color="text.secondary"
+                sx={{
+                  border: 1,
+                  borderColor: "#E8E8E8",
+                  p: "2px",
+                  pl: 1,
+                  pr: 1,
+                  mr: 1,
+                  mb: 1,
+                }}
+              >
+                {pjDeContent1_2}
+              </Box>
+              <Box
+                color="text.secondary"
+                sx={{
+                  border: 1,
+                  borderColor: "#E8E8E8",
+                  p: "2px",
+                  pl: 1,
+                  pr: 1,
+                  mr: 1,
+                  mb: 1,
+                }}
+              >
+                {pjDeContent1_3}
+              </Box>
+              <Box
+                color="text.secondary"
+                sx={{
+                  border: 1,
+                  borderColor: "#E8E8E8",
+                  p: "2px",
+                  pl: 1,
+                  pr: 1,
+                  mr: 1,
+                  mb: 1,
+                }}
+              >
+                {pjDeContent1_4}
+              </Box>
+            </Box>
+          </CardContent>
+        </CardActionArea>
+      </Card>
       <Paper elevation={10}>
         <Dialog
           fullWidth={true}

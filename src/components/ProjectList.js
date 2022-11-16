@@ -8,7 +8,7 @@ import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import ProjectBox from "./ProjectBoxs";
+import ProjectBox from "./ProjectBox";
 
 const colors = {
   1: "#C27D5B",
@@ -121,55 +121,53 @@ function ProjectList() {
         <Tab>Design</Tab>
       </TabsList>
       <Box>
-        <ImageList cols={matches ? 1 : 1}>
-          <TabPanel value={0}>
-            <Grid container spacing={1}>
-              {itemData1.map((item) => (
-                <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBox {...item} />
-                </Grid>
-              ))}
+        <TabPanel value={0}>
+          <Grid container spacing={1}>
+            {itemData1.map((item) => (
+              <Grid item sm={4} xs={12} key={item.id}>
+                <ProjectBox {...item} />
+              </Grid>
+            ))}
 
-              {itemData2.map((item) => (
-                <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBox {...item} />
-                </Grid>
-              ))}
-              {itemData3.map((item) => (
-                <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBox {...item} />
-                </Grid>
-              ))}
-            </Grid>
-          </TabPanel>
-          <TabPanel value={1}>
-            <Grid container spacing={1}>
-              {itemData1.map((item) => (
-                <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBox {...item} />
-                </Grid>
-              ))}
-            </Grid>
-          </TabPanel>
-          <TabPanel value={2}>
-            <Grid container spacing={1}>
-              {itemData2.map((item) => (
-                <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBox {...item} />
-                </Grid>
-              ))}
-            </Grid>
-          </TabPanel>
-          <TabPanel value={3}>
-            <Grid container spacing={1}>
-              {itemData3.map((item) => (
-                <Grid item sm={4} xs={12} key={item.id}>
-                  <ProjectBox {...item} />
-                </Grid>
-              ))}
-            </Grid>
-          </TabPanel>
-        </ImageList>
+            {itemData2.map((item) => (
+              <Grid item sm={4} xs={12} key={item.id}>
+                <ProjectBox {...item} />
+              </Grid>
+            ))}
+            {itemData3.map((item) => (
+              <Grid item sm={4} xs={12} key={item.id}>
+                <ProjectBox {...item} />
+              </Grid>
+            ))}
+          </Grid>
+        </TabPanel>
+        <TabPanel value={1}>
+          <Grid container spacing={1}>
+            {itemData1.map((item) => (
+              <Grid item sm={4} xs={12} key={item.id}>
+                <ProjectBox {...item} />
+              </Grid>
+            ))}
+          </Grid>
+        </TabPanel>
+        <TabPanel value={2}>
+          <Grid container spacing={1}>
+            {itemData2.map((item) => (
+              <Grid item sm={4} xs={12} key={item.id}>
+                <ProjectBox {...item} />
+              </Grid>
+            ))}
+          </Grid>
+        </TabPanel>
+        <TabPanel value={3}>
+          <Grid container spacing={1}>
+            {itemData3.map((item) => (
+              <Grid item sm={4} xs={12} key={item.id}>
+                <ProjectBox {...item} />
+              </Grid>
+            ))}
+          </Grid>
+        </TabPanel>
       </Box>
     </TabsUnstyled>
   );
