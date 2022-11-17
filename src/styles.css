@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* text-decoration: none; */
 }
 
 body {
@@ -79,6 +78,12 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
+}
+
+/* Career */
+.CareerLink {
+  text-decoration: none;
+  color: #959595;
 }
 
 /* Project */
