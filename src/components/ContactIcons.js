@@ -5,27 +5,43 @@ import {
   faBloggerB,
   faGithub,
   faInstagram,
+  faLinkedin,
+  faLinkedinIn,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faLink, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function ContactIcons() {
   return (
     <Box className="contactIcons">
       <div className="contactIcon">
-        <FontAwesomeIcon icon={faPhone} />
+        <a href="https://github.com/ddo0ii" target="_blank">
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
       </div>
       <div className="contactIcon">
-        <FontAwesomeIcon icon={faEnvelope} />
+        <a href="https://ddo-development.tistory.com/" target="_blank">
+          <FontAwesomeIcon icon={faBloggerB} />
+        </a>
       </div>
       <div className="contactIcon">
-        <FontAwesomeIcon icon={faGithub} />
+        <a href="https://instagram.com/ddo_0ii" target="_blank">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
       </div>
       <div className="contactIcon">
-        <FontAwesomeIcon icon={faBloggerB} />
+        <a href="https://www.linkedin.com/in/ddo0ii/" target="_blank">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
       </div>
       <div className="contactIcon">
-        <FontAwesomeIcon icon={faInstagram} />
+        <a
+          href="https://www.youtube.com/channel/UCVS6YLI6ea8eZ5tOXSnjEVg"
+          target="_blank"
+        >
+          <FontAwesomeIcon icon={faYoutube} />
+        </a>
       </div>
     </Box>
   );
