@@ -209,13 +209,14 @@ function ProjectDialog({
           >
             LAUNCH PROTOTYPE
           </Typography>
+
           <Box
             component="img"
             sx={{
               width: "100%",
             }}
             alt={pjPrototypeAlt}
-            src={`${process.env.PUBLIC_URL + pjPrototype}`}
+            src={pjPrototype}
           />
           <Box
             sx={{

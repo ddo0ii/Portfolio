@@ -83,6 +83,7 @@ function ProjectBox({
             image={pjImage}
             alt={`${pjTitle} Image`}
             sx={{
+              backgroundColor: "#808080",
               filter: "brightness(50%)",
             }}
           />
@@ -153,7 +154,7 @@ function ProjectBox({
       </Card>
       <Paper elevation={10}>
         <Dialog
-          fullWidth={true}
+          //fullWidth={true}
           maxWidth="xl"
           open={open}
           onClose={handleClose}

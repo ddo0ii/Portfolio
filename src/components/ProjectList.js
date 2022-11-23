@@ -180,7 +180,7 @@ const itemData1 = [
     id: 1,
     pjType: "Web Develop",
     pjImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=518e8e32-e656-4a5a-936b-9cfcfea0951a",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
     pjTitle: "부동산 계산기",
     pjSubTitle: "케이페이스 인턴(개발팀)",
     pjDuration: "DECEMBER 2019 - FEBRUARY 2020",
@@ -197,14 +197,16 @@ const itemData1 = [
     pjDeContent4: "2 Months",
     pjDef:
       "부동산계산기를 웹페이지에서도 모바일에서도 편리하게 사용할 수 있도록 기획하고 구상하여 제작하였다.",
-    pjPrototype: "캡처본들사용, 접속링크",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
     pjPrototypeAlt: "부동산 계산기 화면",
     pjVideo: "https://www.youtube.com/embed/XYXbrhirUIw",
   },
   {
     id: 2,
     pjType: "Web Develop",
-    pjImage: "",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0.jpg?alt=media&token=3f9f3ab8-8882-47c3-bb17-9f6bc8663e7f",
     pjTitle: "PWA를 활용한 웹 푸시 알림 시스템",
     pjSubTitle: "진동벨이 필요 없는 카페 주문 완료 알림 시스템 제작",
     pjDuration: "JULY 2017 - JULY 2018",
@@ -212,7 +214,7 @@ const itemData1 = [
     pjDeContent1_1: "PWA",
     pjDeContent1_2: "Node.js",
     pjDeContent1_3: "MongoDB",
-    pjDeContent1_4: "Notification API & Push API",
+    pjDeContent1_4: "",
     pjDeTitle2: "ROLE",
     pjDeContent2: "기획 및 제작",
     pjDeTitle3: "INDUSTRY",
@@ -221,14 +223,42 @@ const itemData1 = [
     pjDeContent4: "1 Year",
     pjDef:
       "모바일 어플리케이션을 통해 지원되는 기존의 푸시 알림 서비스는 사용자가 관심 분야의 정보를 받아볼 수 있기 때문에 유용하다. 그러나, 기존의 푸시 알림 서비스는 사용 측면에서 명확한 한계를 가진다. 이에 개선된 형태의 푸시 알림 시스템이 요구된다.",
-    pjPrototype: "",
-    pjPrototypeAlt: "",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa1.jpg?alt=media&token=c5799406-4b1c-4c10-85c2-d71b74a3086a",
+    pjPrototypeAlt: "PWA를 활용한 웹 푸시 알림 시스템 상세",
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
   {
     id: 3,
     pjType: "Web Develop",
-    pjImage: "캡처본들사용",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten0.jpg?alt=media&token=9ddcfe00-498c-49c3-ba8d-576037a2edbd",
+    pjTitle: "진동벨이 필요 없는 카페 알림 시스템",
+    pjSubTitle: "청각장애인을 위한카페 시스템",
+    pjDuration: "JULY 2017 - JULY 2018",
+    pjDeTitle1: "LANGUAGE & TOOL",
+    pjDeContent1_1: "PWA",
+    pjDeContent1_2: "Node.js",
+    pjDeContent1_3: "MongoDB",
+    pjDeContent1_4: "",
+    pjDeTitle2: "ROLE",
+    pjDeContent2: "기획 및 제작",
+    pjDeTitle3: "INDUSTRY",
+    pjDeContent3: "Developer 4",
+    pjDeTitle4: "DURATION",
+    pjDeContent4: "1 Year",
+    pjDef:
+      "청각장애인은 물론 비장애인도 카페에서 음료 제조의 완료 알림을 받을 수 있고, 카페 매장 측은 마케팅 플랫폼으로 활용할 수 있는 시스템을 개발하였다.",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten1.jpg?alt=media&token=c80a0fd9-aa0e-4d89-bd44-780d882c772f",
+    pjPrototypeAlt: "진동벨이 필요 없는 카페 주문 완료 알림 시스템 제작 상세",
+    pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
+  },
+  {
+    id: 4,
+    pjType: "Web Develop",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fdiary%2Fdiary0.jpg?alt=media&token=e24c915e-ca03-4e7e-ae0d-c7f586c74ff4",
     pjTitle: "감정일기장",
     pjSubTitle: "한입 크기로 잘라 먹는 리액트 수강 및 이수",
     pjDuration: "Inflearn",
@@ -245,14 +275,16 @@ const itemData1 = [
     pjDeContent4: "",
     pjDef:
       "Inflearn의 <b>한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지(https://www.inflearn.com/course/%ED%95%9C%EC%9E%85-%EB%A6%AC%EC%95%A1%ED%8A%B8#)</b>로 JavaScript와 React의 기초적인 개념을 Blog에 기록하며 학습하였다. 최종적으로 React.js를 이용하여 감정일기장을 제작하고 Firebase를 이용하여 프로젝트를 배포하였다.",
-    pjPrototype: "이수증, 캡쳐본, 접속링크",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fdiary%2Fdiary1.png?alt=media&token=c1144b12-e887-4df9-a6fc-5414d797f09a",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/hE4qm1l6Da4",
   },
   {
-    id: 4,
+    id: 5,
     pjType: "Web Develop",
-    pjImage: "",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
     pjTitle: "영화 웹 서비스",
     pjSubTitle: "ReactJS로 영화 웹 서비스 만들기",
     pjDuration: "Nomad Coders",
@@ -274,9 +306,10 @@ const itemData1 = [
     pjVideo: "",
   },
   {
-    id: 5,
+    id: 6,
     pjType: "Web Develop",
-    pjImage: "",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
     pjTitle: "Twitter Service",
     pjSubTitle: "트위터 클론코딩",
     pjDuration: "Nomad Coders",
@@ -304,7 +337,8 @@ const itemData2 = [
   {
     id: 1,
     pjType: "App Develop",
-    pjImage: "",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0.jpg?alt=media&token=c34fd663-bb38-4fdc-9465-d30d7494f01f",
     pjTitle: "잇다",
     pjSubTitle: "초등학생들을 위한 어플리케이션 제작",
     pjDuration: "MARCH 2020 - JULY 2020",
@@ -321,14 +355,16 @@ const itemData2 = [
     pjDeContent4: "5 Months",
     pjDef:
       "초등학생들이 자기주도적으로 마음을 다스리고 목표, 식사를 계획하여 가정과 학교를 이을 수 있게 어플리케이션을 제작하였다.",
-    pjPrototype: "",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0.jpg?alt=media&token=c34fd663-bb38-4fdc-9465-d30d7494f01f",
     pjPrototypeAlt: "",
     pjVideo: "",
   },
   {
     id: 2,
     pjType: "App Develop",
-    pjImage: "",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fe2e%2Fe2e0.png?alt=media&token=e8bf0291-207d-4e91-ba77-376b74e51c03",
     pjTitle: "Eyes2Ears",
     pjSubTitle: "노인들을 위한 어플리케이션 기획 및 제작",
     pjDuration: "MARCH 2017 - JULY 2017",
@@ -346,14 +382,15 @@ const itemData2 = [
     pjDef:
       "노인들의 스마트폰 사용량이 증가함에 반해 노인들이 사용하기에 적합한 어플리케이션들이 많지 않고 편리하지도 않다. 노인들이 일상생활에서 필요한 기능들과 오락도 즐길 수 있는 어플리케이션을 구상하고 구현하였다.",
     pjPrototype:
-      "Music Page 제작(Youtube 라이브러리 사용), Hear Page 제작(Speech Recognizer 라이브러리 사용), Start Page, Log In Page 제작",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fe2e%2Fe2e1.png?alt=media&token=3f864d37-c418-43e0-89cf-67986beb2c99",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/s5NPzhmp7OU",
   },
   {
     id: 3,
     pjType: "App Develop",
-    pjImage: "",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fsiren%2Fshh0.jpg?alt=media&token=cf56f3f8-ac72-4262-9b48-4e77fa09266d",
     pjTitle: "SIREN + SHH",
     pjSubTitle: "기숙사 내 침묵시간 소음 방지기 기획 및 제작",
     pjDuration: "MARCH 2017 - JULY 2017",
@@ -370,7 +407,8 @@ const itemData2 = [
     pjDeContent4: "5 Months",
     pjDef:
       "취침시간임에도 불구하고 기숙사내에서는 많은 소음들이 발생하는데, 소음 발생 자제 요청을 직접적으로 하기 어려움과 어느 방에서 소음을 내는지 알 수 없는 어려움을 해결하기위해 소음방지기를 제작",
-    pjPrototype: "",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fsiren%2Fshh1.png?alt=media&token=b787c9dd-a953-4e8b-8eb6-bd504ea40173",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/ZYuGDom_te4",
   },
@@ -379,7 +417,8 @@ const itemData3 = [
   {
     id: 1,
     pjType: "Design",
-    pjImage: "",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep0.png?alt=media&token=8b227812-cb82-443b-a1ff-47a884d2bef2",
     pjTitle: "Bestep Center",
     pjSubTitle: "코딩 테스트 웹 페이지 기획 및 구상",
     pjDuration: "AUGUST 2019 - DECEMBER 2019",
@@ -396,7 +435,8 @@ const itemData3 = [
     pjDeContent4: "5 Months",
     pjDef:
       "코딩 테스트를 개최 및 진행할 수 있도록 웹 페이지를 기획 및 구상하였다.",
-    pjPrototype: "",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep0.png?alt=media&token=8b227812-cb82-443b-a1ff-47a884d2bef2",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/JQCWEL09i4c",
   },
