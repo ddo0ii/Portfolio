@@ -80,7 +80,7 @@ function ProjectBox({
           <CardMedia
             component="img"
             height="300"
-            image={process.env.PUBLIC_URL + pjImage}
+            image={pjImage}
             alt={`${pjTitle} Image`}
             sx={{
               filter: "brightness(50%)",

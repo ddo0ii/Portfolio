@@ -30,9 +30,7 @@ function ProjectDialog({
       <Box
         className="projectDialogTop"
         sx={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${
-            process.env.PUBLIC_URL + pjImage
-          })`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${pjImage})`,
         }}
       >
         <Container>
