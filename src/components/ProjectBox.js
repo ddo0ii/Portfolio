@@ -20,6 +20,7 @@ import {
 function ProjectBox({
   id,
   pjType,
+  pjSImage,
   pjImage,
   pjTitle,
   pjSubTitle,
@@ -76,12 +77,12 @@ function ProjectBox({
           <CardMedia
             height="300"
             sx={{
-              backgroundColor: "#808080",
+              //backgroundColor: "#808080",
               filter: "brightness(50%)",
             }}
           >
             <LazyLoadImage
-              src={pjImage}
+              src={pjSImage}
               alt={`${pjTitle} Image`}
               effect="blur"
               width="100%"
@@ -165,6 +166,7 @@ function ProjectBox({
           <ProjectDialog
             id={id}
             pjType={pjType}
+            pjSImage={pjSImage}
             pjImage={pjImage}
             pjTitle={pjTitle}
             pjSubTitle={pjSubTitle}

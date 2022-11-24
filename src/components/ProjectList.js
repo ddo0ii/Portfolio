@@ -179,6 +179,8 @@ const itemData1 = [
   {
     id: 1,
     pjType: "Web Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0_s.jpg?alt=media&token=8e6bce92-6d56-4041-ba9c-6e5e3b26d1c9",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
     pjTitle: "부동산 계산기",
@@ -205,6 +207,8 @@ const itemData1 = [
   {
     id: 2,
     pjType: "Web Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten0_s.jpg?alt=media&token=e34b9a3e-5567-4fd2-9510-8717274f0167",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0.jpg?alt=media&token=3f9f3ab8-8882-47c3-bb17-9f6bc8663e7f",
     pjTitle: "PWA를 활용한 웹 푸시 알림 시스템",
@@ -231,6 +235,8 @@ const itemData1 = [
   {
     id: 3,
     pjType: "Web Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0_s.jpg?alt=media&token=7a02d2b0-4c15-4412-923d-6ec27a0ed849",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten0.jpg?alt=media&token=9ddcfe00-498c-49c3-ba8d-576037a2edbd",
     pjTitle: "진동벨이 필요 없는 카페 알림 시스템",
@@ -257,6 +263,8 @@ const itemData1 = [
   {
     id: 4,
     pjType: "Web Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fdiary%2Fdiary0_s.jpg?alt=media&token=f70d5048-cc69-4f03-a94d-bf937dcb11ba",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fdiary%2Fdiary0.jpg?alt=media&token=e24c915e-ca03-4e7e-ae0d-c7f586c74ff4",
     pjTitle: "감정일기장",
@@ -283,6 +291,8 @@ const itemData1 = [
   {
     id: 5,
     pjType: "Web Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0_s.jpg?alt=media&token=7a02d2b0-4c15-4412-923d-6ec27a0ed849",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
     pjTitle: "영화 웹 서비스",
@@ -308,6 +318,8 @@ const itemData1 = [
   {
     id: 6,
     pjType: "Web Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0_s.jpg?alt=media&token=7a02d2b0-4c15-4412-923d-6ec27a0ed849",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
     pjTitle: "Twitter Service",
@@ -337,6 +349,8 @@ const itemData2 = [
   {
     id: 1,
     pjType: "App Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0_s.jpg?alt=media&token=513f1b62-b397-4221-86d2-6284535bcd30",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0.jpg?alt=media&token=c34fd663-bb38-4fdc-9465-d30d7494f01f",
     pjTitle: "잇다",
@@ -363,6 +377,8 @@ const itemData2 = [
   {
     id: 2,
     pjType: "App Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fe2e%2Fe2e0_s.jpg?alt=media&token=7ef60f5a-1c40-4a14-8c90-c0479c56f692",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fe2e%2Fe2e0.png?alt=media&token=e8bf0291-207d-4e91-ba77-376b74e51c03",
     pjTitle: "Eyes2Ears",
@@ -389,6 +405,8 @@ const itemData2 = [
   {
     id: 3,
     pjType: "App Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fsiren%2Fshh0_s.jpg?alt=media&token=be41c883-13c7-42f0-b07b-2dd975cccf76",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fsiren%2Fshh0.jpg?alt=media&token=cf56f3f8-ac72-4262-9b48-4e77fa09266d",
     pjTitle: "SIREN + SHH",
@@ -417,6 +435,8 @@ const itemData3 = [
   {
     id: 1,
     pjType: "Design",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep0_s.jpg?alt=media&token=5ae637b8-3f22-4970-9d10-8c6b6124cd56",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep0.png?alt=media&token=8b227812-cb82-443b-a1ff-47a884d2bef2",
     pjTitle: "Bestep Center",
