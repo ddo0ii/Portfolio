@@ -4,8 +4,6 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import CircularProgress from "@mui/material/CircularProgress";
-import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -44,15 +42,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="appA">
-        {init ? (
-          <div>
-            <AppRouter />
-          </div>
-        ) : (
-          <Box className="loading" sx={{ display: "flex" }}>
-            <CircularProgress color="inherit" />
-          </Box>
-        )}
+        <AppRouter />
       </div>
     </ThemeProvider>
   );

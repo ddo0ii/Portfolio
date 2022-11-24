@@ -1,8 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { Suspense, lazy, useRef, useState } from "react";
 import {
   AppBar,
   Box,
   Button,
+  CircularProgress,
   Container,
   Divider,
   Drawer,
@@ -16,12 +17,12 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Home from "../pages/Home";
-import About from "../pages/About";
-import Career from "../pages/Career";
-import Projects from "../pages/Projects";
-import Activities from "../pages/Activities";
-import ALC from "../pages/ALC";
+const Home = lazy(() => import("../pages/Home"));
+const About = lazy(() => import("../pages/About"));
+const Career = lazy(() => import("../pages/Career"));
+const Projects = lazy(() => import("../pages/Projects"));
+const Activities = lazy(() => import("../pages/Activities"));
+const ALC = lazy(() => import("../pages/ALC"));
 import ContactIcons from "../components/ContactIcons";
 
 function Navigation() {
@@ -101,132 +102,140 @@ function Navigation() {
   );
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <AppBar
-        component="nav"
-        className={colorChange ? "navbar colorChange" : "navbar"}
-        sx={{ backgroundColor: "transparent", boxShadow: "none" }}
-      >
-        <Container>
-          <Toolbar>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-            >
-              DDO0II
-            </Typography>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button onClick={item.to} key={item.id} color="secondary">
-                  {item.name}
-                </Button>
-              ))}
-            </Box>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="end"
-              onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton>
-          </Toolbar>
-        </Container>
-      </AppBar>
-      <Box component="nav">
-        <Drawer
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
+    <Suspense
+      fallback={
+        <Box className="loading" sx={{ display: "flex" }}>
+          <CircularProgress color="inherit" />
+        </Box>
+      }
+    >
+      <Box sx={{ display: "flex" }}>
+        <AppBar
+          component="nav"
+          className={colorChange ? "navbar colorChange" : "navbar"}
+          sx={{ backgroundColor: "transparent", boxShadow: "none" }}
         >
-          {drawer}
-        </Drawer>
-      </Box>
-      <Box>
-        <Box ref={homeRef}>
-          <Home />
-        </Box>
-        <Box ref={aboutRef}>
-          <Toolbar />
-          <About />
-        </Box>
-        <Box ref={careerRef} sx={{ backgroundColor: "#161617" }}>
-          <Toolbar />
-          <Career />
-        </Box>
-        <Box ref={projectsRef} sx={{ backgroundColor: "#0F0F0F" }}>
-          <Toolbar />
-          <Projects />
-        </Box>
-        <Box ref={activitiesRef}>
-          <Toolbar />
-          <Activities />
-        </Box>
-        <Box ref={alcRef} sx={{ backgroundColor: "#161617" }}>
-          <Toolbar />
-          <ALC />
-        </Box>
-        <Box sx={{ display: { sm: "inline", xs: "none" } }}>
-          <Box
-            sx={{
-              pt: { sm: "100px", xs: "80px" },
-              pb: { sm: "100px", xs: "80px" },
-            }}
-          >
-            <Container>
+          <Container>
+            <Toolbar>
               <Typography
                 variant="h6"
                 component="div"
-                align="center"
-                color="primary"
-                sx={{ mb: 3 }}
+                sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
               >
                 DDO0II
               </Typography>
-              <Box align="center" sx={{ display: "block" }}>
+              <Box sx={{ display: { xs: "none", sm: "block" } }}>
                 {navItems.map((item) => (
-                  <Button
-                    onClick={item.to}
-                    key={item.id}
-                    size="large"
-                    color="secondary"
-                    sx={{
-                      pl: 3,
-                      pr: 3,
-                    }}
-                  >
+                  <Button onClick={item.to} key={item.id} color="secondary">
                     {item.name}
                   </Button>
                 ))}
               </Box>
-              <Divider color="#DEDEDE" sx={{ mt: 5, mb: 3 }} />
-              <Grid container spacing={1}>
-                <Grid item sm={8}>
-                  <Typography color="#959595" sx={{ fontSize: "13px" }}>
-                    Copyright @ Soyeong Kwon 2022, All rights reserved
-                  </Typography>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="end"
+                onClick={handleDrawerToggle}
+                sx={{ mr: 2, display: { sm: "none" } }}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Toolbar>
+          </Container>
+        </AppBar>
+        <Box component="nav">
+          <Drawer
+            variant="temporary"
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            ModalProps={{
+              keepMounted: true, // Better open performance on mobile.
+            }}
+            sx={{
+              display: { xs: "block", sm: "none" },
+              "& .MuiDrawer-paper": {
+                boxSizing: "border-box",
+                width: drawerWidth,
+              },
+            }}
+          >
+            {drawer}
+          </Drawer>
+        </Box>
+        <Box>
+          <Box ref={homeRef}>
+            <Home />
+          </Box>
+          <Box ref={aboutRef}>
+            <Toolbar />
+            <About />
+          </Box>
+          <Box ref={careerRef} sx={{ backgroundColor: "#161617" }}>
+            <Toolbar />
+            <Career />
+          </Box>
+          <Box ref={projectsRef} sx={{ backgroundColor: "#0F0F0F" }}>
+            <Toolbar />
+            <Projects />
+          </Box>
+          <Box ref={activitiesRef}>
+            <Toolbar />
+            <Activities />
+          </Box>
+          <Box ref={alcRef} sx={{ backgroundColor: "#161617" }}>
+            <Toolbar />
+            <ALC />
+          </Box>
+          <Box sx={{ display: { sm: "inline", xs: "none" } }}>
+            <Box
+              sx={{
+                pt: { sm: "100px", xs: "80px" },
+                pb: { sm: "100px", xs: "80px" },
+              }}
+            >
+              <Container>
+                <Typography
+                  variant="h6"
+                  component="div"
+                  align="center"
+                  color="primary"
+                  sx={{ mb: 3 }}
+                >
+                  DDO0II
+                </Typography>
+                <Box align="center" sx={{ display: "block" }}>
+                  {navItems.map((item) => (
+                    <Button
+                      onClick={item.to}
+                      key={item.id}
+                      size="large"
+                      color="secondary"
+                      sx={{
+                        pl: 3,
+                        pr: 3,
+                      }}
+                    >
+                      {item.name}
+                    </Button>
+                  ))}
+                </Box>
+                <Divider color="#DEDEDE" sx={{ mt: 5, mb: 3 }} />
+                <Grid container spacing={1}>
+                  <Grid item sm={8}>
+                    <Typography color="#959595" sx={{ fontSize: "13px" }}>
+                      Copyright @ Soyeong Kwon 2022, All rights reserved
+                    </Typography>
+                  </Grid>
+                  <Grid item sm={4}>
+                    <ContactIcons />
+                  </Grid>
                 </Grid>
-                <Grid item sm={4}>
-                  <ContactIcons />
-                </Grid>
-              </Grid>
-            </Container>
+              </Container>
+            </Box>
           </Box>
         </Box>
       </Box>
-    </Box>
+    </Suspense>
   );
 }
 
