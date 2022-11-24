@@ -8,15 +8,14 @@ import {
   CardMedia,
   Dialog,
   DialogActions,
-  Grid,
-  ImageListItem,
-  ImageListItemBar,
   Paper,
   Typography,
 } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import ProjectDialog from "./ProjectDialog";
+import {
+  LazyLoadComponent,
+  LazyLoadImage,
+} from "react-lazy-load-image-component";
 
 function ProjectBox({
   id,
@@ -41,9 +40,6 @@ function ProjectBox({
   pjPrototypeAlt,
   pjVideo,
 }) {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
-
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState("paper");
 
@@ -78,15 +74,21 @@ function ProjectBox({
       >
         <CardActionArea>
           <CardMedia
-            component="img"
             height="300"
-            image={pjImage}
-            alt={`${pjTitle} Image`}
             sx={{
               backgroundColor: "#808080",
               filter: "brightness(50%)",
             }}
-          />
+          >
+            <LazyLoadImage
+              src={pjImage}
+              alt={`${pjTitle} Image`}
+              effect="blur"
+              width="100%"
+              height="300"
+              style={{ margin: 0, padding: 0 }}
+            />
+          </CardMedia>
           <CardContent>
             <Typography gutterBottom variant="h6" component="div">
               {pjTitle}
