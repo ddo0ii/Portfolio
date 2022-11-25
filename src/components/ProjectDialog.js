@@ -16,6 +16,10 @@ function ProjectDialog({
   pjTitle,
   pjSubTitle,
   pjDuration,
+  pjSite,
+  pjGithub,
+  pjBlog,
+  pjYouTube,
   pjDeTitle1,
   pjDeContent1_1,
   pjDeContent1_2,
@@ -94,30 +98,42 @@ function ProjectDialog({
                 mb: { sm: 15, xs: 0 },
               }}
             >
-              <div className="contactIcon">
-                <a href="https://instagram.com/ddo_0ii" target="_blank">
-                  <FontAwesomeIcon icon={faPalette} />
-                </a>
-              </div>
-              <div className="contactIcon">
-                <a href="https://github.com/ddo0ii" target="_blank">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </div>
-              <div className="contactIcon">
-                <a href="https://ddo-development.tistory.com/" target="_blank">
-                  <FontAwesomeIcon icon={faBloggerB} />
-                </a>
-              </div>
-
-              <div className="contactIcon">
-                <a
-                  href="https://www.youtube.com/channel/UCVS6YLI6ea8eZ5tOXSnjEVg"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon icon={faYoutube} />
-                </a>
-              </div>
+              {pjSite ? (
+                <div className="contactIcon">
+                  <a href={pjSite} target="_blank">
+                    <FontAwesomeIcon icon={faPalette} />
+                  </a>
+                </div>
+              ) : (
+                ""
+              )}
+              {pjGithub ? (
+                <div className="contactIcon">
+                  <a href={pjGithub} target="_blank">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                </div>
+              ) : (
+                ""
+              )}
+              {pjBlog ? (
+                <div className="contactIcon">
+                  <a href={pjBlog} target="_blank">
+                    <FontAwesomeIcon icon={faBloggerB} />
+                  </a>
+                </div>
+              ) : (
+                ""
+              )}
+              {pjYouTube ? (
+                <div className="contactIcon">
+                  <a href={pjYouTube} target="_blank">
+                    <FontAwesomeIcon icon={faYoutube} />
+                  </a>
+                </div>
+              ) : (
+                ""
+              )}
             </Box>
           </Box>
         </Container>

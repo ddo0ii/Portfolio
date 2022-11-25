@@ -25,6 +25,10 @@ function ProjectBox({
   pjTitle,
   pjSubTitle,
   pjDuration,
+  pjSite,
+  pjGithub,
+  pjBlog,
+  pjYouTube,
   pjDeTitle1,
   pjDeContent1_1,
   pjDeContent1_2,
@@ -187,6 +191,10 @@ function ProjectBox({
             pjTitle={pjTitle}
             pjSubTitle={pjSubTitle}
             pjDuration={pjDuration}
+            pjSite={pjSite}
+            pjGithub={pjGithub}
+            pjBlog={pjBlog}
+            pjYouTube={pjYouTube}
             pjDeTitle1={pjDeTitle1}
             pjDeContent1_1={pjDeContent1_1}
             pjDeContent1_2={pjDeContent1_2}
