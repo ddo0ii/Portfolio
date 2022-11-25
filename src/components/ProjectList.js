@@ -236,7 +236,7 @@ const itemData1 = [
     pjDef:
       "모바일 어플리케이션을 통해 지원되는 기존의 푸시 알림 서비스는 사용자가 관심 분야의 정보를 받아볼 수 있기 때문에 유용하다. 그러나, 기존의 푸시 알림 서비스는 사용 측면에서 명확한 한계를 가진다. 이에 개선된 형태의 푸시 알림 시스템이 요구된다.",
     pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa1.jpg?alt=media&token=c5799406-4b1c-4c10-85c2-d71b74a3086a",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa1_s.jpg?alt=media&token=27371e10-88ee-447f-9596-1990ad69341f",
     pjPrototypeAlt: "PWA를 활용한 웹 푸시 알림 시스템 상세",
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
@@ -268,7 +268,7 @@ const itemData1 = [
     pjDef:
       "청각장애인은 물론 비장애인도 카페에서 음료 제조의 완료 알림을 받을 수 있고, 카페 매장 측은 마케팅 플랫폼으로 활용할 수 있는 시스템을 개발하였다.",
     pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten1.jpg?alt=media&token=c80a0fd9-aa0e-4d89-bd44-780d882c772f",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten1_s.jpg?alt=media&token=d3b92725-8150-4914-b6d2-831a4822ae72",
     pjPrototypeAlt: "진동벨이 필요 없는 카페 주문 완료 알림 시스템 제작 상세",
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
@@ -378,9 +378,9 @@ const itemData2 = [
     id: 1,
     pjType: "App Develop",
     pjSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0_s.jpg?alt=media&token=513f1b62-b397-4221-86d2-6284535bcd30",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0_s.jpg?alt=media&token=9dfc1b44-7242-464b-aa82-ca2e0f5f42fd",
     pjImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0.jpg?alt=media&token=c34fd663-bb38-4fdc-9465-d30d7494f01f",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0_s.jpg?alt=media&token=9dfc1b44-7242-464b-aa82-ca2e0f5f42fd",
     pjTitle: "잇다",
     pjSubTitle: "초등학생들을 위한 어플리케이션 제작",
     pjDuration: "MARCH 2020 - JULY 2020",
@@ -391,7 +391,7 @@ const itemData2 = [
     pjDeTitle1: "LANGUAGE & TOOL",
     pjDeContent1_1: "Flutter",
     pjDeContent1_2: "Firebase",
-    pjDeContent1_3: "Zeplin",
+    pjDeContent1_3: "",
     pjDeContent1_4: "",
     pjDeTitle2: "ROLE",
     pjDeContent2: "제작",
@@ -402,7 +402,7 @@ const itemData2 = [
     pjDef:
       "초등학생들이 자기주도적으로 마음을 다스리고 목표, 식사를 계획하여 가정과 학교를 이을 수 있게 어플리케이션을 제작하였다.",
     pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0.jpg?alt=media&token=c34fd663-bb38-4fdc-9465-d30d7494f01f",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fitda%2Fitda0_s.jpg?alt=media&token=9dfc1b44-7242-464b-aa82-ca2e0f5f42fd",
     pjPrototypeAlt: "",
     pjVideo: "",
   },
@@ -412,7 +412,7 @@ const itemData2 = [
     pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fe2e%2Fe2e0_s.jpg?alt=media&token=7ef60f5a-1c40-4a14-8c90-c0479c56f692",
     pjImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fe2e%2Fe2e0.png?alt=media&token=e8bf0291-207d-4e91-ba77-376b74e51c03",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fe2e%2Fe2e0_s.png?alt=media&token=072d1b08-eb46-4e4e-aa0d-254bfe0e2471",
     pjTitle: "Eyes2Ears",
     pjSubTitle: "노인들을 위한 어플리케이션 기획 및 제작",
     pjDuration: "MARCH 2017 - JULY 2017",
@@ -434,7 +434,7 @@ const itemData2 = [
     pjDef:
       "노인들의 스마트폰 사용량이 증가함에 반해 노인들이 사용하기에 적합한 어플리케이션들이 많지 않고 편리하지도 않다. 노인들이 일상생활에서 필요한 기능들과 오락도 즐길 수 있는 어플리케이션을 구상하고 구현하였다.",
     pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fe2e%2Fe2e1.png?alt=media&token=3f864d37-c418-43e0-89cf-67986beb2c99",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fe2e%2Fe2e1_s.png?alt=media&token=e7fe5a79-d987-4806-bfc7-d807a84c36c6",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/s5NPzhmp7OU",
   },
@@ -444,7 +444,7 @@ const itemData2 = [
     pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fsiren%2Fshh0_s.jpg?alt=media&token=be41c883-13c7-42f0-b07b-2dd975cccf76",
     pjImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fsiren%2Fshh0.jpg?alt=media&token=cf56f3f8-ac72-4262-9b48-4e77fa09266d",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fsiren%2Fshh0_s2.jpg?alt=media&token=f8afea49-87e0-4d2e-b82b-37cffafb0c37",
     pjTitle: "SIREN + SHH",
     pjSubTitle: "기숙사 내 침묵시간 소음 방지기 기획 및 제작",
     pjDuration: "MARCH 2017 - JULY 2017",
@@ -466,7 +466,7 @@ const itemData2 = [
     pjDef:
       "취침시간임에도 불구하고 기숙사내에서는 많은 소음들이 발생하는데, 소음 발생 자제 요청을 직접적으로 하기 어려움과 어느 방에서 소음을 내는지 알 수 없는 어려움을 해결하기위해 소음방지기를 제작",
     pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fsiren%2Fshh1.png?alt=media&token=b787c9dd-a953-4e8b-8eb6-bd504ea40173",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fapp%2Fsiren%2Fshh1_s.jpg?alt=media&token=f7734dc7-9a77-4fc0-ad9b-c78956b28e75",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/ZYuGDom_te4",
   },
@@ -478,7 +478,7 @@ const itemData3 = [
     pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep0_s.jpg?alt=media&token=5ae637b8-3f22-4970-9d10-8c6b6124cd56",
     pjImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep0.png?alt=media&token=8b227812-cb82-443b-a1ff-47a884d2bef2",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep1_s.jpg?alt=media&token=a323dacb-0446-4677-84e8-9aefcd70c369",
     pjTitle: "Bestep Center",
     pjSubTitle: "코딩 테스트 웹 페이지 기획 및 구상",
     pjDuration: "AUGUST 2019 - DECEMBER 2019",
@@ -500,7 +500,7 @@ const itemData3 = [
     pjDef:
       "코딩 테스트를 개최 및 진행할 수 있도록 웹 페이지를 기획 및 구상하였다.",
     pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep0.png?alt=media&token=8b227812-cb82-443b-a1ff-47a884d2bef2",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep0_s.png?alt=media&token=9001c607-0c53-40df-9ee1-4992e2fd71dc",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/JQCWEL09i4c",
   },
