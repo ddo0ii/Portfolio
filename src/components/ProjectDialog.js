@@ -88,53 +88,51 @@ function ProjectDialog({
           >
             {pjDuration}
           </Typography>
-          <Box sx={{ width: "35%", margin: "auto" }}>
-            <Box
-              color="#989796"
-              sx={{
-                display: "flex",
-                justifyContent: "space-between",
-                typography: { sm: "h6", xs: "overline" },
-                mb: { sm: 15, xs: 0 },
-              }}
-            >
-              {pjSite ? (
-                <div className="contactIcon">
-                  <a href={pjSite} target="_blank">
-                    <FontAwesomeIcon icon={faPalette} />
-                  </a>
-                </div>
-              ) : (
-                ""
-              )}
-              {pjGithub ? (
-                <div className="contactIcon">
-                  <a href={pjGithub} target="_blank">
-                    <FontAwesomeIcon icon={faGithub} />
-                  </a>
-                </div>
-              ) : (
-                ""
-              )}
-              {pjBlog ? (
-                <div className="contactIcon">
-                  <a href={pjBlog} target="_blank">
-                    <FontAwesomeIcon icon={faBloggerB} />
-                  </a>
-                </div>
-              ) : (
-                ""
-              )}
-              {pjYouTube ? (
-                <div className="contactIcon">
-                  <a href={pjYouTube} target="_blank">
-                    <FontAwesomeIcon icon={faYoutube} />
-                  </a>
-                </div>
-              ) : (
-                ""
-              )}
-            </Box>
+          <Box
+            color="#989796"
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              typography: { sm: "h6", xs: "overline" },
+              mb: { sm: 15, xs: 0 },
+            }}
+          >
+            {pjSite ? (
+              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <a href={pjSite} target="_blank">
+                  <FontAwesomeIcon icon={faPalette} />
+                </a>
+              </Box>
+            ) : (
+              ""
+            )}
+            {pjGithub ? (
+              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <a href={pjGithub} target="_blank">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </Box>
+            ) : (
+              ""
+            )}
+            {pjBlog ? (
+              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <a href={pjBlog} target="_blank">
+                  <FontAwesomeIcon icon={faBloggerB} />
+                </a>
+              </Box>
+            ) : (
+              ""
+            )}
+            {pjYouTube ? (
+              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <a href={pjYouTube} target="_blank">
+                  <FontAwesomeIcon icon={faYoutube} />
+                </a>
+              </Box>
+            ) : (
+              ""
+            )}
           </Box>
         </Container>
       </Box>
