@@ -302,7 +302,7 @@ const itemData1 = [
     pjDef:
       "Inflearn의 <b>한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지(https://www.inflearn.com/course/%ED%95%9C%EC%9E%85-%EB%A6%AC%EC%95%A1%ED%8A%B8#)</b>로 JavaScript와 React의 기초적인 개념을 Blog에 기록하며 학습하였다. 최종적으로 React.js를 이용하여 감정일기장을 제작하고 Firebase를 이용하여 프로젝트를 배포하였다.",
     pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fdiary%2Fdiary1.png?alt=media&token=c1144b12-e887-4df9-a6fc-5414d797f09a",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fdiary%2Fdiary1_s.png?alt=media&token=16957c73-9239-4021-9b64-cb7cf4598cf2",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/hE4qm1l6Da4",
   },
