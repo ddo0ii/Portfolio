@@ -1,11 +1,19 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navigation from "./Navigation";
+import LoadingPage from "../components/LoadingPage";
+const Navigation = lazy(() => {
+  return Promise.all([
+    import("./Navigation"),
+    new Promise((resolve) => setTimeout(resolve, 3000)),
+  ]).then(([moduleExports]) => moduleExports);
+});
 
 const AppRouter = () => {
   return (
     <Router>
-      <Navigation />
+      <Suspense fallback={<LoadingPage />}>
+        <Navigation />
+      </Suspense>
     </Router>
   );
 };
