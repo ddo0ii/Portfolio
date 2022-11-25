@@ -3,7 +3,6 @@ import {
   AppBar,
   Box,
   Button,
-  CircularProgress,
   Container,
   Divider,
   Drawer,
@@ -24,6 +23,7 @@ const Projects = lazy(() => import("../pages/Projects"));
 const Activities = lazy(() => import("../pages/Activities"));
 const ALC = lazy(() => import("../pages/ALC"));
 import ContactIcons from "../components/ContactIcons";
+import LoadingPage from "../components/LoadingPage";
 
 function Navigation() {
   // Navigation 클릭 시 이동
@@ -102,13 +102,7 @@ function Navigation() {
   );
 
   return (
-    <Suspense
-      fallback={
-        <Box className="loading" sx={{ display: "flex" }}>
-          <CircularProgress color="inherit" />
-        </Box>
-      }
-    >
+    <Suspense fallback={<LoadingPage />}>
       <Box sx={{ display: "flex" }}>
         <AppBar
           component="nav"
