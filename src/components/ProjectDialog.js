@@ -1,6 +1,13 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import ReactPlayer from "react-player";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBloggerB,
+  faGithub,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPalette } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectDialog({
   id,
@@ -72,11 +79,47 @@ function ProjectDialog({
             color="#989796"
             sx={{
               typography: { sm: "h6", xs: "overline" },
-              mb: { sm: 15, xs: 0 },
+              mb: { sm: 3, xs: 0 },
             }}
           >
             {pjDuration}
           </Typography>
+          <Box sx={{ width: "35%", margin: "auto" }}>
+            <Box
+              color="#989796"
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                typography: { sm: "h6", xs: "overline" },
+                mb: { sm: 15, xs: 0 },
+              }}
+            >
+              <div className="contactIcon">
+                <a href="https://instagram.com/ddo_0ii" target="_blank">
+                  <FontAwesomeIcon icon={faPalette} />
+                </a>
+              </div>
+              <div className="contactIcon">
+                <a href="https://github.com/ddo0ii" target="_blank">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </div>
+              <div className="contactIcon">
+                <a href="https://ddo-development.tistory.com/" target="_blank">
+                  <FontAwesomeIcon icon={faBloggerB} />
+                </a>
+              </div>
+
+              <div className="contactIcon">
+                <a
+                  href="https://www.youtube.com/channel/UCVS6YLI6ea8eZ5tOXSnjEVg"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faYoutube} />
+                </a>
+              </div>
+            </Box>
+          </Box>
         </Container>
       </Box>
       <Box
