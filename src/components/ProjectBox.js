@@ -95,62 +95,78 @@ function ProjectBox({
               {pjTitle}
             </Typography>
             <Box sx={{ display: "flex", flexWrap: "wrap" }}>
-              <Box
-                color="text.secondary"
-                sx={{
-                  border: 1,
-                  borderColor: "#E8E8E8",
-                  p: "2px",
-                  pl: 1,
-                  pr: 1,
-                  mr: 1,
-                  mb: 1,
-                }}
-              >
-                {pjDeContent1_1}
-              </Box>
-              <Box
-                color="text.secondary"
-                sx={{
-                  border: 1,
-                  borderColor: "#E8E8E8",
-                  p: "2px",
-                  pl: 1,
-                  pr: 1,
-                  mr: 1,
-                  mb: 1,
-                }}
-              >
-                {pjDeContent1_2}
-              </Box>
-              <Box
-                color="text.secondary"
-                sx={{
-                  border: 1,
-                  borderColor: "#E8E8E8",
-                  p: "2px",
-                  pl: 1,
-                  pr: 1,
-                  mr: 1,
-                  mb: 1,
-                }}
-              >
-                {pjDeContent1_3}
-              </Box>
-              <Box
-                color="text.secondary"
-                sx={{
-                  border: 1,
-                  borderColor: "#E8E8E8",
-                  p: "2px",
-                  pl: 1,
-                  pr: 1,
-                  mr: 1,
-                  mb: 1,
-                }}
-              >
-                {pjDeContent1_4}
-              </Box>
+              {pjDeContent1_1 ? (
+                <Box
+                  color="text.secondary"
+                  sx={{
+                    border: 1,
+                    borderColor: "#E8E8E8",
+                    p: "2px",
+                    pl: 1,
+                    pr: 1,
+                    mr: 1,
+                    mb: 1,
+                  }}
+                >
+                  {pjDeContent1_1}
+                </Box>
+              ) : (
+                ""
+              )}
+              {pjDeContent1_2 ? (
+                <Box
+                  color="text.secondary"
+                  sx={{
+                    border: 1,
+                    borderColor: "#E8E8E8",
+                    p: "2px",
+                    pl: 1,
+                    pr: 1,
+                    mr: 1,
+                    mb: 1,
+                  }}
+                >
+                  {pjDeContent1_2}
+                </Box>
+              ) : (
+                ""
+              )}
+              {pjDeContent1_3 ? (
+                <Box
+                  color="text.secondary"
+                  sx={{
+                    border: 1,
+                    borderColor: "#E8E8E8",
+                    p: "2px",
+                    pl: 1,
+                    pr: 1,
+                    mr: 1,
+                    mb: 1,
+                  }}
+                >
+                  {pjDeContent1_3}
+                </Box>
+              ) : (
+                ""
+              )}
+              {pjDeContent1_4 ? (
+                <Box
+                  color="text.secondary"
+                  sx={{
+                    border: 1,
+                    borderColor: "#E8E8E8",
+                    p: "2px",
+                    pl: 1,
+                    pr: 1,
+                    mr: 1,
+                    mb: 1,
+                  }}
+                >
+                  {pjDeContent1_4}
+                </Box>
+              ) : (
+                ""
+              )}
             </Box>
           </CardContent>
         </CardActionArea>
