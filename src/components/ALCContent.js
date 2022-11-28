@@ -19,12 +19,13 @@ import {
 } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIdCard } from "@fortawesome/free-regular-svg-icons";
-import { faAward, faMedal, faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { faMedal, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import ALCDialog from "./ALCDialog";
 
 function ALCContent({
   id,
   alcImage,
+  alcIcon,
   alcTitle,
   alcSubTitle,
   alcOrganizer,
@@ -88,7 +89,17 @@ function ALCContent({
             }}
           >
             <Typography sx={{ fontSize: { sm: "30px", xs: "15px" } }}>
-              <FontAwesomeIcon icon={faTrophy} style={{ color: "black" }} />
+              {alcIcon == "faTrophy" ? (
+                <FontAwesomeIcon icon={faTrophy} style={{ color: "black" }} />
+              ) : alcIcon == "faAward" ? (
+                <FontAwesomeIcon icon={faTrophy} style={{ color: "black" }} />
+              ) : alcIcon == "faMedal" ? (
+                <FontAwesomeIcon icon={faMedal} style={{ color: "black" }} />
+              ) : alcIcon == "faIdCard" ? (
+                <FontAwesomeIcon icon={faIdCard} style={{ color: "black" }} />
+              ) : (
+                ""
+              )}
             </Typography>
           </Avatar>
         </Stack>
@@ -137,6 +148,7 @@ function ALCContent({
             id={id}
             alcImage={alcImage}
             alcTitle={alcTitle}
+            alcIcon={alcIcon}
             alcSubTitle={alcSubTitle}
             alcOrganizer={alcOrganizer}
             alcDate={alcDate}

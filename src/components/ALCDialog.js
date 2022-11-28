@@ -4,6 +4,7 @@ import React from "react";
 function ALCDialog({
   id,
   alcImage,
+  alcIcon,
   alcTitle,
   alcSubTitle,
   alcOrganizer,

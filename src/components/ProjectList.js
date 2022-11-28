@@ -230,7 +230,7 @@ const itemData1 = [
     pjDeTitle2: "ROLE",
     pjDeContent2: "기획 및 제작",
     pjDeTitle3: "INDUSTRY",
-    pjDeContent3: "Developer 4",
+    pjDeContent3: "Developer 3",
     pjDeTitle4: "DURATION",
     pjDeContent4: "1 Year",
     pjDef:
@@ -262,7 +262,7 @@ const itemData1 = [
     pjDeTitle2: "ROLE",
     pjDeContent2: "기획 및 제작",
     pjDeTitle3: "INDUSTRY",
-    pjDeContent3: "Developer 4",
+    pjDeContent3: "Developer 3",
     pjDeTitle4: "DURATION",
     pjDeContent4: "1 Year",
     pjDef:
