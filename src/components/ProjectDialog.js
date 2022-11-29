@@ -300,18 +300,6 @@ function ProjectDialog({
             >
               LAUNCH PROTOTYPE
             </Typography>
-            {pjPrototype ? (
-              <Box
-                component="img"
-                sx={{
-                  width: "100%",
-                }}
-                alt={pjPrototypeAlt}
-                src={pjPrototype}
-              />
-            ) : (
-              ""
-            )}
             {pjVideo ? (
               <Box
                 sx={{
@@ -332,6 +320,18 @@ function ProjectDialog({
                   controls={true}
                 />
               </Box>
+            ) : (
+              ""
+            )}
+            {pjPrototype ? (
+              <Box
+                component="img"
+                sx={{
+                  width: "100%",
+                }}
+                alt={pjPrototypeAlt}
+                src={pjPrototype}
+              />
             ) : (
               ""
             )}

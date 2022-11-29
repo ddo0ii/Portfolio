@@ -7,6 +7,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { faPalette, faSitemap } from "@fortawesome/free-solid-svg-icons";
+import ReactPlayer from "react-player";
 
 function ALCDialog({
   id,
