@@ -24,6 +24,7 @@ import ALCDialog from "./ALCDialog";
 
 function ALCContent({
   id,
+  alcSImage,
   alcImage,
   alcIcon,
   alcTitle,
@@ -151,6 +152,7 @@ function ALCContent({
         >
           <ALCDialog
             id={id}
+            alcSImage={alcSImage}
             alcImage={alcImage}
             alcTitle={alcTitle}
             alcIcon={alcIcon}

@@ -6,6 +6,8 @@ import ALCList from "../components/ALCList";
 const alcData = [
   {
     id: 1,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fprize%2Fpr1.jpg?alt=media&token=a270b6f1-ca6c-412f-a303-8c268166c70f",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faTrophy",
     alcTitle: "국경 없는 과학자 기술자 회장상",
@@ -35,6 +37,8 @@ const alcData = [
   },
   {
     id: 2,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Fliceip1.jpg?alt=media&token=c84d4bbb-9678-46be-9b8e-773029803076",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faIdCard",
     alcTitle: "정보처리기사",
@@ -63,6 +67,8 @@ const alcData = [
   },
   {
     id: 3,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Fliceip1.jpg?alt=media&token=c84d4bbb-9678-46be-9b8e-773029803076",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faIdCard",
     alcTitle: "정보처리산업기사",
@@ -91,6 +97,8 @@ const alcData = [
   },
   {
     id: 4,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flicdb1.jpg?alt=media&token=3656f47d-a2e0-4da3-9313-43f6b07443b3",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faIdCard",
     alcTitle: "SQL 개발자(SQLD)",
@@ -119,6 +127,8 @@ const alcData = [
   },
   {
     id: 5,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flico1.jpg?alt=media&token=b726595a-1e5b-4c7f-ad8a-63dafe83af21",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faIdCard",
     alcTitle: "OPIc",
@@ -147,6 +157,8 @@ const alcData = [
   },
   {
     id: 6,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Fliccu1.jpg?alt=media&token=36b8c2b4-5e31-4e51-b8d6-e1df795abe01",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faIdCard",
     alcTitle: "컴퓨터활용능력 2급",
@@ -175,6 +187,8 @@ const alcData = [
   },
   {
     id: 7,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flicdr1.jpg?alt=media&token=a5888575-0370-40b0-ae81-44145e75d37f",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faIdCard",
     alcTitle: "자동차 운전면허 1종 보통",
@@ -203,6 +217,8 @@ const alcData = [
   },
   {
     id: 8,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertljh1.jpg?alt=media&token=9d721531-8917-4b51-8533-110c6f1e721f",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faMedal",
     alcTitle: "한입 크기로 잘라 먹는 리액트",
@@ -236,6 +252,8 @@ const alcData = [
   },
   {
     id: 9,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertt1.jpg?alt=media&token=0d03c150-96c3-4f1d-b14d-c96ff77d2b44",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faMedal",
     alcTitle: "트위터 클론코딩",
@@ -267,6 +285,8 @@ const alcData = [
   },
   {
     id: 10,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertnw1.jpg?alt=media&token=6cc9257b-621a-424f-8a38-b8a81a798944",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faMedal",
     alcTitle: "ReactJS로 영화 웹 서비스 만들기",
@@ -299,6 +319,8 @@ const alcData = [
   },
   {
     id: 11,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faMedal",
     alcTitle: "[큐레이팅#]누구나 DO IT! 쉽게 시작하는 AI&프로그래밍",
@@ -327,6 +349,8 @@ const alcData = [
   },
   {
     id: 12,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faMedal",
     alcTitle: "[큐레이팅#]누구나 DO IT! 쉽게 시작하는 수익형 웹과 앱 만들기",
@@ -356,6 +380,8 @@ const alcData = [
   },
   {
     id: 13,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faMedal",
     alcTitle: "[직딩잇템]처음 시작하는 파이썬, 구조를 학습하라",
@@ -385,6 +411,8 @@ const alcData = [
   },
   {
     id: 14,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faMedal",
     alcTitle: "[직딩잇템]처음 시작하는 파이썬, 문법부터 시작하라",

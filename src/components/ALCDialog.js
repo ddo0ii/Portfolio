@@ -10,6 +10,7 @@ import { faPalette, faSitemap } from "@fortawesome/free-solid-svg-icons";
 
 function ALCDialog({
   id,
+  alcSImage,
   alcImage,
   alcIcon,
   alcTitle,
@@ -41,9 +42,7 @@ function ALCDialog({
       <Box
         className="projectDialogTop"
         sx={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${
-            process.env.PUBLIC_URL + alcImage
-          })`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${alcSImage})`,
         }}
       >
         <Container>
@@ -63,98 +62,114 @@ function ALCDialog({
             color="secondary"
             sx={{
               // typography: { sm: "h2", xs: "h5" },
-              fontSize: { sm: "80px", xs: "30px" },
+              fontSize: { sm: "50px", xs: "18px" },
               letterSpacing: { sm: "5px", xs: "2px" },
               mt: { sm: 2, xs: 1 },
             }}
           >
             <b>{alcTitle}</b>
           </Typography>
-          <Typography
-            align="center"
-            color="#989796"
-            sx={{
-              typography: { sm: "h5", xs: "body2" },
-              mt: { sm: 3, xs: 2 },
-            }}
-          >
-            {alcSubTitle}
-          </Typography>
-          <Typography
-            align="center"
-            color="#989796"
-            sx={{
-              typography: { sm: "h5", xs: "body2" },
-              mt: { sm: 3, xs: 2 },
-            }}
-          >
-            {alcOrganizer}
-          </Typography>
-          <Typography
-            align="center"
-            color="#989796"
-            sx={{
-              typography: { sm: "h6", xs: "overline" },
-              mb: { sm: 15, xs: 0 },
-            }}
-          >
-            {alcDate}
-          </Typography>
-          <Box
-            color="#989796"
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              typography: { sm: "h6", xs: "overline" },
-              mb: { sm: 15, xs: 0 },
-            }}
-          >
-            {alcLecSite ? (
-              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
-                <a href={alcLecSite} target="_blank">
-                  <FontAwesomeIcon icon={faSitemap} />
-                </a>
-              </Box>
-            ) : (
-              ""
-            )}
-            {alcSite ? (
-              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
-                <a href={alcSite} target="_blank">
-                  <FontAwesomeIcon icon={faPalette} />
-                </a>
-              </Box>
-            ) : (
-              ""
-            )}
-            {alcGithub ? (
-              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
-                <a href={alcGithub} target="_blank">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-              </Box>
-            ) : (
-              ""
-            )}
-            {alcBlog ? (
-              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
-                <a href={alcBlog} target="_blank">
-                  <FontAwesomeIcon icon={faBloggerB} />
-                </a>
-              </Box>
-            ) : (
-              ""
-            )}
-            {alcYouTube ? (
-              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
-                <a href={alcYouTube} target="_blank">
-                  <FontAwesomeIcon icon={faYoutube} />
-                </a>
-              </Box>
-            ) : (
-              ""
-            )}
-          </Box>
+          {alcSubTitle ? (
+            <Typography
+              align="center"
+              color="#989796"
+              sx={{
+                typography: { sm: "h6", xs: "body2" },
+                mt: { sm: 2, xs: 1 },
+              }}
+            >
+              {alcSubTitle}
+            </Typography>
+          ) : (
+            ""
+          )}
+          {alcOrganizer ? (
+            <Typography
+              align="center"
+              color="#989796"
+              sx={{
+                typography: { sm: "h6", xs: "body2" },
+                mt: { sm: 2, xs: 1 },
+              }}
+            >
+              {alcOrganizer}
+            </Typography>
+          ) : (
+            ""
+          )}
+          {alcDate ? (
+            <Typography
+              align="center"
+              color="#989796"
+              sx={{
+                typography: { sm: "h6", xs: "overline" },
+                mb: { sm: 4, xs: 0 },
+              }}
+            >
+              {alcDate}
+            </Typography>
+          ) : (
+            ""
+          )}
+          {alcLecSite || alcSite || alcGithub || alcBlog || alcYouTube ? (
+            <Box
+              color="#989796"
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                typography: { sm: "h6", xs: "overline" },
+                mb: { sm: 15, xs: 0 },
+              }}
+            >
+              {alcLecSite ? (
+                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                  <a href={alcLecSite} target="_blank">
+                    <FontAwesomeIcon icon={faSitemap} />
+                  </a>
+                </Box>
+              ) : (
+                ""
+              )}
+              {alcSite ? (
+                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                  <a href={alcSite} target="_blank">
+                    <FontAwesomeIcon icon={faPalette} />
+                  </a>
+                </Box>
+              ) : (
+                ""
+              )}
+              {alcGithub ? (
+                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                  <a href={alcGithub} target="_blank">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                </Box>
+              ) : (
+                ""
+              )}
+              {alcBlog ? (
+                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                  <a href={alcBlog} target="_blank">
+                    <FontAwesomeIcon icon={faBloggerB} />
+                  </a>
+                </Box>
+              ) : (
+                ""
+              )}
+              {alcYouTube ? (
+                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                  <a href={alcYouTube} target="_blank">
+                    <FontAwesomeIcon icon={faYoutube} />
+                  </a>
+                </Box>
+              ) : (
+                ""
+              )}
+            </Box>
+          ) : (
+            ""
+          )}
         </Container>
       </Box>
       <Box
