@@ -30,6 +30,11 @@ function ALCContent({
   alcSubTitle,
   alcOrganizer,
   alcDate,
+  alcLecSite,
+  alcSite,
+  alcGithub,
+  alcBlog,
+  alcYouTube,
   alcDeTitle1,
   alcDeContent1_1,
   alcDeContent1_2,
@@ -152,6 +157,11 @@ function ALCContent({
             alcSubTitle={alcSubTitle}
             alcOrganizer={alcOrganizer}
             alcDate={alcDate}
+            alcLecSite={alcLecSite}
+            alcSite={alcSite}
+            alcGithub={alcGithub}
+            alcBlog={alcBlog}
+            alcYouTube={alcYouTube}
             alcDeTitle1={alcDeTitle1}
             alcDeContent1_1={alcDeContent1_1}
             alcDeContent1_2={alcDeContent1_2}

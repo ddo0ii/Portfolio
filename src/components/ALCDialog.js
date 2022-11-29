@@ -1,5 +1,12 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import { Box, Container, Grid, Typography } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBloggerB,
+  faGithub,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPalette, faSitemap } from "@fortawesome/free-solid-svg-icons";
 
 function ALCDialog({
   id,
@@ -9,6 +16,11 @@ function ALCDialog({
   alcSubTitle,
   alcOrganizer,
   alcDate,
+  alcLecSite,
+  alcSite,
+  alcGithub,
+  alcBlog,
+  alcYouTube,
   alcDeTitle1,
   alcDeContent1_1,
   alcDeContent1_2,
@@ -88,6 +100,61 @@ function ALCDialog({
           >
             {alcDate}
           </Typography>
+          <Box
+            color="#989796"
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              typography: { sm: "h6", xs: "overline" },
+              mb: { sm: 15, xs: 0 },
+            }}
+          >
+            {alcLecSite ? (
+              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <a href={alcLecSite} target="_blank">
+                  <FontAwesomeIcon icon={faSitemap} />
+                </a>
+              </Box>
+            ) : (
+              ""
+            )}
+            {alcSite ? (
+              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <a href={alcSite} target="_blank">
+                  <FontAwesomeIcon icon={faPalette} />
+                </a>
+              </Box>
+            ) : (
+              ""
+            )}
+            {alcGithub ? (
+              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <a href={alcGithub} target="_blank">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+              </Box>
+            ) : (
+              ""
+            )}
+            {alcBlog ? (
+              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <a href={alcBlog} target="_blank">
+                  <FontAwesomeIcon icon={faBloggerB} />
+                </a>
+              </Box>
+            ) : (
+              ""
+            )}
+            {alcYouTube ? (
+              <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <a href={alcYouTube} target="_blank">
+                  <FontAwesomeIcon icon={faYoutube} />
+                </a>
+              </Box>
+            ) : (
+              ""
+            )}
+          </Box>
         </Container>
       </Box>
       <Box
