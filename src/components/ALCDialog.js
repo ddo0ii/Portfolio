@@ -89,7 +89,7 @@ function ALCDialog({
               color="#989796"
               sx={{
                 typography: { sm: "h6", xs: "body2" },
-                mt: { sm: 2, xs: 1 },
+                mt: { sm: 1, xs: 1 },
               }}
             >
               {alcOrganizer}
