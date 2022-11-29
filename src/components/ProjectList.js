@@ -248,7 +248,7 @@ const itemData1 = [
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten0.jpg?alt=media&token=9ddcfe00-498c-49c3-ba8d-576037a2edbd",
     pjTitle: "진동벨이 필요 없는 카페 알림 시스템",
-    pjSubTitle: "청각장애인을 위한카페 시스템",
+    pjSubTitle: "청각장애인을 위한 카페 시스템",
     pjDuration: "JULY 2017 - JULY 2018",
     pjSite: "",
     pjGithub: "https://github.com/ddo0ii/capstone",

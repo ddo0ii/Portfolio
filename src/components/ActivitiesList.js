@@ -58,7 +58,7 @@ function ActivitiesList() {
           </ImageListItem>
           <Paper elevation={10}>
             <Dialog
-              fullWidth={true}
+              // fullWidth={true}
               maxWidth="xl"
               open={open}
               onClose={handleClose}
