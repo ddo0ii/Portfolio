@@ -49,7 +49,8 @@ function ALCContent({
   alcDeContent4,
   alcDef,
   alcPrototypeAlt,
-  alcPrototype,
+  alcPrototype1,
+  alcPrototype2,
 }) {
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState("paper");
@@ -177,7 +178,8 @@ function ALCContent({
             alcDeContent4={alcDeContent4}
             alcDef={alcDef}
             alcPrototypeAlt={alcPrototypeAlt}
-            alcPrototype={alcPrototype}
+            alcPrototype1={alcPrototype1}
+            alcPrototype2={alcPrototype2}
           />
           <DialogActions sx={{ backgroundColor: "#0F0F0F" }}>
             <Button onClick={handleClose}>Close</Button>

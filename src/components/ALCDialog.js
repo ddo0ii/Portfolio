@@ -35,7 +35,8 @@ function ALCDialog({
   alcDeContent4,
   alcDef,
   alcPrototypeAlt,
-  alcPrototype,
+  alcPrototype1,
+  alcPrototype2,
 }) {
   return (
     <div style={{ backgroundColor: "#0F0F0F" }}>
@@ -172,146 +173,176 @@ function ALCDialog({
           )}
         </Container>
       </Box>
-      <Box
-        sx={{
-          pt: { sm: "100px", xs: "80px" },
-          pb: { sm: "100px", xs: "0px" },
-        }}
-      >
-        <Container>
-          <Grid container spacing={3}>
-            <Grid item sm={3} xs={6}>
-              <Typography
-                className="pjDetail"
-                sx={{
-                  typography: { sm: "body2", xs: "overline" },
-                  pb: { sm: "10px", xs: "5px" },
-                }}
-              >
-                {alcDeTitle1}
-              </Typography>
-              <Typography
-                className="pjDetailContent"
-                sx={{
-                  typography: { sm: "subtitle1", xs: "body2" },
-                }}
-              >
-                {alcDeContent1_1} {alcDeContent1_2} <br />
-                {alcDeContent1_3} {alcDeContent1_4}
-              </Typography>
+      {alcDeTitle1 ||
+      alcDeContent1_1 ||
+      alcDeContent1_2 ||
+      alcDeContent1_3 ||
+      alcDeContent1_4 ||
+      alcDeTitle2 ||
+      alcDeContent2 ||
+      alcDeTitle3 ||
+      alcDeContent3 ||
+      alcDeTitle4 ||
+      alcDeContent4 ? (
+        <Box
+          sx={{
+            pt: { sm: "100px", xs: "80px" },
+            pb: { sm: "100px", xs: "0px" },
+          }}
+        >
+          <Container>
+            <Grid container spacing={3}>
+              <Grid item sm={3} xs={6}>
+                <Typography
+                  className="pjDetail"
+                  sx={{
+                    typography: { sm: "body2", xs: "overline" },
+                    pb: { sm: "10px", xs: "5px" },
+                  }}
+                >
+                  {alcDeTitle1}
+                </Typography>
+                <Typography
+                  className="pjDetailContent"
+                  sx={{
+                    typography: { sm: "subtitle1", xs: "body2" },
+                  }}
+                >
+                  {alcDeContent1_1} {alcDeContent1_2} <br />
+                  {alcDeContent1_3} {alcDeContent1_4}
+                </Typography>
+              </Grid>
+              <Grid item sm={3} xs={6}>
+                <Typography
+                  className="pjDetail"
+                  sx={{
+                    typography: { sm: "body2", xs: "overline" },
+                    pb: { sm: "10px", xs: "5px" },
+                  }}
+                >
+                  {alcDeTitle2}
+                </Typography>
+                <Typography
+                  className="pjDetailContent"
+                  sx={{
+                    typography: { sm: "subtitle1", xs: "body2" },
+                  }}
+                >
+                  {alcDeContent2}
+                </Typography>
+              </Grid>
+              <Grid item sm={3} xs={6}>
+                <Typography
+                  className="pjDetail"
+                  sx={{
+                    typography: { sm: "body2", xs: "overline" },
+                    pb: { sm: "10px", xs: "5px" },
+                  }}
+                >
+                  {alcDeTitle3}
+                </Typography>
+                <Typography
+                  className="pjDetailContent"
+                  sx={{
+                    typography: { sm: "subtitle1", xs: "body2" },
+                  }}
+                >
+                  {alcDeContent3}
+                </Typography>
+              </Grid>
+              <Grid item sm={3} xs={6}>
+                <Typography
+                  className="pjDetail"
+                  sx={{
+                    typography: { sm: "body2", xs: "overline" },
+                    pb: { sm: "10px", xs: "5px" },
+                  }}
+                >
+                  {alcDeTitle4}
+                </Typography>
+                <Typography
+                  className="pjDetailContent"
+                  sx={{
+                    typography: { sm: "subtitle1", xs: "body2" },
+                  }}
+                >
+                  {alcDeContent4}
+                </Typography>
+              </Grid>
             </Grid>
-            <Grid item sm={3} xs={6}>
-              <Typography
-                className="pjDetail"
-                sx={{
-                  typography: { sm: "body2", xs: "overline" },
-                  pb: { sm: "10px", xs: "5px" },
-                }}
-              >
-                {alcDeTitle2}
-              </Typography>
-              <Typography
-                className="pjDetailContent"
-                sx={{
-                  typography: { sm: "subtitle1", xs: "body2" },
-                }}
-              >
-                {alcDeContent2}
-              </Typography>
-            </Grid>
-            <Grid item sm={3} xs={6}>
-              <Typography
-                className="pjDetail"
-                sx={{
-                  typography: { sm: "body2", xs: "overline" },
-                  pb: { sm: "10px", xs: "5px" },
-                }}
-              >
-                {alcDeTitle3}
-              </Typography>
-              <Typography
-                className="pjDetailContent"
-                sx={{
-                  typography: { sm: "subtitle1", xs: "body2" },
-                }}
-              >
-                {alcDeContent3}
-              </Typography>
-            </Grid>
-            <Grid item sm={3} xs={6}>
-              <Typography
-                className="pjDetail"
-                sx={{
-                  typography: { sm: "body2", xs: "overline" },
-                  pb: { sm: "10px", xs: "5px" },
-                }}
-              >
-                {alcDeTitle4}
-              </Typography>
-              <Typography
-                className="pjDetailContent"
-                sx={{
-                  typography: { sm: "subtitle1", xs: "body2" },
-                }}
-              >
-                {alcDeContent4}
-              </Typography>
-            </Grid>
-          </Grid>
-        </Container>
-      </Box>
-      <Box
-        sx={{
-          pt: { sm: "100px", xs: "80px" },
-          pb: { sm: "100px", xs: "0px" },
-        }}
-      >
-        <Container>
-          <Typography
-            className="pjDetail"
-            sx={{
-              typography: { sm: "body2", xs: "overline" },
-              pb: { sm: "10px", xs: "5px" },
-            }}
-          >
-            DEFINING THE PROBLEM
-          </Typography>
-          <Typography
-            className="pjDetailContent"
-            sx={{
-              typography: { sm: "subtitle1", xs: "body2" },
-            }}
-          >
-            {alcDef}
-          </Typography>
-        </Container>
-      </Box>
-      <Box
-        sx={{
-          pt: { sm: "100px", xs: "80px" },
-          pb: { sm: "50px", xs: "0px" },
-        }}
-      >
-        <Container>
-          <Typography
-            className="pjDetail"
-            sx={{
-              typography: { sm: "body2", xs: "overline" },
-              pb: { sm: "10px", xs: "5px" },
-            }}
-          >
-            LAUNCH PROTOTYPE
-          </Typography>
-          <Box
-            component="img"
-            sx={{
-              width: "100%",
-            }}
-            alt={alcPrototypeAlt}
-            src={`${process.env.PUBLIC_URL + alcPrototype}`}
-          />
-        </Container>
-      </Box>
+          </Container>
+        </Box>
+      ) : (
+        ""
+      )}
+      {alcDef ? (
+        <Box
+          sx={{
+            pt: { sm: "100px", xs: "80px" },
+            pb: { sm: "100px", xs: "0px" },
+          }}
+        >
+          <Container>
+            <Typography
+              className="pjDetail"
+              sx={{
+                typography: { sm: "body2", xs: "overline" },
+                pb: { sm: "10px", xs: "5px" },
+              }}
+            >
+              DEFINING THE PROBLEM
+            </Typography>
+            <Typography
+              className="pjDetailContent"
+              sx={{
+                typography: { sm: "subtitle1", xs: "body2" },
+              }}
+            >
+              {alcDef}
+            </Typography>
+          </Container>
+        </Box>
+      ) : (
+        ""
+      )}
+      {alcPrototype1 || alcPrototype2 ? (
+        <Box
+          sx={{
+            pt: { sm: "100px", xs: "80px" },
+            pb: { sm: "50px", xs: "0px" },
+          }}
+        >
+          <Container>
+            <Typography
+              className="pjDetail"
+              sx={{
+                typography: { sm: "body2", xs: "overline" },
+                pb: { sm: "10px", xs: "5px" },
+              }}
+            >
+              LAUNCH PROTOTYPE
+            </Typography>
+            <Box
+              component="img"
+              sx={{
+                width: "100%",
+              }}
+              alt={alcPrototypeAlt}
+              src={alcPrototype1}
+            />
+            <Box
+              component="img"
+              sx={{
+                width: "100%",
+              }}
+              alt={alcPrototypeAlt}
+              src={alcPrototype2}
+            />
+          </Container>
+        </Box>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
