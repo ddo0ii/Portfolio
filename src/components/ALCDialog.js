@@ -34,7 +34,7 @@ function ALCDialog({
   alcDeTitle4,
   alcDeContent4,
   alcDef,
-  alcPrototypeAlt,
+  alcPrototypeVideo,
   alcPrototype1,
   alcPrototype2,
 }) {
@@ -305,7 +305,7 @@ function ALCDialog({
       ) : (
         ""
       )}
-      {alcPrototype1 || alcPrototype2 ? (
+      {alcPrototypeVideo || alcPrototype1 || alcPrototype2 ? (
         <Box
           sx={{
             pt: { sm: "100px", xs: "80px" },
@@ -322,22 +322,51 @@ function ALCDialog({
             >
               LAUNCH PROTOTYPE
             </Typography>
-            <Box
-              component="img"
-              sx={{
-                width: "100%",
-              }}
-              alt={alcPrototypeAlt}
-              src={alcPrototype1}
-            />
-            <Box
-              component="img"
-              sx={{
-                width: "100%",
-              }}
-              alt={alcPrototypeAlt}
-              src={alcPrototype2}
-            />
+            {alcPrototypeVideo ? (
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  pt: { sm: 2, xs: 1 },
+                }}
+              >
+                <ReactPlayer
+                  className="player"
+                  url={alcPrototypeVideo}
+                  // width="100%"
+                  width="700px"
+                  heigth="700px"
+                  // playing={true}
+                  // muted={true}
+                  controls={true}
+                />
+              </Box>
+            ) : (
+              ""
+            )}
+            {alcPrototype1 ? (
+              <Box
+                component="img"
+                sx={{
+                  width: "100%",
+                }}
+                src={alcPrototype1}
+              />
+            ) : (
+              ""
+            )}
+            {alcPrototype2 ? (
+              <Box
+                component="img"
+                sx={{
+                  width: "100%",
+                }}
+                src={alcPrototype2}
+              />
+            ) : (
+              ""
+            )}
           </Container>
         </Box>
       ) : (

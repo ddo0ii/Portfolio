@@ -48,7 +48,7 @@ function ALCContent({
   alcDeTitle4,
   alcDeContent4,
   alcDef,
-  alcPrototypeAlt,
+  alcPrototypeVideo,
   alcPrototype1,
   alcPrototype2,
 }) {
@@ -177,7 +177,7 @@ function ALCContent({
             alcDeTitle4={alcDeTitle4}
             alcDeContent4={alcDeContent4}
             alcDef={alcDef}
-            alcPrototypeAlt={alcPrototypeAlt}
+            alcPrototypeVideo={alcPrototypeVideo}
             alcPrototype1={alcPrototype1}
             alcPrototype2={alcPrototype2}
           />

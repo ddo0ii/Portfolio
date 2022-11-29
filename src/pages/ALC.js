@@ -32,7 +32,7 @@ const alcData = [
     alcDeContent4: "",
     alcDef:
       "청각장애인은 물론 비장애인도 카페에서 음료 제조의 완료 알림을 받을 수 있고, 카페 매장 측은 마케팅 플랫폼으로 활용할 수 있는 시스템을 개발하였다.",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fprize%2Fpr1.jpg?alt=media&token=a270b6f1-ca6c-412f-a303-8c268166c70f",
     alcPrototype2: "",
@@ -64,7 +64,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1: "",
     alcPrototype2: "",
   },
@@ -95,7 +95,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1: "",
     alcPrototype2: "",
   },
@@ -126,7 +126,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1: "",
     alcPrototype2: "",
   },
@@ -157,7 +157,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flico2.jpg?alt=media&token=960adbfb-00c0-4096-96b1-e2a87d9a6dfb",
     alcPrototype2: "",
@@ -189,7 +189,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1: "",
     alcPrototype2: "",
   },
@@ -220,7 +220,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flicdr2.jpg?alt=media&token=1d0b8119-6b8f-4d8f-9b76-5613223c74a8",
     alcPrototype2: "",
@@ -256,7 +256,7 @@ const alcData = [
     alcDeContent4: "",
     alcDef:
       "Inflearn의 '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지'를 수강하며 JavaScript와 React의 기초적인 개념을 Blog에 기록하며 학습하였다. 최종적으로 React.js를 이용하여 감정일기장을 제작하고 Firebase를 이용하여 프로젝트를 배포하였다.",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "https://www.youtube.com/embed/hE4qm1l6Da4",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertljh2.jpg?alt=media&token=1f6f402d-1a28-4a86-9597-cd4904056471",
     alcPrototype2:
@@ -292,7 +292,7 @@ const alcData = [
     alcDeContent4: "",
     alcDef:
       "Nomad Coders의 <b>트위터 클론코딩(https://nomadcoders.co/nwitter)</b>를 수강하였다. 최종적으로 React.js와 Firebase를 이용하여 백엔드 코딩없이 인증 및 리얼타임 DB를 구현하여 로그인, 트윗작성, 수정 삭제 등의 기본적인 트위터 웹 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertt1.jpg?alt=media&token=0d03c150-96c3-4f1d-b14d-c96ff77d2b44",
     alcPrototype2: "",
@@ -328,7 +328,7 @@ const alcData = [
     alcDeContent4: "",
     alcDef:
       "Nomad Coders의 <b>ReactJS로 영화 웹 서비스 만들기(https://nomadcoders.co/react-for-beginners)</b>로 React의 기초적인 개념을 Blog에 기록하며 학습하였다. 최종적으로 React.js를 이용하여 영화 웹 서비스 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertnw1.jpg?alt=media&token=6cc9257b-621a-424f-8a38-b8a81a798944",
     alcPrototype2: "",
@@ -360,7 +360,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertai2.jpg?alt=media&token=67c1feb3-a03c-4051-ad83-4a25aef47c04",
     alcPrototype2:
@@ -394,7 +394,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwa2.jpg?alt=media&token=539c4542-a330-4b59-873e-c6e889ac69b1",
     alcPrototype2:
@@ -428,7 +428,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertps2.jpg?alt=media&token=d07f377f-81b1-4957-b348-fb1995c8f5e4",
     alcPrototype2:
@@ -462,7 +462,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef: "",
-    alcPrototypeAlt: "",
+    alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertpg2.jpg?alt=media&token=cdbed099-077f-42de-82c6-6c5566a999c9",
     alcPrototype2:
