@@ -65,7 +65,8 @@ const alcData = [
     alcDeContent4: "",
     alcDef: "",
     alcPrototypeVideo: "",
-    alcPrototype1: "",
+    alcPrototype1:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Fliceip3.jpg?alt=media&token=66536971-5316-434e-a6ed-6f7225434ed3",
     alcPrototype2: "",
   },
   {
@@ -96,7 +97,8 @@ const alcData = [
     alcDeContent4: "",
     alcDef: "",
     alcPrototypeVideo: "",
-    alcPrototype1: "",
+    alcPrototype1:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Fliceip2.jpg?alt=media&token=f69b4133-1a79-4c6e-9c0f-624acd7c0fb2",
     alcPrototype2: "",
   },
   {
@@ -127,7 +129,8 @@ const alcData = [
     alcDeContent4: "",
     alcDef: "",
     alcPrototypeVideo: "",
-    alcPrototype1: "",
+    alcPrototype1:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flicdb2.jpg?alt=media&token=ba1bc354-60d6-473c-aaa1-7fd39e700fdd",
     alcPrototype2: "",
   },
   {
@@ -190,7 +193,8 @@ const alcData = [
     alcDeContent4: "",
     alcDef: "",
     alcPrototypeVideo: "",
-    alcPrototype1: "",
+    alcPrototype1:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Fliccu2.jpg?alt=media&token=704f9081-b0a2-49fb-9d2b-6f75145786ba",
     alcPrototype2: "",
   },
   {
