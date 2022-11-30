@@ -321,7 +321,7 @@ function ALCDialog({
                 pb: { sm: "10px", xs: "5px" },
               }}
             >
-              LAUNCH PROTOTYPE
+              DETAIL
             </Typography>
             {alcPrototypeVideo ? (
               <Box
@@ -346,11 +346,35 @@ function ALCDialog({
             ) : (
               ""
             )}
+            {id == 1 ? (
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  pt: { sm: 2, xs: 1 },
+                }}
+              >
+                <ReactPlayer
+                  className="player"
+                  url="https://www.youtube.com/embed/Cf-SD33nqWo"
+                  // width="100%"
+                  width="700px"
+                  heigth="700px"
+                  // playing={true}
+                  // muted={true}
+                  controls={true}
+                />
+              </Box>
+            ) : (
+              ""
+            )}
             {alcPrototype1 ? (
               <Box
                 component="img"
                 sx={{
                   width: "100%",
+                  pt: { sm: 2, xs: 1 },
                 }}
                 src={alcPrototype1}
               />

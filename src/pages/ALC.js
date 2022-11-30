@@ -34,8 +34,9 @@ const alcData = [
       "청각장애인은 물론 비장애인도 카페에서 음료 제조의 완료 알림을 받을 수 있고, 카페 매장 측은 마케팅 플랫폼으로 활용할 수 있는 시스템을 개발하였다.",
     alcPrototypeVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
     alcPrototype1:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten1.jpg?alt=media&token=3fe74a94-bbab-45b1-9a36-b2f3d7093a8b",
+    alcPrototype2:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fprize%2Fpr1.jpg?alt=media&token=a270b6f1-ca6c-412f-a303-8c268166c70f",
-    alcPrototype2: "",
   },
   {
     id: 2,
@@ -262,9 +263,8 @@ const alcData = [
       "Inflearn의 '한입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지'를 수강하며 JavaScript와 React의 기초적인 개념을 Blog에 기록하며 학습하였다. 최종적으로 React.js를 이용하여 감정일기장을 제작하고 Firebase를 이용하여 프로젝트를 배포하였다.",
     alcPrototypeVideo: "https://www.youtube.com/embed/hE4qm1l6Da4",
     alcPrototype1:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertljh2.jpg?alt=media&token=1f6f402d-1a28-4a86-9597-cd4904056471",
-    alcPrototype2:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fdiary%2Fdiary1_s.png?alt=media&token=16957c73-9239-4021-9b64-cb7cf4598cf2",
+    alcPrototype2: "",
   },
   {
     id: 9,
@@ -295,7 +295,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef:
-      "Nomad Coders의 <b>트위터 클론코딩(https://nomadcoders.co/nwitter)</b>를 수강하였다. 최종적으로 React.js와 Firebase를 이용하여 백엔드 코딩없이 인증 및 리얼타임 DB를 구현하여 로그인, 트윗작성, 수정 삭제 등의 기본적인 트위터 웹 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.",
+      "Nomad Coders의 '트위터 클론코딩'를 수강하였다. 최종적으로 React.js와 Firebase를 이용하여 백엔드 코딩없이 인증 및 리얼타임 DB를 구현하여 로그인, 트윗작성, 수정 삭제 등의 기본적인 트위터 웹 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.",
     alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertt1.jpg?alt=media&token=0d03c150-96c3-4f1d-b14d-c96ff77d2b44",
@@ -331,7 +331,7 @@ const alcData = [
     alcDeTitle4: "",
     alcDeContent4: "",
     alcDef:
-      "Nomad Coders의 <b>ReactJS로 영화 웹 서비스 만들기(https://nomadcoders.co/react-for-beginners)</b>로 React의 기초적인 개념을 Blog에 기록하며 학습하였다. 최종적으로 React.js를 이용하여 영화 웹 서비스 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.",
+      "Nomad Coders의 'ReactJS로 영화 웹 서비스 만들기'를 수강하여 React의 기초적인 개념을 Blog에 기록하며 학습하였다. 최종적으로 React.js를 이용하여 영화 웹 서비스 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.",
     alcPrototypeVideo: "",
     alcPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertnw1.jpg?alt=media&token=6cc9257b-621a-424f-8a38-b8a81a798944",
@@ -339,73 +339,6 @@ const alcData = [
   },
   {
     id: 11,
-    alcSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
-    alcImage: "/images/projectImg/project1.jpg",
-    alcIcon: "faMedal",
-    alcTitle: "[큐레이팅#]누구나 DO IT! 쉽게 시작하는 AI&프로그래밍",
-    alcSubTitle: "",
-    alcOrganizer: "WISET_멀티캠퍼스",
-    alcDate: "DECEMBER 2019 - FEBRUARY 2020",
-    alcLecSite: "https://www.multicampus.com/kr/index.html",
-    alcSite: "",
-    alcGithub: "",
-    alcBlog: "",
-    alcYouTube: "",
-    alcDeTitle1: "",
-    alcDeContent1_1: "",
-    alcDeContent1_2: "",
-    alcDeContent1_3: "",
-    alcDeContent1_4: "",
-    alcDeTitle2: "",
-    alcDeContent2: "",
-    alcDeTitle3: "",
-    alcDeContent3: "",
-    alcDeTitle4: "",
-    alcDeContent4: "",
-    alcDef: "",
-    alcPrototypeVideo: "",
-    alcPrototype1:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertai2.jpg?alt=media&token=67c1feb3-a03c-4051-ad83-4a25aef47c04",
-    alcPrototype2:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertai1.jpg?alt=media&token=c57af034-a65e-4a01-975d-8c9274454757",
-  },
-  {
-    id: 12,
-    alcSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
-    alcImage: "/images/projectImg/project1.jpg",
-    alcIcon: "faMedal",
-    alcTitle: "[큐레이팅#]누구나 DO IT! 쉽게 시작하는 수익형 웹과 앱 만들기",
-    alcSubTitle: "",
-    alcOrganizer: "WISET_멀티캠퍼스",
-    alcDate: "DECEMBER 2019 - FEBRUARY 2020",
-    alcLecSite: "https://www.multicampus.com/kr/index.html",
-    alcSite: "",
-    alcGithub: "",
-    alcBlog:
-      "https://ddo0ii.notion.site/ddo0ii/Wiset-6c352eb74aab43129dcff5fa6bd0537a",
-    alcYouTube: "",
-    alcDeTitle1: "",
-    alcDeContent1_1: "",
-    alcDeContent1_2: "",
-    alcDeContent1_3: "",
-    alcDeContent1_4: "",
-    alcDeTitle2: "",
-    alcDeContent2: "",
-    alcDeTitle3: "",
-    alcDeContent3: "",
-    alcDeTitle4: "",
-    alcDeContent4: "",
-    alcDef: "",
-    alcPrototypeVideo: "",
-    alcPrototype1:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwa2.jpg?alt=media&token=539c4542-a330-4b59-873e-c6e889ac69b1",
-    alcPrototype2:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwa1.jpg?alt=media&token=5f9eec09-b3b6-43b9-a792-08c5d3017b52",
-  },
-  {
-    id: 13,
     alcSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
     alcImage: "/images/projectImg/project1.jpg",
@@ -439,7 +372,7 @@ const alcData = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertps1.jpg?alt=media&token=be09a761-b56f-42a7-872f-085c0221c2bc",
   },
   {
-    id: 14,
+    id: 12,
     alcSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
     alcImage: "/images/projectImg/project1.jpg",
@@ -471,6 +404,74 @@ const alcData = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertpg2.jpg?alt=media&token=cdbed099-077f-42de-82c6-6c5566a999c9",
     alcPrototype2:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertpg1.jpg?alt=media&token=109d9a49-af96-4809-8e6e-fee73c697b0a",
+  },
+  {
+    id: 13,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
+    alcImage: "/images/projectImg/project1.jpg",
+    alcIcon: "faMedal",
+    alcTitle: "[큐레이팅#]누구나 DO IT! 쉽게 시작하는 AI&프로그래밍",
+    alcSubTitle: "",
+    alcOrganizer: "WISET_멀티캠퍼스",
+    alcDate: "DECEMBER 2019 - FEBRUARY 2020",
+    alcLecSite: "https://www.multicampus.com/kr/index.html",
+    alcSite: "",
+    alcGithub: "",
+    alcBlog:
+      "https://ddo0ii.notion.site/ddo0ii/Wiset-6c352eb74aab43129dcff5fa6bd0537a",
+    alcYouTube: "",
+    alcDeTitle1: "",
+    alcDeContent1_1: "",
+    alcDeContent1_2: "",
+    alcDeContent1_3: "",
+    alcDeContent1_4: "",
+    alcDeTitle2: "",
+    alcDeContent2: "",
+    alcDeTitle3: "",
+    alcDeContent3: "",
+    alcDeTitle4: "",
+    alcDeContent4: "",
+    alcDef: "",
+    alcPrototypeVideo: "",
+    alcPrototype1:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertai2.jpg?alt=media&token=67c1feb3-a03c-4051-ad83-4a25aef47c04",
+    alcPrototype2:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertai1.jpg?alt=media&token=c57af034-a65e-4a01-975d-8c9274454757",
+  },
+  {
+    id: 14,
+    alcSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwiset1.jpg?alt=media&token=5bf77b01-a460-4808-b519-6b123aac4b30",
+    alcImage: "/images/projectImg/project1.jpg",
+    alcIcon: "faMedal",
+    alcTitle: "[큐레이팅#]누구나 DO IT! 쉽게 시작하는 수익형 웹과 앱 만들기",
+    alcSubTitle: "",
+    alcOrganizer: "WISET_멀티캠퍼스",
+    alcDate: "DECEMBER 2019 - FEBRUARY 2020",
+    alcLecSite: "https://www.multicampus.com/kr/index.html",
+    alcSite: "",
+    alcGithub: "",
+    alcBlog:
+      "https://ddo0ii.notion.site/ddo0ii/Wiset-6c352eb74aab43129dcff5fa6bd0537a",
+    alcYouTube: "",
+    alcDeTitle1: "",
+    alcDeContent1_1: "",
+    alcDeContent1_2: "",
+    alcDeContent1_3: "",
+    alcDeContent1_4: "",
+    alcDeTitle2: "",
+    alcDeContent2: "",
+    alcDeTitle3: "",
+    alcDeContent3: "",
+    alcDeTitle4: "",
+    alcDeContent4: "",
+    alcDef: "",
+    alcPrototypeVideo: "",
+    alcPrototype1:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwa2.jpg?alt=media&token=539c4542-a330-4b59-873e-c6e889ac69b1",
+    alcPrototype2:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Fcertificate%2Fcertwa1.jpg?alt=media&token=5f9eec09-b3b6-43b9-a792-08c5d3017b52",
   },
 ];
 

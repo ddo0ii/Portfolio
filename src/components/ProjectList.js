@@ -213,6 +213,39 @@ const itemData1 = [
     id: 2,
     pjType: "Web Develop",
     pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten0_s.jpg?alt=media&token=e34b9a3e-5567-4fd2-9510-8717274f0167",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten0.jpg?alt=media&token=9ddcfe00-498c-49c3-ba8d-576037a2edbd",
+    pjTitle: "진동벨이 필요 없는 카페 알림 시스템",
+    pjSubTitle: "청각장애인을 위한 카페 시스템",
+    pjDuration: "JULY 2017 - JULY 2018",
+    pjLecSite: "",
+    pjSite: "",
+    pjGithub: "https://github.com/ddo0ii/capstone",
+    pjBlog: "",
+    pjYouTube: "https://youtu.be/5CEzAd3kDtg",
+    pjDeTitle1: "LANGUAGE & TOOL",
+    pjDeContent1_1: "PWA",
+    pjDeContent1_2: "Node.js",
+    pjDeContent1_3: "MongoDB",
+    pjDeContent1_4: "",
+    pjDeTitle2: "ROLE",
+    pjDeContent2: "기획 및 제작",
+    pjDeTitle3: "INDUSTRY",
+    pjDeContent3: "Developer 3",
+    pjDeTitle4: "DURATION",
+    pjDeContent4: "1 Year",
+    pjDef:
+      "청각장애인은 물론 비장애인도 카페에서 음료 제조의 완료 알림을 받을 수 있고, 카페 매장 측은 마케팅 플랫폼으로 활용할 수 있는 시스템을 개발하였다.",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten1.jpg?alt=media&token=3fe74a94-bbab-45b1-9a36-b2f3d7093a8b",
+    pjPrototypeAlt: "진동벨이 필요 없는 카페 주문 완료 알림 시스템 제작 상세",
+    pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
+  },
+  {
+    id: 3,
+    pjType: "Web Develop",
+    pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0_s.jpg?alt=media&token=7a02d2b0-4c15-4412-923d-6ec27a0ed849",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0.jpg?alt=media&token=3f9f3ab8-8882-47c3-bb17-9f6bc8663e7f",
@@ -242,39 +275,7 @@ const itemData1 = [
     pjPrototypeAlt: "PWA를 활용한 웹 푸시 알림 시스템 상세",
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
-  {
-    id: 3,
-    pjType: "Web Develop",
-    pjSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten0_s.jpg?alt=media&token=e34b9a3e-5567-4fd2-9510-8717274f0167",
-    pjImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten0.jpg?alt=media&token=9ddcfe00-498c-49c3-ba8d-576037a2edbd",
-    pjTitle: "진동벨이 필요 없는 카페 알림 시스템",
-    pjSubTitle: "청각장애인을 위한 카페 시스템",
-    pjDuration: "JULY 2017 - JULY 2018",
-    pjLecSite: "",
-    pjSite: "",
-    pjGithub: "https://github.com/ddo0ii/capstone",
-    pjBlog: "",
-    pjYouTube: "https://youtu.be/5CEzAd3kDtg",
-    pjDeTitle1: "LANGUAGE & TOOL",
-    pjDeContent1_1: "PWA",
-    pjDeContent1_2: "Node.js",
-    pjDeContent1_3: "MongoDB",
-    pjDeContent1_4: "",
-    pjDeTitle2: "ROLE",
-    pjDeContent2: "기획 및 제작",
-    pjDeTitle3: "INDUSTRY",
-    pjDeContent3: "Developer 3",
-    pjDeTitle4: "DURATION",
-    pjDeContent4: "1 Year",
-    pjDef:
-      "청각장애인은 물론 비장애인도 카페에서 음료 제조의 완료 알림을 받을 수 있고, 카페 매장 측은 마케팅 플랫폼으로 활용할 수 있는 시스템을 개발하였다.",
-    pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten1_s.jpg?alt=media&token=d3b92725-8150-4914-b6d2-831a4822ae72",
-    pjPrototypeAlt: "진동벨이 필요 없는 카페 주문 완료 알림 시스템 제작 상세",
-    pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
-  },
+
   {
     id: 4,
     pjType: "Web Develop",

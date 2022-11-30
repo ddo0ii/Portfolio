@@ -328,6 +328,7 @@ function ProjectDialog({
                 component="img"
                 sx={{
                   width: "100%",
+                  pt: { sm: 2, xs: 1 },
                 }}
                 alt={pjPrototypeAlt}
                 src={pjPrototype}
