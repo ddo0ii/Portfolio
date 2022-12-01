@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
+  Box,
   Button,
   Dialog,
   DialogActions,
@@ -8,7 +9,6 @@ import {
   Paper,
 } from "@mui/material";
 import ActivitiesDialog from "./ActivitiesDialog";
-import { Box } from "@mui/system";
 
 function ActivitiesContent({
   id,
@@ -29,8 +29,8 @@ function ActivitiesContent({
   actDeTitle4,
   actDeContent4,
   actDef,
-  actPrototypeAlt,
-  actPrototype,
+  actPrototype1,
+  actPrototype2,
 }) {
   const [open, setOpen] = useState(false);
   const [scroll, setScroll] = useState("paper");
@@ -96,8 +96,8 @@ function ActivitiesContent({
             actDeTitle4={actDeTitle4}
             actDeContent4={actDeContent4}
             actDef={actDef}
-            actPrototypeAlt={actPrototypeAlt}
-            actPrototype={actPrototype}
+            actPrototype1={actPrototype1}
+            actPrototype2={actPrototype2}
           />
           <DialogActions sx={{ backgroundColor: "#0F0F0F" }}>
             <Button onClick={handleClose}>Close</Button>

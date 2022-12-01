@@ -20,7 +20,6 @@ function ActivitiesDialog({
   actDeTitle4,
   actDeContent4,
   actDef,
-  actPrototypeAlt,
   actPrototype,
 }) {
   return (
@@ -224,8 +223,16 @@ function ActivitiesDialog({
             sx={{
               width: "100%",
             }}
-            alt={actPrototypeAlt}
-            src={`${process.env.PUBLIC_URL + actPrototype}`}
+            alt={actTitle}
+            src={actPrototype1}
+          />
+          <Box
+            component="img"
+            sx={{
+              width: "100%",
+            }}
+            alt={actTitle}
+            src={actPrototype2}
           />
         </Container>
       </Box>

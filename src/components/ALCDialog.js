@@ -376,6 +376,7 @@ function ALCDialog({
                   width: "100%",
                   pt: { sm: 2, xs: 1 },
                 }}
+                alt={alcTitle}
                 src={alcPrototype1}
               />
             ) : (
@@ -387,6 +388,7 @@ function ALCDialog({
                 sx={{
                   width: "100%",
                 }}
+                alt={alcTitle}
                 src={alcPrototype2}
               />
             ) : (
