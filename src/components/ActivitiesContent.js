@@ -14,6 +14,7 @@ function ActivitiesContent({
   id,
   actImage,
   actTitle,
+  atcSite,
   actSubTitle,
   actOrganizer,
   actDate,
@@ -82,6 +83,7 @@ function ActivitiesContent({
             actImage={actImage}
             actTitle={actTitle}
             actSubTitle={actSubTitle}
+            atcSite={atcSite}
             actOrganizer={actOrganizer}
             actDate={actDate}
             actDeTitle1={actDeTitle1}

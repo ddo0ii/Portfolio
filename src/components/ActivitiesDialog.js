@@ -5,6 +5,7 @@ function ActivitiesDialog({
   id,
   actImage,
   actTitle,
+  atcSite,
   actSubTitle,
   actOrganizer,
   actDate,
@@ -45,18 +46,20 @@ function ActivitiesDialog({
           >
             ACTIVITIES
           </Typography>
-          <Typography
-            align="center"
-            color="secondary"
-            sx={{
-              // typography: { sm: "h2", xs: "h5" },
-              fontSize: { sm: "80px", xs: "30px" },
-              letterSpacing: { sm: "5px", xs: "2px" },
-              mt: { sm: 2, xs: 1 },
-            }}
-          >
-            <b>{actTitle}</b>
-          </Typography>
+          <a className="CareerLink" href={atcSite} target="_blank">
+            <Typography
+              align="center"
+              color="secondary"
+              sx={{
+                // typography: { sm: "h2", xs: "h5" },
+                fontSize: { sm: "80px", xs: "30px" },
+                letterSpacing: { sm: "5px", xs: "2px" },
+                mt: { sm: 2, xs: 1 },
+              }}
+            >
+              <b>{actTitle}</b>
+            </Typography>
+          </a>
           <Typography
             align="center"
             color="#989796"
