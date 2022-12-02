@@ -69,27 +69,34 @@ function ProjectDialog({
           >
             <b>{pjTitle}</b>
           </Typography>
-          <Typography
-            align="center"
-            color="#989796"
-            sx={{
-              typography: { sm: "h6", xs: "body2" },
-              mt: { sm: 2, xs: 1 },
-            }}
-          >
-            {pjSubTitle}
-          </Typography>
-          <Typography
-            align="center"
-            color="#989796"
-            sx={{
-              typography: { sm: "h6", xs: "overline" },
-              mb: { sm: 4, xs: 0 },
-            }}
-          >
-            {pjDuration}
-          </Typography>
-
+          {pjSubTitle ? (
+            <Typography
+              align="center"
+              color="#989796"
+              sx={{
+                typography: { sm: "h6", xs: "body2" },
+                mt: { sm: 2, xs: 1 },
+              }}
+            >
+              {pjSubTitle}
+            </Typography>
+          ) : (
+            ""
+          )}
+          {pjDuration ? (
+            <Typography
+              align="center"
+              color="#989796"
+              sx={{
+                typography: { sm: "h6", xs: "overline" },
+                mb: { sm: 4, xs: 0 },
+              }}
+            >
+              {pjDuration}
+            </Typography>
+          ) : (
+            ""
+          )}
           {pjLecSite || pjSite || pjGithub || pjBlog || pjYouTube ? (
             <Box
               color="#989796"
@@ -170,83 +177,103 @@ function ProjectDialog({
         >
           <Container>
             <Grid container spacing={3}>
-              <Grid item sm={3} xs={6}>
-                <Typography
-                  className="pjDetail"
-                  sx={{
-                    typography: { sm: "body2", xs: "overline" },
-                    pb: { sm: "10px", xs: "5px" },
-                  }}
-                >
-                  {pjDeTitle1}
-                </Typography>
-                <Typography
-                  className="pjDetailContent"
-                  sx={{
-                    typography: { sm: "subtitle1", xs: "body2" },
-                  }}
-                >
-                  {pjDeContent1_1} {pjDeContent1_2} <br />
-                  {pjDeContent1_3} {pjDeContent1_4}
-                </Typography>
-              </Grid>
-              <Grid item sm={3} xs={6}>
-                <Typography
-                  className="pjDetail"
-                  sx={{
-                    typography: { sm: "body2", xs: "overline" },
-                    pb: { sm: "10px", xs: "5px" },
-                  }}
-                >
-                  {pjDeTitle2}
-                </Typography>
-                <Typography
-                  className="pjDetailContent"
-                  sx={{
-                    typography: { sm: "subtitle1", xs: "body2" },
-                  }}
-                >
-                  {pjDeContent2}
-                </Typography>
-              </Grid>
-              <Grid item sm={3} xs={6}>
-                <Typography
-                  className="pjDetail"
-                  sx={{
-                    typography: { sm: "body2", xs: "overline" },
-                    pb: { sm: "10px", xs: "5px" },
-                  }}
-                >
-                  {pjDeTitle3}
-                </Typography>
-                <Typography
-                  className="pjDetailContent"
-                  sx={{
-                    typography: { sm: "subtitle1", xs: "body2" },
-                  }}
-                >
-                  {pjDeContent3}
-                </Typography>
-              </Grid>
-              <Grid item sm={3} xs={6}>
-                <Typography
-                  className="pjDetail"
-                  sx={{
-                    typography: { sm: "body2", xs: "overline" },
-                    pb: { sm: "10px", xs: "5px" },
-                  }}
-                >
-                  {pjDeTitle4}
-                </Typography>
-                <Typography
-                  className="pjDetailContent"
-                  sx={{
-                    typography: { sm: "subtitle1", xs: "body2" },
-                  }}
-                >
-                  {pjDeContent4}
-                </Typography>
-              </Grid>
+              {pjDeTitle1 ||
+              pjDeContent1_1 ||
+              pjDeContent1_2 ||
+              pjDeContent1_3 ||
+              pjDeContent1_4 ? (
+                <Grid item sm={3} xs={6}>
+                  <Typography
+                    className="pjDetail"
+                    sx={{
+                      typography: { sm: "body2", xs: "overline" },
+                      pb: { sm: "10px", xs: "5px" },
+                    }}
+                  >
+                    {pjDeTitle1}
+                  </Typography>
+                  <Typography
+                    className="pjDetailContent"
+                    sx={{
+                      typography: { sm: "subtitle1", xs: "body2" },
+                    }}
+                  >
+                    {pjDeContent1_1} {pjDeContent1_2} <br />
+                    {pjDeContent1_3} {pjDeContent1_4}
+                  </Typography>
+                </Grid>
+              ) : (
+                ""
+              )}
+              {pjDeTitle2 || pjDeContent2 ? (
+                <Grid item sm={3} xs={6}>
+                  <Typography
+                    className="pjDetail"
+                    sx={{
+                      typography: { sm: "body2", xs: "overline" },
+                      pb: { sm: "10px", xs: "5px" },
+                    }}
+                  >
+                    {pjDeTitle2}
+                  </Typography>
+                  <Typography
+                    className="pjDetailContent"
+                    sx={{
+                      typography: { sm: "subtitle1", xs: "body2" },
+                    }}
+                  >
+                    {pjDeContent2}
+                  </Typography>
+                </Grid>
+              ) : (
+                ""
+              )}
+              {pjDeTitle3 || pjDeContent3 ? (
+                <Grid item sm={3} xs={6}>
+                  <Typography
+                    className="pjDetail"
+                    sx={{
+                      typography: { sm: "body2", xs: "overline" },
+                      pb: { sm: "10px", xs: "5px" },
+                    }}
+                  >
+                    {pjDeTitle3}
+                  </Typography>
+                  <Typography
+                    className="pjDetailContent"
+                    sx={{
+                      typography: { sm: "subtitle1", xs: "body2" },
+                    }}
+                  >
+                    {pjDeContent3}
+                  </Typography>
+                </Grid>
+              ) : (
+                ""
+              )}
+              {pjDeTitle4 || pjDeContent4 ? (
+                <Grid item sm={3} xs={6}>
+                  <Typography
+                    className="pjDetail"
+                    sx={{
+                      typography: { sm: "body2", xs: "overline" },
+                      pb: { sm: "10px", xs: "5px" },
+                    }}
+                  >
+                    {pjDeTitle4}
+                  </Typography>
+                  <Typography
+                    className="pjDetailContent"
+                    sx={{
+                      typography: { sm: "subtitle1", xs: "body2" },
+                    }}
+                  >
+                    {pjDeContent4}
+                  </Typography>
+                </Grid>
+              ) : (
+                ""
+              )}
             </Grid>
           </Container>
         </Box>

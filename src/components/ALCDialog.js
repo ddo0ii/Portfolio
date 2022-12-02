@@ -193,83 +193,103 @@ function ALCDialog({
         >
           <Container>
             <Grid container spacing={3}>
-              <Grid item sm={3} xs={6}>
-                <Typography
-                  className="pjDetail"
-                  sx={{
-                    typography: { sm: "body2", xs: "overline" },
-                    pb: { sm: "10px", xs: "5px" },
-                  }}
-                >
-                  {alcDeTitle1}
-                </Typography>
-                <Typography
-                  className="pjDetailContent"
-                  sx={{
-                    typography: { sm: "subtitle1", xs: "body2" },
-                  }}
-                >
-                  {alcDeContent1_1} {alcDeContent1_2} <br />
-                  {alcDeContent1_3} {alcDeContent1_4}
-                </Typography>
-              </Grid>
-              <Grid item sm={3} xs={6}>
-                <Typography
-                  className="pjDetail"
-                  sx={{
-                    typography: { sm: "body2", xs: "overline" },
-                    pb: { sm: "10px", xs: "5px" },
-                  }}
-                >
-                  {alcDeTitle2}
-                </Typography>
-                <Typography
-                  className="pjDetailContent"
-                  sx={{
-                    typography: { sm: "subtitle1", xs: "body2" },
-                  }}
-                >
-                  {alcDeContent2}
-                </Typography>
-              </Grid>
-              <Grid item sm={3} xs={6}>
-                <Typography
-                  className="pjDetail"
-                  sx={{
-                    typography: { sm: "body2", xs: "overline" },
-                    pb: { sm: "10px", xs: "5px" },
-                  }}
-                >
-                  {alcDeTitle3}
-                </Typography>
-                <Typography
-                  className="pjDetailContent"
-                  sx={{
-                    typography: { sm: "subtitle1", xs: "body2" },
-                  }}
-                >
-                  {alcDeContent3}
-                </Typography>
-              </Grid>
-              <Grid item sm={3} xs={6}>
-                <Typography
-                  className="pjDetail"
-                  sx={{
-                    typography: { sm: "body2", xs: "overline" },
-                    pb: { sm: "10px", xs: "5px" },
-                  }}
-                >
-                  {alcDeTitle4}
-                </Typography>
-                <Typography
-                  className="pjDetailContent"
-                  sx={{
-                    typography: { sm: "subtitle1", xs: "body2" },
-                  }}
-                >
-                  {alcDeContent4}
-                </Typography>
-              </Grid>
+              {alcDeTitle1 ||
+              alcDeContent1_1 ||
+              alcDeContent1_2 ||
+              alcDeContent1_3 ||
+              alcDeContent1_4 ? (
+                <Grid item sm={3} xs={6}>
+                  <Typography
+                    className="pjDetail"
+                    sx={{
+                      typography: { sm: "body2", xs: "overline" },
+                      pb: { sm: "10px", xs: "5px" },
+                    }}
+                  >
+                    {alcDeTitle1}
+                  </Typography>
+                  <Typography
+                    className="pjDetailContent"
+                    sx={{
+                      typography: { sm: "subtitle1", xs: "body2" },
+                    }}
+                  >
+                    {alcDeContent1_1} {alcDeContent1_2} <br />
+                    {alcDeContent1_3} {alcDeContent1_4}
+                  </Typography>
+                </Grid>
+              ) : (
+                ""
+              )}
+              {alcDeTitle2 || alcDeContent2 ? (
+                <Grid item sm={3} xs={6}>
+                  <Typography
+                    className="pjDetail"
+                    sx={{
+                      typography: { sm: "body2", xs: "overline" },
+                      pb: { sm: "10px", xs: "5px" },
+                    }}
+                  >
+                    {alcDeTitle2}
+                  </Typography>
+                  <Typography
+                    className="pjDetailContent"
+                    sx={{
+                      typography: { sm: "subtitle1", xs: "body2" },
+                    }}
+                  >
+                    {alcDeContent2}
+                  </Typography>
+                </Grid>
+              ) : (
+                ""
+              )}
+              {alcDeTitle3 || alcDeContent3 ? (
+                <Grid item sm={3} xs={6}>
+                  <Typography
+                    className="pjDetail"
+                    sx={{
+                      typography: { sm: "body2", xs: "overline" },
+                      pb: { sm: "10px", xs: "5px" },
+                    }}
+                  >
+                    {alcDeTitle3}
+                  </Typography>
+                  <Typography
+                    className="pjDetailContent"
+                    sx={{
+                      typography: { sm: "subtitle1", xs: "body2" },
+                    }}
+                  >
+                    {alcDeContent3}
+                  </Typography>
+                </Grid>
+              ) : (
+                ""
+              )}
+              {alcDeTitle4 || alcDeContent4 ? (
+                <Grid item sm={3} xs={6}>
+                  <Typography
+                    className="pjDetail"
+                    sx={{
+                      typography: { sm: "body2", xs: "overline" },
+                      pb: { sm: "10px", xs: "5px" },
+                    }}
+                  >
+                    {alcDeTitle4}
+                  </Typography>
+                  <Typography
+                    className="pjDetailContent"
+                    sx={{
+                      typography: { sm: "subtitle1", xs: "body2" },
+                    }}
+                  >
+                    {alcDeContent4}
+                  </Typography>
+                </Grid>
+              ) : (
+                ""
+              )}
             </Grid>
           </Container>
         </Box>
