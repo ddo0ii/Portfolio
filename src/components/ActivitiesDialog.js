@@ -20,7 +20,8 @@ function ActivitiesDialog({
   actDeTitle4,
   actDeContent4,
   actDef,
-  actPrototype,
+  actPrototype1,
+  actPrototype2,
 }) {
   return (
     <div style={{ backgroundColor: "#0F0F0F" }}>
