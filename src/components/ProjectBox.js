@@ -77,17 +77,11 @@ function ProjectBox({
         sx={{
           //maxWidth: 300,
           borderRadius: 0,
+          filter: "brightness(50%)",
         }}
       >
         <CardActionArea>
-          <CardMedia
-            className="sizingUpImg"
-            height="300"
-            sx={{
-              //backgroundColor: "#808080",
-              filter: "brightness(50%)",
-            }}
-          >
+          <CardMedia className="sizingUpImg" height="300">
             <LazyLoadImage
               src={pjSImage}
               alt={`${pjTitle} Image`}
