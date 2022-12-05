@@ -13,6 +13,7 @@ import ActivitiesDialog from "./ActivitiesDialog";
 function ActivitiesContent({
   id,
   actImage,
+  actSImage,
   actTitle,
   atcSite,
   actSubTitle,
@@ -59,7 +60,7 @@ function ActivitiesContent({
     <Box key={id}>
       <ImageListItem onClick={handleClickOpen("body")}>
         <img
-          src={process.env.PUBLIC_URL + actImage}
+          src={actSImage}
           alt={actTitle}
           loading="lazy"
           style={{ filter: "brightness(30%)" }}
@@ -81,6 +82,7 @@ function ActivitiesContent({
           <ActivitiesDialog
             id={id}
             actImage={actImage}
+            actSImage={actSImage}
             actTitle={actTitle}
             actSubTitle={actSubTitle}
             atcSite={atcSite}

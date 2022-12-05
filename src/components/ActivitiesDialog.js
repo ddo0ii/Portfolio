@@ -4,6 +4,7 @@ import React from "react";
 function ActivitiesDialog({
   id,
   actImage,
+  actSImage,
   actTitle,
   atcSite,
   actSubTitle,
@@ -29,9 +30,7 @@ function ActivitiesDialog({
       <Box
         className="projectDialogTop"
         sx={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${
-            process.env.PUBLIC_URL + actImage
-          })`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${actImage})`,
         }}
       >
         <Container>
