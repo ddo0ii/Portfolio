@@ -1,4 +1,4 @@
-import { useRef, useEffect, useCallback } from "react";
+import React, { useRef, useEffect, useCallback } from "react";
 
 const useScrollClipPath = (direction = "left", duration = 1, delay = 0) => {
   const element = useRef();

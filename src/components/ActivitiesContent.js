@@ -9,6 +9,7 @@ import {
   Paper,
 } from "@mui/material";
 import ActivitiesDialog from "./ActivitiesDialog";
+import useScrollClipPath from "../hooks/useScrollClipPath";
 
 function ActivitiesContent({
   id,
@@ -54,10 +55,15 @@ function ActivitiesContent({
       }
     }
   }, [open]);
+  const animatedImage = useScrollClipPath();
 
   return (
     <Box key={id} sx={{ cursor: "pointer" }}>
-      <ImageListItem className="sizingUpImg" onClick={handleClickOpen("body")}>
+      <ImageListItem
+        className="sizingUpImg"
+        onClick={handleClickOpen("body")}
+        {...animatedImage}
+      >
         <img
           src={actImage}
           alt={actTitle}
