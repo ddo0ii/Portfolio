@@ -87,7 +87,7 @@ const actiData = [
     actImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_sma.jpg?alt=media&token=ce2b6ec1-ef01-4f5a-9ced-082ed24eb50b",
     actTitle: "Social Maker Academy 참여 / 한동대학교",
-    actSubTitle: "",
+    actSubTitle: "메이커 문화 확산을 위한 프로그램",
     actOrganizer: "",
     actDate: "AUGUST 05, 2019 - AUGUST 08 2020",
     actDeTitle1: "LANGUAGE & TOOL",

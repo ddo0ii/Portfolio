@@ -56,7 +56,7 @@ function ActivitiesContent({
   }, [open]);
 
   return (
-    <Box key={id}>
+    <Box key={id} sx={{ cursor: "pointer" }}>
       <ImageListItem onClick={handleClickOpen("body")}>
         <img
           src={actImage}
