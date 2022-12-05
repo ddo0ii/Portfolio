@@ -56,36 +56,21 @@ function ActivitiesContent({
   }, [open]);
 
   return (
-    <Box
-      key={id}
-      sx={{
-        cursor: "pointer",
-      }}
-    >
-      <ImageListItem onClick={handleClickOpen("body")}>
-        <Box
-          sx={{
-            width: "100%",
-            filter: "brightness(70%)",
-            "&:hover": { filter: "brightness(100%)" },
-          }}
-        >
-          <img
-            src={actImage}
-            alt={actTitle}
-            loading="lazy"
-            style={{
-              width: "100%",
-              height: "350px",
-            }}
-          />
-        </Box>
+    <Box key={id} sx={{ cursor: "pointer" }}>
+      <ImageListItem
+        className="activitiesImg"
+        onClick={handleClickOpen("body")}
+      >
+        <img
+          src={actImage}
+          alt={actTitle}
+          loading="lazy"
+          style={{ filter: "brightness(30%)", height: "350px" }}
+        />
         <ImageListItemBar
           title={actTitle}
           subtitle={actSubTitle}
-          sx={{
-            backgroundColor: "transparent",
-          }}
+          sx={{ backgroundColor: "transparent" }}
         />
       </ImageListItem>
       <Paper elevation={10}>
