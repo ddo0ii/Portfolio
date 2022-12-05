@@ -8,8 +8,6 @@ const actiData = [
     id: 1,
     actImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2FIntro_ss.jpg?alt=media&token=1c4bb42a-a13e-48fc-9fe5-3c1925920648",
-    actSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2FIntro_ss.jpg?alt=media&token=1c4bb42a-a13e-48fc-9fe5-3c1925920648",
     actTitle: "시선 학회 / 한동대학교",
     atcSite: "https://www.facebook.com/forneighbor/",
     actSubTitle: "소외된 이웃을 위한 IT 솔루션 연구 학회",
@@ -34,8 +32,6 @@ const actiData = [
   {
     id: 2,
     actImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_sfc.jpg?alt=media&token=0e43d891-6650-4e38-9af3-4952d0db6e0c",
-    actSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_sfc.jpg?alt=media&token=0e43d891-6650-4e38-9af3-4952d0db6e0c",
     actTitle: "Student for Christ / 한동대학교",
     atcSite: "https://www.facebook.com/groups/261478993896100",
@@ -62,9 +58,7 @@ const actiData = [
   {
     id: 3,
     actImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_sfc.jpg?alt=media&token=0e43d891-6650-4e38-9af3-4952d0db6e0c",
-    actSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_sfc.jpg?alt=media&token=0e43d891-6650-4e38-9af3-4952d0db6e0c",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_gdsfc.jpg?alt=media&token=2e4bfc4c-55f9-4b96-8435-7987635b0902",
     actTitle: "Student for Christ / 경북동부지방소속",
     atcSite: "https://sfc.or.kr/",
     actSubTitle: "학생신앙운동",
@@ -92,8 +86,6 @@ const actiData = [
     id: 4,
     actImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_sma.jpg?alt=media&token=ce2b6ec1-ef01-4f5a-9ced-082ed24eb50b",
-    actSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_sma.jpg?alt=media&token=ce2b6ec1-ef01-4f5a-9ced-082ed24eb50b",
     actTitle: "Social Maker Academy 참여 / 한동대학교",
     actSubTitle: "",
     actOrganizer: "",
@@ -118,8 +110,6 @@ const actiData = [
   {
     id: 5,
     actImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_star.jpg?alt=media&token=574d337c-88a7-48ee-bb37-2c61592d1131",
-    actSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fintro_star.jpg?alt=media&token=574d337c-88a7-48ee-bb37-2c61592d1131",
     actTitle: "이방의 빛 차세대 지도자 훈련원",
     atcSite: "https://cafe.daum.net/light4gentiles",

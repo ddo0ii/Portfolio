@@ -4,7 +4,6 @@ import React from "react";
 function ActivitiesDialog({
   id,
   actImage,
-  actSImage,
   actTitle,
   atcSite,
   actSubTitle,

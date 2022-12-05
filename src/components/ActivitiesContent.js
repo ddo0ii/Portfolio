@@ -13,7 +13,6 @@ import ActivitiesDialog from "./ActivitiesDialog";
 function ActivitiesContent({
   id,
   actImage,
-  actSImage,
   actTitle,
   atcSite,
   actSubTitle,
@@ -60,10 +59,10 @@ function ActivitiesContent({
     <Box key={id}>
       <ImageListItem onClick={handleClickOpen("body")}>
         <img
-          src={actSImage}
+          src={actImage}
           alt={actTitle}
           loading="lazy"
-          style={{ filter: "brightness(30%)" }}
+          style={{ filter: "brightness(30%)", height: "350px" }}
         />
         <ImageListItemBar
           title={actTitle}
@@ -82,7 +81,6 @@ function ActivitiesContent({
           <ActivitiesDialog
             id={id}
             actImage={actImage}
-            actSImage={actSImage}
             actTitle={actTitle}
             actSubTitle={actSubTitle}
             atcSite={atcSite}
