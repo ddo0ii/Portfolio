@@ -1,6 +1,5 @@
-import { Grid, Typography } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
+import { Box, Grid, Typography } from "@mui/material";
 import CareerTimelineList from "./CareerTimelineList";
 
 const dummyList1 = [
