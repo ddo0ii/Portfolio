@@ -71,6 +71,7 @@ function ProjectBox({
   return (
     <Box>
       <Card
+        className="cardContent"
         elevation={10}
         onClick={handleClickOpen("body")}
         sx={{
@@ -80,6 +81,7 @@ function ProjectBox({
       >
         <CardActionArea>
           <CardMedia
+            className="sizingUpImg"
             height="300"
             sx={{
               //backgroundColor: "#808080",
