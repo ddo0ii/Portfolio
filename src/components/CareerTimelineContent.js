@@ -61,36 +61,40 @@ function CareerTimelineContent({
               {timeSubTitle}
             </Typography>
           </a>
-          <Box sx={{ mt: 2, ml: 1 }}>
-            <a className="CareerLink" href={content1Link} target="_blank">
-              <Typography sx={{ fontSize: { sm: "14px", xs: "11px" } }}>
-                {content1}
-              </Typography>
-              <Typography
-                sx={{
-                  fontWeight: "100",
-                  fontSize: { sm: "11px", xs: "10px" },
-                  mb: 1,
-                }}
-              >
-                {content1Date}
-              </Typography>
-            </a>
-            <a className="CareerLink" href={content2Link} target="_blank">
-              <Typography sx={{ fontSize: { sm: "14px", xs: "11px" } }}>
-                {content2}
-              </Typography>
-              <Typography
-                sx={{
-                  fontWeight: "100",
-                  fontSize: { sm: "11px", xs: "10px" },
-                  mb: 1,
-                }}
-              >
-                {content2Date}
-              </Typography>
-            </a>
-          </Box>
+          {content1 || content1Date || content2 || content2Date ? (
+            <Box sx={{ mt: 2, ml: 1 }}>
+              <a className="CareerLink" href={content1Link} target="_blank">
+                <Typography sx={{ fontSize: { sm: "14px", xs: "11px" } }}>
+                  {content1}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontWeight: "100",
+                    fontSize: { sm: "11px", xs: "10px" },
+                    mb: 1,
+                  }}
+                >
+                  {content1Date}
+                </Typography>
+              </a>
+              <a className="CareerLink" href={content2Link} target="_blank">
+                <Typography sx={{ fontSize: { sm: "14px", xs: "11px" } }}>
+                  {content2}
+                </Typography>
+                <Typography
+                  sx={{
+                    fontWeight: "100",
+                    fontSize: { sm: "11px", xs: "10px" },
+                    mb: 1,
+                  }}
+                >
+                  {content2Date}
+                </Typography>
+              </a>
+            </Box>
+          ) : (
+            ""
+          )}
         </TimelineContent>
       </TimelineItem>
     </Timeline>

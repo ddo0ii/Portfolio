@@ -8,6 +8,17 @@ body {
   background-color: black;
 }
 
+a {
+  display: inline-block;
+  transition: 0.3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+a:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 /* App */
 .appA {
   color: white;
