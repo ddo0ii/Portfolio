@@ -42,7 +42,7 @@ function ALCDialog({
   return (
     <div style={{ backgroundColor: "#0F0F0F" }}>
       <Box
-        className="projectDialogTop"
+        className="dialogTop"
         sx={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${alcSImage})`,
         }}
@@ -200,7 +200,7 @@ function ALCDialog({
               alcDeContent1_4 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -209,7 +209,7 @@ function ALCDialog({
                     {alcDeTitle1}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -224,7 +224,7 @@ function ALCDialog({
               {alcDeTitle2 || alcDeContent2 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -233,7 +233,7 @@ function ALCDialog({
                     {alcDeTitle2}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -247,7 +247,7 @@ function ALCDialog({
               {alcDeTitle3 || alcDeContent3 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -256,7 +256,7 @@ function ALCDialog({
                     {alcDeTitle3}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -270,7 +270,7 @@ function ALCDialog({
               {alcDeTitle4 || alcDeContent4 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -279,7 +279,7 @@ function ALCDialog({
                     {alcDeTitle4}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -305,7 +305,7 @@ function ALCDialog({
         >
           <Container>
             <Typography
-              className="pjDetail"
+              className="dialogDetail"
               sx={{
                 typography: { sm: "body2", xs: "overline" },
                 pb: { sm: "10px", xs: "5px" },
@@ -314,7 +314,7 @@ function ALCDialog({
               DEFINING THE PROBLEM
             </Typography>
             <Typography
-              className="pjDetailContent"
+              className="dialogDetailContent"
               sx={{
                 typography: { sm: "subtitle1", xs: "body2" },
               }}
@@ -335,7 +335,7 @@ function ALCDialog({
         >
           <Container>
             <Typography
-              className="pjDetail"
+              className="dialogDetail"
               sx={{
                 typography: { sm: "body2", xs: "overline" },
                 pb: { sm: "10px", xs: "5px" },

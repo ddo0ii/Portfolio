@@ -40,7 +40,7 @@ function ProjectDialog({
   return (
     <div style={{ backgroundColor: "#0F0F0F" }}>
       <Box
-        className="projectDialogTop"
+        className="dialogTop"
         sx={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${pjImage})`,
         }}
@@ -184,7 +184,7 @@ function ProjectDialog({
               pjDeContent1_4 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -193,7 +193,7 @@ function ProjectDialog({
                     {pjDeTitle1}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -208,7 +208,7 @@ function ProjectDialog({
               {pjDeTitle2 || pjDeContent2 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -217,7 +217,7 @@ function ProjectDialog({
                     {pjDeTitle2}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -231,7 +231,7 @@ function ProjectDialog({
               {pjDeTitle3 || pjDeContent3 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -240,7 +240,7 @@ function ProjectDialog({
                     {pjDeTitle3}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -254,7 +254,7 @@ function ProjectDialog({
               {pjDeTitle4 || pjDeContent4 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -263,7 +263,7 @@ function ProjectDialog({
                     {pjDeTitle4}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -289,7 +289,7 @@ function ProjectDialog({
         >
           <Container>
             <Typography
-              className="pjDetail"
+              className="dialogDetail"
               sx={{
                 typography: { sm: "body2", xs: "overline" },
                 pb: { sm: "10px", xs: "5px" },
@@ -298,7 +298,7 @@ function ProjectDialog({
               DEFINING THE PROBLEM
             </Typography>
             <Typography
-              className="pjDetailContent"
+              className="dialogDetailContent"
               sx={{
                 typography: { sm: "subtitle1", xs: "body2" },
               }}
@@ -319,7 +319,7 @@ function ProjectDialog({
         >
           <Container>
             <Typography
-              className="pjDetail"
+              className="dialogDetail"
               sx={{
                 typography: { sm: "body2", xs: "overline" },
                 pb: { sm: "10px", xs: "5px" },

@@ -27,7 +27,7 @@ function ActivitiesDialog({
   return (
     <div style={{ backgroundColor: "#0F0F0F" }}>
       <Box
-        className="projectDialogTop"
+        className="dialogTop"
         sx={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(${actImage})`,
         }}
@@ -116,7 +116,7 @@ function ActivitiesDialog({
               actDeContent1_4 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -125,7 +125,7 @@ function ActivitiesDialog({
                     {actDeTitle1}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -140,7 +140,7 @@ function ActivitiesDialog({
               {actDeTitle2 || actDeContent2 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -149,7 +149,7 @@ function ActivitiesDialog({
                     {actDeTitle2}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -163,7 +163,7 @@ function ActivitiesDialog({
               {actDeTitle3 || actDeContent3 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -172,7 +172,7 @@ function ActivitiesDialog({
                     {actDeTitle3}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -186,7 +186,7 @@ function ActivitiesDialog({
               {actDeTitle4 || actDeContent4 ? (
                 <Grid item sm={3} xs={6}>
                   <Typography
-                    className="pjDetail"
+                    className="dialogDetail"
                     sx={{
                       typography: { sm: "body2", xs: "overline" },
                       pb: { sm: "10px", xs: "5px" },
@@ -195,7 +195,7 @@ function ActivitiesDialog({
                     {actDeTitle4}
                   </Typography>
                   <Typography
-                    className="pjDetailContent"
+                    className="dialogDetailContent"
                     sx={{
                       typography: { sm: "subtitle1", xs: "body2" },
                     }}
@@ -221,7 +221,7 @@ function ActivitiesDialog({
         >
           <Container>
             <Typography
-              className="pjDetail"
+              className="dialogDetail"
               sx={{
                 typography: { sm: "body2", xs: "overline" },
                 pb: { sm: "10px", xs: "5px" },
@@ -230,7 +230,7 @@ function ActivitiesDialog({
               DEFINING THE PROBLEM
             </Typography>
             <Typography
-              className="pjDetailContent"
+              className="dialogDetailContent"
               sx={{
                 typography: { sm: "subtitle1", xs: "body2" },
               }}
@@ -251,7 +251,7 @@ function ActivitiesDialog({
         >
           <Container>
             <Typography
-              className="pjDetail"
+              className="dialogDetail"
               sx={{
                 typography: { sm: "body2", xs: "overline" },
                 pb: { sm: "10px", xs: "5px" },

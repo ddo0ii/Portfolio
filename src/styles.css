@@ -78,8 +78,8 @@ body {
   color: #959595;
 }
 
-/* Project */
-.projectDialogTop {
+/* Dialog */
+.dialogTop {
   /*
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/public/images/projectImg/project1.jpg");
@@ -95,10 +95,10 @@ body {
   min-height: 45vh;
 }
 
-.pjDetail {
+.dialogDetail {
   color: #9b9b9b;
 }
 
-.pjDetailContent {
+.dialogDetailContent {
   color: #dedede;
 }
