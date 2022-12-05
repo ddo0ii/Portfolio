@@ -19,6 +19,10 @@ a:hover {
   transform: scale(1.1);
 }
 
+.imgContent:hover {
+  filter: "brightness(0%)";
+}
+
 /* App */
 .appA {
   color: white;
