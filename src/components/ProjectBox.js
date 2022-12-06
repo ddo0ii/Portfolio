@@ -16,6 +16,7 @@ import {
   LazyLoadComponent,
   LazyLoadImage,
 } from "react-lazy-load-image-component";
+import useScrollClipPath from "../hooks/useScrollClipPath";
 
 function ProjectBox({
   id,
@@ -68,9 +69,12 @@ function ProjectBox({
     }
   }, [open]);
 
+  const animatedImage = useScrollClipPath();
+
   return (
     <Box>
       <Card
+        {...animatedImage}
         className="cardContent"
         elevation={10}
         onClick={handleClickOpen("body")}

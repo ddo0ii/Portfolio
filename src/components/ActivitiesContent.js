@@ -55,6 +55,7 @@ function ActivitiesContent({
       }
     }
   }, [open]);
+
   const animatedImage = useScrollClipPath();
 
   return (
