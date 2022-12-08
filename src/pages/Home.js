@@ -5,10 +5,10 @@ import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
 function Home() {
   const animatedItem = {
-    0: useScrollFadeIn("up", 1, 0),
-    1: useScrollFadeIn("up", 1, 0.2),
-    2: useScrollFadeIn("up", 1, 0.3),
-    3: useScrollFadeIn("up", 1, 0.4),
+    0: useScrollFadeIn("down", 1, 0),
+    1: useScrollFadeIn("down", 1, 0.2),
+    2: useScrollFadeIn("down", 1, 0.3),
+    3: useScrollFadeIn("down", 1, 0.4),
   };
   return (
     <Box className="homePage">

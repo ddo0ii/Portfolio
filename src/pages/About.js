@@ -13,6 +13,7 @@ import {
   Typography,
 } from "@mui/material";
 import ContactIcons from "../components/ContactIcons";
+import useScrollClipPath from "../hooks/useScrollClipPath";
 
 function createData(subject, content) {
   return { subject, content };
@@ -29,6 +30,7 @@ const rows = [
 ];
 
 function About() {
+  const animatedImage = useScrollClipPath();
   return (
     <Box
       className="aboutPage"
@@ -38,7 +40,7 @@ function About() {
       }}
     >
       <Container>
-        <Grid container spacing={1}>
+        <Grid container spacing={1} className="letters">
           <Grid item xs={12} sm={5}>
             <Box p={2}>
               <Typography align="center">
@@ -55,7 +57,9 @@ function About() {
               <Typography
                 color="secondary"
                 gutterBottom
-                sx={{ typography: { sm: "h3", xs: "h4" } }}
+                sx={{
+                  typography: { sm: "h3", xs: "h4" },
+                }}
               >
                 <b>
                   Hello, I Am
@@ -69,7 +73,13 @@ function About() {
               >
                 <b>A Front-end Web Developer</b>
               </Typography>
-              <Typography color="#959595" gutterBottom sx={{ mb: 4 }}>
+              <Typography
+                color="#959595"
+                gutterBottom
+                sx={{
+                  mb: 4,
+                }}
+              >
                 I help businesses and companies reach their goals by designing
                 user-centric digital products & interactive experiences.
               </Typography>
