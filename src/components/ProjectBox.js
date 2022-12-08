@@ -74,88 +74,100 @@ function ProjectBox({
   const animatedImage = useScrollClipPath();
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <Card
-        {...animatedImage}
-        className="cardContent"
-        elevation={10}
-        onClick={handleClickOpen("body")}
-        sx={{
-          //maxWidth: 300,
-          borderRadius: 0,
-          backgroundColor: "transparent",
-          width: "90%",
-          mb: 3,
-        }}
+    <Box>
+      <Box
+        className="sizingUpBox"
+        sx={{ display: "flex", justifyContent: "center" }}
       >
-        <CardActionArea>
-          <CardMedia className="sizingUpImg" height="300">
-            <LazyLoadImage
-              src={pjSImage}
-              alt={`${pjTitle} Image`}
-              effect="blur"
-              width="100%"
-              height="250"
-              style={{ margin: 0, padding: 0 }}
-            />
-          </CardMedia>
-          <CardContent sx={{ height: "200px" }}>
-            <Box
-              sx={{
-                display: "flex",
-                flexWrap: "wrap",
-                color: "#E8E8E8",
-                mt: 1,
-                mb: 2,
-              }}
-            >
-              {pjDeContent1_1 ? (
-                <Typography variant="caption" sx={{ mr: 1 }}>
-                  {pjDeContent1_1}
-                </Typography>
-              ) : (
-                ""
-              )}
-              {pjDeContent1_2 ? (
-                <Typography variant="caption" sx={{ mr: 1 }}>
-                  {pjDeContent1_2}
-                </Typography>
-              ) : (
-                ""
-              )}
-              {pjDeContent1_3 ? (
-                <Typography variant="caption" sx={{ mr: 1 }}>
-                  {pjDeContent1_3}
-                </Typography>
-              ) : (
-                ""
-              )}
-              {pjDeContent1_4 ? (
-                <Typography variant="caption" sx={{ mr: 1 }}>
-                  {pjDeContent1_4}
-                </Typography>
-              ) : (
-                ""
-              )}
-            </Box>
-            <Typography
-              variant="h6"
-              component="div"
-              sx={{ color: "white", fontWeight: "bold", mb: 3 }}
-            >
-              {pjTitle}
-            </Typography>
-            <Box
-              sx={{ color: "#C27D5B", position: "absolute", bottom: "30px" }}
-            >
-              <Typography sx={{ display: "inline", mr: 2 }}>
-                Read More
+        <Card
+          {...animatedImage}
+          className="cardContent"
+          elevation={10}
+          onClick={handleClickOpen("body")}
+          sx={{
+            //maxWidth: 300,
+            borderRadius: 0,
+            backgroundColor: "transparent",
+            width: "90%",
+            mb: 3,
+          }}
+        >
+          <CardActionArea>
+            <CardMedia className="sizingUpImg" height="300">
+              <LazyLoadImage
+                src={pjSImage}
+                alt={`${pjTitle} Image`}
+                effect="blur"
+                width="100%"
+                height="250"
+                style={{ margin: 0, padding: 0 }}
+              />
+            </CardMedia>
+            <CardContent sx={{ height: "200px" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  color: "#E8E8E8",
+                  mt: 1,
+                  mb: 2,
+                }}
+              >
+                {pjDeContent1_1 ? (
+                  <Typography variant="caption" sx={{ mr: 1 }}>
+                    {pjDeContent1_1}
+                  </Typography>
+                ) : (
+                  ""
+                )}
+                {pjDeContent1_2 ? (
+                  <Typography variant="caption" sx={{ mr: 1 }}>
+                    {pjDeContent1_2}
+                  </Typography>
+                ) : (
+                  ""
+                )}
+                {pjDeContent1_3 ? (
+                  <Typography variant="caption" sx={{ mr: 1 }}>
+                    {pjDeContent1_3}
+                  </Typography>
+                ) : (
+                  ""
+                )}
+                {pjDeContent1_4 ? (
+                  <Typography variant="caption" sx={{ mr: 1 }}>
+                    {pjDeContent1_4}
+                  </Typography>
+                ) : (
+                  ""
+                )}
+              </Box>
+              <Typography
+                variant="h6"
+                component="div"
+                sx={{ color: "white", fontWeight: "bold", mb: 3 }}
+              >
+                {pjTitle}
               </Typography>
-              <FontAwesomeIcon icon={faArrowRight} sx={{ display: "inline" }} />
-            </Box>
-          </CardContent>
-        </CardActionArea>
-      </Card>
+              <Box
+                sx={{
+                  color: "#C27D5B",
+                  position: "absolute",
+                  bottom: "30px",
+                }}
+              >
+                <Typography sx={{ display: "inline", mr: 2 }}>
+                  Read More
+                </Typography>
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  sx={{ display: "inline" }}
+                />
+              </Box>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Box>
       <Paper elevation={10}>
         <Dialog
           //fullWidth={true}

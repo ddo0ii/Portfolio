@@ -37,6 +37,18 @@ a:hover {
   transform: scale(1.1);
 }
 
+/* sizingUpBox */
+.sizingUpBox {
+  display: inline-block;
+  transition: 0.3s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.sizingUpBox:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 /* sizingUpImg */
 .sizingUpImg {
   overflow: hidden;
