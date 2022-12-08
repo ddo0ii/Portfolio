@@ -74,7 +74,7 @@ function ProjectBox({
   const animatedImage = useScrollClipPath();
 
   return (
-    <Box>
+    <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Card
         {...animatedImage}
         className="cardContent"
@@ -84,7 +84,7 @@ function ProjectBox({
           //maxWidth: 300,
           borderRadius: 0,
           backgroundColor: "transparent",
-          width: "95%",
+          width: "90%",
           mb: 3,
         }}
       >
@@ -96,7 +96,7 @@ function ProjectBox({
               effect="blur"
               width="100%"
               height="250"
-              style={{ margin: 0, padding: 0, filter: "brightness(50%)" }}
+              style={{ margin: 0, padding: 0 }}
             />
           </CardMedia>
           <CardContent sx={{ height: "200px" }}>
