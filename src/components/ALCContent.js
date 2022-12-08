@@ -83,9 +83,11 @@ function ALCContent({
       }}
     >
       <Box
+        className="sizingUpBox"
         onClick={handleClickOpen("body")}
         ml={{ sm: 4, xs: 2 }}
         mt={{ sm: 8, xs: 2 }}
+        sx={{ height: "300px" }}
       >
         <Stack direction="row" mb={{ sm: 8, xs: 3 }}>
           <Avatar
@@ -126,7 +128,12 @@ function ALCContent({
             {alcOrganizer}
           </Typography>
         </Box>
-        <Box className="smallTitle" sx={{ mb: { sm: 5, xs: 2.5 } }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <Divider
             color="white"
             sx={{
@@ -137,7 +144,9 @@ function ALCContent({
           />
           <Typography
             color="white"
-            sx={{ fontSize: { sm: "13px", xs: "10px" } }}
+            sx={{
+              fontSize: { sm: "13px", xs: "10px" },
+            }}
           >
             더보기
           </Typography>
