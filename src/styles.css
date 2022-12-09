@@ -60,9 +60,9 @@
 
 .letterEffect {
   animation-name: slidein;
-  animation-duration: 3s;
-  animation-delay: 3s;
-  /* animation-iteration-count: infinite; */
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
   animation-timing-function: linear;
   /* animation-direction: alternate; */
 }
