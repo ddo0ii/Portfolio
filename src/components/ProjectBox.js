@@ -76,6 +76,7 @@ function ProjectBox({
     1: useScrollFadeIn("right", 1, 0.2),
     2: useScrollFadeIn("right", 1, 0.4),
   };
+
   return (
     <Box>
       <Box
@@ -84,7 +85,6 @@ function ProjectBox({
       >
         <Card
           {...animatedItem[2]}
-          // {...animatedImage}
           className="cardContent"
           elevation={10}
           onClick={handleClickOpen("body")}

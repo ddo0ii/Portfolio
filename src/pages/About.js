@@ -51,9 +51,10 @@ function About() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={7} className="sa sa-left">
+          <Grid item xs={12} sm={7}>
             <Box p={2}>
               <Typography
+                className="sa sa-down"
                 color="secondary"
                 gutterBottom
                 sx={{
@@ -65,84 +66,86 @@ function About() {
                   <span style={{ color: "#C27D5B" }}> Soyoeng Kwon</span>
                 </b>
               </Typography>
-              <Typography
-                color="secondary"
-                gutterBottom
-                sx={{ typography: { sm: "h5", xs: "h6" }, mb: 2 }}
-              >
-                <b>A Front-end Web Developer</b>
-              </Typography>
-              <Typography
-                color="#959595"
-                gutterBottom
-                sx={{
-                  mb: 4,
-                }}
-              >
-                I help businesses and companies reach their goals by designing
-                user-centric digital products & interactive experiences.
-              </Typography>
-              <TableContainer sx={{ mb: 5 }}>
-                <Table
+              <Box className="sa sa-left">
+                <Typography
+                  color="secondary"
+                  gutterBottom
+                  sx={{ typography: { sm: "h5", xs: "h6" }, mb: 2 }}
+                >
+                  <b>A Front-end Web Developer</b>
+                </Typography>
+                <Typography
+                  color="#959595"
+                  gutterBottom
                   sx={{
-                    [`& .${tableCellClasses.root}`]: {
-                      borderBottom: "none",
-                    },
+                    mb: 4,
                   }}
                 >
-                  <TableBody>
-                    {rows.map((row) => (
-                      <TableRow key={row.subject}>
-                        <TableCell
-                          size="medium"
-                          sx={{ color: "#959595", fontWeight: "bold" }}
-                        >
-                          {row.subject}
-                        </TableCell>
-                        <TableCell
-                          size="medium"
-                          align="left"
-                          sx={{ color: "#959595" }}
-                        >
-                          {row.content}
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </TableContainer>
-              <Grid className="aboutContact" container>
-                <Grid item xs={4} sm={2}>
-                  <Box>
-                    <Typography color="primary" sx={{ fontWeight: "bold" }}>
-                      Contact Me
-                    </Typography>
-                  </Box>
-                </Grid>
-                <Grid
-                  item
-                  xs={2}
-                  sm={2}
-                  sx={{
-                    pr: { sm: "30px", xs: "20px" },
-                    pl: { sm: "5px", xs: "0px" },
-                  }}
-                >
-                  <Divider
-                    color="#C27D5B"
-                    // sx={{ borderBottomWidth: 2 }}
-                  />
-                </Grid>
-                <Grid item xs={6} sm={4}>
-                  <Box
+                  I help businesses and companies reach their goals by designing
+                  user-centric digital products & interactive experiences.
+                </Typography>
+                <TableContainer sx={{ mb: 5 }}>
+                  <Table
                     sx={{
-                      fontSize: { sm: "20px", xs: "13px" },
+                      [`& .${tableCellClasses.root}`]: {
+                        borderBottom: "none",
+                      },
                     }}
                   >
-                    <ContactIcons />
-                  </Box>
+                    <TableBody>
+                      {rows.map((row) => (
+                        <TableRow key={row.subject}>
+                          <TableCell
+                            size="medium"
+                            sx={{ color: "#959595", fontWeight: "bold" }}
+                          >
+                            {row.subject}
+                          </TableCell>
+                          <TableCell
+                            size="medium"
+                            align="left"
+                            sx={{ color: "#959595" }}
+                          >
+                            {row.content}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+                <Grid className="aboutContact" container>
+                  <Grid item xs={4} sm={2}>
+                    <Box>
+                      <Typography color="primary" sx={{ fontWeight: "bold" }}>
+                        Contact Me
+                      </Typography>
+                    </Box>
+                  </Grid>
+                  <Grid
+                    item
+                    xs={2}
+                    sm={2}
+                    sx={{
+                      pr: { sm: "30px", xs: "20px" },
+                      pl: { sm: "5px", xs: "0px" },
+                    }}
+                  >
+                    <Divider
+                      color="#C27D5B"
+                      // sx={{ borderBottomWidth: 2 }}
+                    />
+                  </Grid>
+                  <Grid item xs={6} sm={4}>
+                    <Box
+                      sx={{
+                        fontSize: { sm: "20px", xs: "13px" },
+                      }}
+                    >
+                      <ContactIcons />
+                    </Box>
+                  </Grid>
                 </Grid>
-              </Grid>
+              </Box>
             </Box>
           </Grid>
         </Grid>

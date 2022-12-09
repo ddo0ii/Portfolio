@@ -73,6 +73,7 @@ function ALCContent({
       }
     }
   }, [open]);
+
   return (
     <Grid
       item
