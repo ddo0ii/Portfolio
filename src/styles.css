@@ -79,6 +79,38 @@
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  font-family: "JSongMyung-Regular-KO";
+}
+
+@font-face {
+  font-family: "Cafe24ClassicType-Regular";
+  src: url("./fonts/Cafe24Classictype.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JSongMyung-Regular-KO";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/JSongMyung-Regular-KO.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lightsFont";
+  src: url("./fonts/빛의계승자체Bold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: black;
 }

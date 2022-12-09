@@ -14,14 +14,17 @@ function Home() {
     <Box className="homePage">
       <Container>
         <Toolbar />
+
         <Typography
           {...animatedItem[1]}
           align="center"
           gutterBottom
           color="primary"
-          sx={{ typography: { sm: "h1", xs: "h4" } }}
+          sx={{
+            typography: { sm: "h1", xs: "h4" },
+          }}
         >
-          <b>SOYEONG KWON</b>
+          <span style={{ fontFamily: "lightsFont" }}>SOYEONG KWON</span>
         </Typography>
         <Typography
           {...animatedItem[2]}

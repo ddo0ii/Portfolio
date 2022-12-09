@@ -63,7 +63,15 @@ function About() {
               >
                 <b>
                   Hello, I Am
-                  <span style={{ color: "#C27D5B" }}> Soyoeng Kwon</span>
+                  <span
+                    style={{
+                      color: "#C27D5B",
+                      fontFamily: "lightsFont",
+                      marginLeft: "15px",
+                    }}
+                  >
+                    Soyoeng Kwon
+                  </span>
                 </b>
               </Typography>
               <Box className="sa sa-left">
