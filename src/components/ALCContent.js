@@ -11,12 +11,6 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import {
-  BadgeOutlined,
-  EmojiEventsOutlined,
-  MilitaryTechOutlined,
-  WorkspacePremiumOutlined,
-} from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faIdCard } from "@fortawesome/free-regular-svg-icons";
 import { faMedal, faTrophy } from "@fortawesome/free-solid-svg-icons";
