@@ -121,7 +121,7 @@ function ProjectList() {
         <Tab>Design</Tab>
       </TabsList>
       <Box>
-        <TabPanel className="sa sa-up" value={0}>
+        <TabPanel value={0}>
           <Grid container spacing={1}>
             {itemData1.map((item) => (
               <Grid item sm={4} xs={12} key={item.id}>
@@ -141,7 +141,7 @@ function ProjectList() {
             ))}
           </Grid>
         </TabPanel>
-        <TabPanel className="sa sa-up" value={1}>
+        <TabPanel value={1}>
           <Grid container spacing={1}>
             {itemData1.map((item) => (
               <Grid item sm={4} xs={12} key={item.id}>
@@ -159,7 +159,7 @@ function ProjectList() {
             ))}
           </Grid>
         </TabPanel>
-        <TabPanel className="sa sa-up" value={3}>
+        <TabPanel value={3}>
           <Grid container spacing={1}>
             {itemData3.map((item) => (
               <Grid item sm={4} xs={12} key={item.id}>

@@ -23,7 +23,8 @@ function CareerTimelineContent({
 }) {
   return (
     <Timeline
-      className="sa"
+      // className="sa sa-left"
+      className="sa sa-left"
       sx={{
         [`& .${timelineItemClasses.root}:before`]: {
           flex: 0,
