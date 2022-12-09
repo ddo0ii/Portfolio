@@ -91,9 +91,11 @@ function ProjectBox({
           sx={{
             //maxWidth: 300,
             borderRadius: 0,
+            //backgroundColor: "rgba( 255, 255, 255, 0.1 )",
             backgroundColor: "transparent",
-            width: "90%",
+            width: "95%",
             mb: 3,
+            boxShadow: 20,
           }}
         >
           <CardActionArea>
@@ -149,7 +151,11 @@ function ProjectBox({
               <Typography
                 variant="h6"
                 component="div"
-                sx={{ color: "white", fontWeight: "bold", mb: 3 }}
+                sx={{
+                  color: "white",
+                  fontWeight: "bold",
+                  mb: 3,
+                }}
               >
                 {pjTitle}
               </Typography>
