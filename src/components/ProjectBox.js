@@ -16,9 +16,9 @@ import {
   LazyLoadComponent,
   LazyLoadImage,
 } from "react-lazy-load-image-component";
-import useScrollClipPath from "../hooks/useScrollClipPath";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
 function ProjectBox({
   id,
@@ -71,8 +71,11 @@ function ProjectBox({
     }
   }, [open]);
 
-  const animatedImage = useScrollClipPath();
-
+  const animatedItem = {
+    0: useScrollFadeIn("right", 1),
+    1: useScrollFadeIn("right", 1, 0.2),
+    2: useScrollFadeIn("right", 1, 0.4),
+  };
   return (
     <Box>
       <Box
@@ -80,7 +83,8 @@ function ProjectBox({
         sx={{ display: "flex", justifyContent: "center" }}
       >
         <Card
-          {...animatedImage}
+          {...animatedItem[2]}
+          // {...animatedImage}
           className="cardContent"
           elevation={10}
           onClick={handleClickOpen("body")}
