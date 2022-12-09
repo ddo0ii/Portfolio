@@ -39,8 +39,8 @@ function About() {
       }}
     >
       <Container>
-        <Grid container spacing={1} className="sa sa-right">
-          <Grid item xs={12} sm={5}>
+        <Grid container spacing={1}>
+          <Grid item xs={12} sm={5} className="sa sa-right">
             <Box p={2}>
               <Typography align="center">
                 <img
@@ -51,7 +51,7 @@ function About() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={7}>
+          <Grid item xs={12} sm={7} className="sa sa-left">
             <Box p={2}>
               <Typography
                 color="secondary"

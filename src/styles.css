@@ -53,9 +53,18 @@
 .sa.show {
   opacity: 1;
   transform: none;
-  animation-duration: 3s;
-  animation-name: slidein;
+  /* animation-duration: 3s;
+  animation-name: slidein; */
   /* animation-iteration-count: infinite; */
+}
+
+.letterEffect {
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  /* animation-iteration-count: infinite; */
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
 }
 
 @keyframes slidein {

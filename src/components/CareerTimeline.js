@@ -75,12 +75,7 @@ const dummyList2 = [
 
 function CareerTimeline() {
   return (
-    <Grid
-      className="sa sa-left"
-      container
-      spacing={1}
-      sx={{ mt: { sm: "5", xs: "0" } }}
-    >
+    <Grid container spacing={1} sx={{ mt: { sm: "5", xs: "0" } }}>
       <Grid item xs={12} sm={6}>
         <Box>
           <Typography
