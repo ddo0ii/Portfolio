@@ -360,7 +360,7 @@ const itemData1 = [
     pjSite: "https://ddo0ii.github.io/Twitter_React_NomadCoders",
     pjGithub: "https://github.com/ddo0ii/Twitter_React_NomadCoders",
     pjBlog: "",
-    pjYouTube: "",
+    pjYouTube: "https://youtu.be/IvrnrHmEoBo",
     pjDeTitle1: "LANGUAGE & TOOL",
     pjDeContent1_1: "React.js",
     pjDeContent1_2: "JavaScript",
@@ -378,7 +378,7 @@ const itemData1 = [
       "Nomad Coders의 '트위터 클론코딩'을 수강하였다. 최종적으로 React.js와 Firebase를 이용하여 백엔드 코딩없이 인증 및 리얼타임 DB를 구현하여 로그인, 트윗작성, 수정 삭제 등의 기본적인 트위터 웹 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.",
     pjPrototype: "",
     pjPrototypeAlt: "",
-    pjVideo: "",
+    pjVideo: "https://www.youtube.com/embed/IvrnrHmEoBo",
   },
 ];
 const itemData2 = [
