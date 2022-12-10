@@ -44,26 +44,27 @@ function ActivitiesDialog({
           >
             ACTIVITIES
           </Typography>
-          <a className="CareerLink" href={atcSite} target="_blank">
-            <Typography
-              align="center"
-              color="secondary"
-              sx={{
-                // typography: { sm: "h2", xs: "h5" },
-                fontSize: { sm: "80px", xs: "30px" },
-                letterSpacing: { sm: "5px", xs: "2px" },
-                mt: { sm: 2, xs: 1 },
-              }}
-            >
-              <b>{actTitle}</b>
-            </Typography>
-          </a>
+          <Typography
+            align="center"
+            color="secondary"
+            sx={{
+              // typography: { sm: "h2", xs: "h5" },
+              fontSize: { sm: "50px", xs: "18px" },
+              fontWeight: "bold",
+              letterSpacing: { sm: "5px", xs: "2px" },
+              mt: { sm: 2, xs: 1 },
+            }}
+          >
+            <a className="CareerLink" href={atcSite} target="_blank">
+              {actTitle}
+            </a>
+          </Typography>
           <Typography
             align="center"
             color="#989796"
             sx={{
-              typography: { sm: "h5", xs: "body2" },
-              mt: { sm: 3, xs: 2 },
+              typography: { sm: "h6", xs: "body2" },
+              mt: { sm: 2, xs: 1 },
             }}
           >
             {actSubTitle}
@@ -72,8 +73,8 @@ function ActivitiesDialog({
             align="center"
             color="#989796"
             sx={{
-              typography: { sm: "h5", xs: "body2" },
-              mt: { sm: 3, xs: 2 },
+              typography: { sm: "h6", xs: "body2" },
+              mt: { sm: 2, xs: 1 },
             }}
           >
             {actOrganizer}
@@ -83,7 +84,7 @@ function ActivitiesDialog({
             color="#989796"
             sx={{
               typography: { sm: "h6", xs: "overline" },
-              mb: { sm: 15, xs: 0 },
+              mb: { sm: 4, xs: 0 },
             }}
           >
             {actDate}
