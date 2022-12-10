@@ -67,7 +67,9 @@ function ActivitiesContent({
         <ImageListItemBar
           title={actTitle}
           subtitle={actSubTitle}
-          sx={{ backgroundColor: "transparent" }}
+          sx={{
+            backgroundColor: "transparent",
+          }}
         />
       </ImageListItem>
       <Paper elevation={10}>

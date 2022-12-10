@@ -5,7 +5,10 @@ function TopTitle({ subTitle, realTitle }) {
   return (
     <Box
       className="sa sa-right title"
-      sx={{ p: { sm: 0, xs: 2 }, mb: { sm: 5, xs: 0 } }}
+      sx={{
+        p: { sm: 0, xs: 2 },
+        mb: { sm: 5, xs: 0 },
+      }}
     >
       <Box className="smallTitle">
         <Divider
@@ -23,11 +26,11 @@ function TopTitle({ subTitle, realTitle }) {
             letterSpacing: "5px",
           }}
         >
-          {subTitle}
+          <span>{subTitle}</span>
         </Typography>
       </Box>
       <Typography sx={{ typography: { sm: "h3", xs: "h4" } }} gutterBottom>
-        <b>{realTitle}</b>
+        <span>{realTitle}</span>
       </Typography>
     </Box>
   );

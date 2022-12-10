@@ -54,7 +54,9 @@ function CareerTimelineContent({
           </Box>
           <a className="CareerLink" href={timeTitleLink} target="_blank">
             <Typography
-              sx={{ typography: { sm: "h6", xs: "subtitle1" } }}
+              sx={{
+                typography: { sm: "h6", xs: "subtitle1" },
+              }}
               component="span"
             >
               {timeTitle}

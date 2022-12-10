@@ -35,7 +35,7 @@ function Home() {
             typography: { sm: "h4", xs: "body1" },
           }}
         >
-          FRONT-END WEB DEVELOPER
+          <span>FRONT-END WEB DEVELOPER</span>
         </Typography>
         <Box
           {...animatedItem[3]}

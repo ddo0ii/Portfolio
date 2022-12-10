@@ -78,7 +78,7 @@
     width: 100%;
   }
 }
-
+/*
 h1,
 h2,
 h3,
@@ -87,8 +87,11 @@ h5,
 h6,
 p,
 span {
-  font-family: "JSongMyung-Regular-KO";
+  font-family: "DM Serif Display", serif;
 }
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
 @font-face {
   font-family: "Cafe24ClassicType-Regular";
@@ -110,11 +113,64 @@ span {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "BMDOHYEON";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BMHANNAPro";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SLEIGothicTTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SLEIGothicTTF.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LINESeedKR-Bd";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Handon3gyeopsal600g";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal600g.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   background-color: black;
 }
 
+body * {
+  font-family: "Roboto", sans-serif;
+}
 a {
   display: inline-block;
   transition: 0.3s;
@@ -179,6 +235,9 @@ a:hover {
 }
 
 /* Title */
+.title span {
+  font-family: "Handon3gyeopsal600g";
+}
 .smallTitle {
   display: flex;
   align-items: center;
