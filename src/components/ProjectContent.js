@@ -20,7 +20,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
-function ProjectBox({
+function ProjectContent({
   id,
   pjType,
   pjSImage,
@@ -225,4 +225,4 @@ function ProjectBox({
   );
 }
 
-export default ProjectBox;
+export default ProjectContent;
