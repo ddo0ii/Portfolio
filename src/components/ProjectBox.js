@@ -153,12 +153,12 @@ function ProjectBox({
                 component="div"
                 sx={{
                   color: "white",
-                  fontFamily: "Handon3gyeopsal600g",
+
                   fontWeight: "bold",
                   mb: 3,
                 }}
               >
-                <span>{pjTitle}</span>
+                {pjTitle}
               </Typography>
               <Box
                 sx={{

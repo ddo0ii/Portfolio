@@ -111,11 +111,11 @@ function ALCContent({
           sx={{
             fontSize: { sm: "20px", xs: "13px" },
             mb: { sm: 1, xs: 0.5 },
-            fontFamily: "Handon3gyeopsal600g",
+
             fontWeight: "bold",
           }}
         >
-          <span>{alcTitle}</span>
+          {alcTitle}
         </Typography>
         <Box color="#959595" sx={{ mb: 2 }}>
           <Typography sx={{ fontSize: { sm: "13px", xs: "10px" } }}>
