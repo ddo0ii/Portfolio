@@ -316,9 +316,9 @@ const itemData1 = [
     id: 5,
     pjType: "Web Develop",
     pjSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0_s.jpg?alt=media&token=7a02d2b0-4c15-4412-923d-6ec27a0ed849",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fmovie%2Fmovie_intro.JPG?alt=media&token=c3f962c3-29e5-48f7-8ea7-4b2fe4bd54af",
     pjImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fmovie%2Fmovie_intro.JPG?alt=media&token=c3f962c3-29e5-48f7-8ea7-4b2fe4bd54af",
     pjTitle: "영화 웹 서비스",
     pjSubTitle: "ReactJS로 영화 웹 서비스 만들기",
     pjDuration: "Nomad Coders",
@@ -328,7 +328,7 @@ const itemData1 = [
       "https://github.com/ddo0ii/NomadCoders_React/tree/main/react-for-begginners",
     pjBlog:
       "https://ddo-development.tistory.com/category/React/ReactJS%EB%A1%9C%20%EC%98%81%ED%99%94%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%20%EB%A7%8C%EB%93%A4%EA%B8%B0",
-    pjYouTube: "",
+    pjYouTube: "https://youtu.be/jT91qmaHXIo",
     pjDeTitle1: "LANGUAGE & TOOL",
     pjDeContent1_1: "React.js",
     pjDeContent1_2: "Node.js",
@@ -342,17 +342,18 @@ const itemData1 = [
     pjDeContent4: "",
     pjDef:
       "Nomad Coders의 'ReactJS로 영화 웹 서비스 만들기'를 수강하며 React의 기초적인 개념을 Blog에 기록하며 학습하였다. 최종적으로 React.js를 이용하여 영화 웹 서비스 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.",
-    pjPrototype: "",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fmovie%2FMovie_w.png?alt=media&token=ef83d022-6f48-4f03-875b-fc18758fea26",
     pjPrototypeAlt: "",
-    pjVideo: "",
+    pjVideo: "https://www.youtube.com/embed/jT91qmaHXIo",
   },
   {
     id: 6,
     pjType: "Web Develop",
     pjSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0_s.jpg?alt=media&token=7a02d2b0-4c15-4412-923d-6ec27a0ed849",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Ftwitter%2Ftwitter_intro.JPG?alt=media&token=72ee8489-fce4-4ecc-b409-9319b25a5c93",
     pjImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Ftwitter%2Ftwitter_intro.JPG?alt=media&token=72ee8489-fce4-4ecc-b409-9319b25a5c93",
     pjTitle: "Twitter Service",
     pjSubTitle: "트위터 클론코딩",
     pjDuration: "Nomad Coders",
@@ -376,7 +377,8 @@ const itemData1 = [
     pjDeContent4: "",
     pjDef:
       "Nomad Coders의 '트위터 클론코딩'을 수강하였다. 최종적으로 React.js와 Firebase를 이용하여 백엔드 코딩없이 인증 및 리얼타임 DB를 구현하여 로그인, 트윗작성, 수정 삭제 등의 기본적인 트위터 웹 페이지를 제작하고 Github를 이용하여 프로젝트를 배포하였다.",
-    pjPrototype: "",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Ftwitter%2Fnwitter_w.png?alt=media&token=e16cfd22-f06e-4fdd-8605-8409ea9bd43a",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/IvrnrHmEoBo",
   },
