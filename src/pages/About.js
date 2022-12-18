@@ -4,6 +4,7 @@ import {
   Container,
   Divider,
   Grid,
+  Hidden,
   Table,
   TableBody,
   TableCell,
@@ -21,10 +22,10 @@ function createData(subject, content) {
 
 const rows = [
   createData("Birth", "1996 . 05 . 13"),
-  createData(
-    "Address",
-    "55-5 Bihwajung-ro 1-gil, Angang-eup, Gyeongju-si, Gyeongsangbuk-do"
-  ),
+  // createData(
+  //   "Address",
+  //   "55-5 Bihwajung-ro 1-gil, Angang-eup, Gyeongju-si, Gyeongsangbuk-do"
+  // ),
   createData("Phone Number", "010 - 2667 - 5857"),
   createData("Email", "soyeong5857@gmail.com"),
 ];
@@ -63,11 +64,16 @@ function About() {
               >
                 <b>
                   Hello, I Am
+                  <Hidden only={["sm", "md", "lg", "xl"]}>
+                    <br />
+                  </Hidden>
+                  <Hidden only={["xs"]}>
+                    <span style={{ marginLeft: "15px" }}></span>
+                  </Hidden>
                   <span
                     style={{
                       color: "#C27D5B",
                       fontFamily: "lightsFont",
-                      marginLeft: "15px",
                     }}
                   >
                     Soyoeng Kwon
@@ -78,7 +84,7 @@ function About() {
                 <Typography
                   color="secondary"
                   gutterBottom
-                  sx={{ typography: { sm: "h5", xs: "h6" }, mb: 2 }}
+                  sx={{ typography: { sm: "h5", xs: "h6" }, mb: 3 }}
                 >
                   <b>A Front-end Web Developer</b>
                 </Typography>
@@ -86,7 +92,8 @@ function About() {
                   color="#959595"
                   gutterBottom
                   sx={{
-                    mb: 4,
+                    mb: 3,
+                    fontSize: "14px",
                   }}
                 >
                   일단 시작해보는 프론트엔드 웹 개발자입니다.
@@ -100,7 +107,7 @@ function About() {
                   발걸음을 내딛게 하여 자신의 페이지를 완성해가도록 돕는
                   프론트엔드 웹 개발자가 되고 싶습니다.
                 </Typography>
-                <TableContainer sx={{ mb: 5 }}>
+                <TableContainer sx={{ mb: 3 }}>
                   <Table
                     sx={{
                       [`& .${tableCellClasses.root}`]: {
