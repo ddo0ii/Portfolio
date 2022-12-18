@@ -89,8 +89,16 @@ function About() {
                     mb: 4,
                   }}
                 >
-                  I help businesses and companies reach their goals by designing
-                  user-centric digital products & interactive experiences.
+                  일단 시작해보는 프론트엔드 웹 개발자입니다.
+                  <br />
+                  새로운 도전은 누구에게나 두렵고 어렵지만, 한 발걸음이 불안보다
+                  작은 변화와 성장을 선물해주기 때문입니다. 태그 하나하나로
+                  채워지는 웹 페이지가 나도 할 수 있다는 도전을 저에게 불어넣어
+                  주었기에 프론트엔드 개발자의 삶을 선택하였습니다.
+                  <br />
+                  완벽한 것을 상상하고 첫 발을 내딛지 못하는 이들에게 첫
+                  발걸음을 내딛게 하여 자신의 페이지를 완성해가도록 돕는
+                  프론트엔드 웹 개발자가 되고 싶습니다.
                 </Typography>
                 <TableContainer sx={{ mb: 5 }}>
                   <Table
