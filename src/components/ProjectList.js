@@ -180,6 +180,72 @@ const itemData1 = [
     id: 1,
     pjType: "Web Develop",
     pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FporfolioIntro.jpg?alt=media&token=395ef9c1-eb61-4784-bd84-2cc69ecbb49e",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FporfolioIntro.jpg?alt=media&token=395ef9c1-eb61-4784-bd84-2cc69ecbb49e",
+    pjTitle: "Portfolio",
+    pjSubTitle: "",
+    pjDuration: "OCTOBER 2022 - DECEMBER 2022",
+    pjLecSite: "",
+    pjSite: "https://ddo0ii.github.io/Portfolio/",
+    pjGithub: "https://github.com/ddo0ii/Portfolio",
+    pjBlog: "",
+    pjYouTube: "",
+    pjDeTitle1: "LANGUAGE & TOOL",
+    pjDeContent1_1: "React.js",
+    pjDeContent1_2: "MUI System",
+    pjDeContent1_3: "",
+    pjDeContent1_4: "",
+    pjDeTitle2: "ROLE",
+    pjDeContent2: "기획 및 제작",
+    pjDeTitle3: "INDUSTRY",
+    pjDeContent3: "Solo",
+    pjDeTitle4: "DURATION",
+    pjDeContent4: "2 Months",
+    pjDef:
+      "	React.js를 이용하여 제작했던 프로젝트, 활동 내역, 수상 내역, 자격 내역 등을 한눈에 보기 쉽게 포트폴리오로 작성하였다.",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FpotfolioAll.jpg?alt=media&token=9da191c6-6fc7-46bb-90a1-9f942ff7c4c4",
+    pjPrototypeAlt: "",
+    pjVideo: "",
+  },
+  {
+    id: 2,
+    pjType: "Web Develop",
+    pjSImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fbric%2FbricIntroS.jpg?alt=media&token=4c0bf0f2-f131-4f7c-99b7-ff44926ac073",
+    pjImage:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fbric%2FbricIntro.jpg?alt=media&token=6d96708c-edec-42e1-affe-bf15ce012c9a",
+    pjTitle: "Biological Research Information Center, BRIC",
+    pjSubTitle: "포항공과대학교 산학협력단 소속(Front-End Web 개발)",
+    pjDuration: "DECEMBER 2019 - FEBRUARY 2020",
+    pjLecSite: "https://www.ibric.org/",
+    pjSite: "",
+    pjGithub: "",
+    pjBlog: "",
+    pjYouTube: "",
+    pjDeTitle1: "LANGUAGE & TOOL",
+    pjDeContent1_1: "HTML",
+    pjDeContent1_2: "JavaScript",
+    pjDeContent1_3: "CSS",
+    pjDeContent1_4: "Bootstrap",
+    pjDeTitle2: "ROLE",
+    pjDeContent2: "기획 및 제작",
+    pjDeTitle3: "INDUSTRY",
+    pjDeContent3: "Solo",
+    pjDeTitle4: "",
+    pjDeContent4: "",
+    pjDef:
+      "10만 유저, 4700여개 기업과 함께하며 한국과학재단과 포항공과대학교의 지원으로 생물학계 연구자들에게 전문적인 정보 서비스를 제공하는 센터",
+    pjPrototype:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fbric%2FbricPrototype.jpg?alt=media&token=613e6c52-6e55-4eac-87a5-cbd08d987956",
+    pjPrototypeAlt: "",
+    pjVideo: "",
+  },
+  {
+    id: 3,
+    pjType: "Web Develop",
+    pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0_s.jpg?alt=media&token=8e6bce92-6d56-4041-ba9c-6e5e3b26d1c9",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fcalculator%2Fcal0.jpg?alt=media&token=0e3d7823-bccd-46ab-94f0-7d0e1c0c392d",
@@ -210,7 +276,7 @@ const itemData1 = [
     pjVideo: "https://www.youtube.com/embed/XYXbrhirUIw",
   },
   {
-    id: 2,
+    id: 4,
     pjType: "Web Develop",
     pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Flisten%2Flisten0_s.jpg?alt=media&token=e34b9a3e-5567-4fd2-9510-8717274f0167",
@@ -243,7 +309,7 @@ const itemData1 = [
     pjVideo: "https://www.youtube.com/embed/5CEzAd3kDtg",
   },
   {
-    id: 3,
+    id: 5,
     pjType: "Web Develop",
     pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fpwa%2Fpwa0_s.jpg?alt=media&token=7a02d2b0-4c15-4412-923d-6ec27a0ed849",
@@ -277,7 +343,7 @@ const itemData1 = [
   },
 
   {
-    id: 4,
+    id: 6,
     pjType: "Web Develop",
     pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fdiary%2Fdiary0_s.jpg?alt=media&token=f70d5048-cc69-4f03-a94d-bf937dcb11ba",
@@ -313,7 +379,7 @@ const itemData1 = [
     pjVideo: "https://www.youtube.com/embed/hE4qm1l6Da4",
   },
   {
-    id: 5,
+    id: 7,
     pjType: "Web Develop",
     pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fmovie%2Fmovie_intro.JPG?alt=media&token=c3f962c3-29e5-48f7-8ea7-4b2fe4bd54af",
@@ -348,7 +414,7 @@ const itemData1 = [
     pjVideo: "https://www.youtube.com/embed/jT91qmaHXIo",
   },
   {
-    id: 6,
+    id: 8,
     pjType: "Web Develop",
     pjSImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Ftwitter%2Ftwitter_intro.JPG?alt=media&token=72ee8489-fce4-4ecc-b409-9319b25a5c93",
