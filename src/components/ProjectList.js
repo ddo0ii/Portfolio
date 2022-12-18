@@ -190,7 +190,7 @@ const itemData1 = [
     pjSite: "https://ddo0ii.github.io/Portfolio/",
     pjGithub: "https://github.com/ddo0ii/Portfolio",
     pjBlog: "",
-    pjYouTube: "",
+    pjYouTube: "https://youtu.be/O43uHwiimIk",
     pjDeTitle1: "LANGUAGE & TOOL",
     pjDeContent1_1: "React.js",
     pjDeContent1_2: "MUI System",
@@ -203,11 +203,11 @@ const itemData1 = [
     pjDeTitle4: "DURATION",
     pjDeContent4: "2 Months",
     pjDef:
-      "	React.js를 이용하여 제작했던 프로젝트, 활동 내역, 수상 내역, 자격 내역 등을 한눈에 보기 쉽게 포트폴리오로 작성하였다.",
+      "React.js를 이용하여 제작했던 프로젝트, 활동 내역, 수상 내역, 자격 내역 등을 한눈에 보기 쉽게 포트폴리오로 작성하였다.",
     pjPrototype:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FpotfolioAll.jpg?alt=media&token=0ef7d393-c1a5-4020-850d-1666fd45cfcf",
     pjPrototypeAlt: "",
-    pjVideo: "",
+    pjVideo: "https://www.youtube.com/embed/O43uHwiimIk",
   },
   {
     id: 2,
@@ -223,7 +223,7 @@ const itemData1 = [
     pjSite: "",
     pjGithub: "",
     pjBlog: "",
-    pjYouTube: "",
+    pjYouTube: "https://youtu.be/WjjAXr7XZkE",
     pjDeTitle1: "LANGUAGE & TOOL",
     pjDeContent1_1: "HTML",
     pjDeContent1_2: "JavaScript",
@@ -240,7 +240,7 @@ const itemData1 = [
     pjPrototype:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fbric%2FbricPrototype.jpg?alt=media&token=613e6c52-6e55-4eac-87a5-cbd08d987956",
     pjPrototypeAlt: "",
-    pjVideo: "",
+    pjVideo: "https://www.youtube.com/embed/WjjAXr7XZkE",
   },
   {
     id: 3,
