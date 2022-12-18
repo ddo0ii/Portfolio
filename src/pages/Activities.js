@@ -22,8 +22,8 @@ const actiData = [
     actDeContent2: "",
     actDeTitle3: "INDUSTRY",
     actDeContent3: "Developer 4",
-    actDeTitle4: "DURATION",
-    actDeContent4: "2 Months",
+    actDeTitle4: "",
+    actDeContent4: "",
     actDef: "",
     actPrototype1:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/activities%2Fss.jpg?alt=media&token=09062509-b3a4-48e0-8412-f7f0632602f7",
@@ -47,8 +47,8 @@ const actiData = [
     actDeContent2: "",
     actDeTitle3: "",
     actDeContent3: "",
-    actDeTitle4: "DURATION",
-    actDeContent4: "2 Months",
+    actDeTitle4: "",
+    actDeContent4: "",
     actDef:
       "개혁주의 신앙인으로서 하나님 중심, 성경 중심, 교회 중심의 삶을 이 땅에서 살아내기위해 힘쓰며 배우고 고민함",
     actPrototype1:
@@ -73,8 +73,8 @@ const actiData = [
     actDeContent2: "",
     actDeTitle3: "",
     actDeContent3: "",
-    actDeTitle4: "DURATION",
-    actDeContent4: "2 Months",
+    actDeTitle4: "",
+    actDeContent4: "",
     actDef:
       "경북동부지방(경주,영천,울릉,포항)에 있는 청소년들을 대상으로 수련회와 각종 행사들을 담당하여 주최하고 참여. 경북동부지방에 있는 대학생들과 리더로서 자질을 갖추기 위한 교육을 받고 함께 소통함",
     actPrototype1:
@@ -125,8 +125,8 @@ const actiData = [
     actDeContent2: "",
     actDeTitle3: "INDUSTRY",
     actDeContent3: "Member 7",
-    actDeTitle4: "DURATION",
-    actDeContent4: "2 Months",
+    actDeTitle4: "",
+    actDeContent4: "",
     actDef:
       "하나님 나라의 백성으로 살아가는데 필요한 영성훈련과 공동체 훈련, 매월 1회 합숙훈련(1박 2일), 국내 비전트립, 미국&멕시코 비전트립",
     actPrototype1:
