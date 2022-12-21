@@ -18,7 +18,6 @@ import {
 } from "react-lazy-load-image-component";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
 function ProjectContent({
   id,
@@ -71,20 +70,13 @@ function ProjectContent({
     }
   }, [open]);
 
-  const animatedItem = {
-    0: useScrollFadeIn("right", 1),
-    1: useScrollFadeIn("right", 1, 0.2),
-    2: useScrollFadeIn("right", 1, 0.4),
-  };
-
   return (
-    <Box>
+    <Box className="sa sa-up">
       <Box
         className="sizingUpBox"
         sx={{ display: "flex", justifyContent: "center" }}
       >
         <Card
-          {...animatedItem[2]}
           className="cardContent"
           elevation={10}
           onClick={handleClickOpen("body")}
