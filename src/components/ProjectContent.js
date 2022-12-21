@@ -71,7 +71,7 @@ function ProjectContent({
   }, [open]);
 
   return (
-    <Box className="sa sa-up">
+    <Box className="sa sa-right">
       <Box
         className="sizingUpBox"
         sx={{ display: "flex", justifyContent: "center" }}

@@ -488,7 +488,7 @@ function ALC() {
           subTitle="QUALIFICATION"
           realTitle="AWARD & LICENSE & CERTIFICATE"
         />
-        <Box className="sa sa-up">
+        <Box>
           <ALCList alcList={alcData} />
         </Box>
       </Container>
