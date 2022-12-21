@@ -216,7 +216,7 @@ const itemData1 = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fbric%2FbricIntroS.jpg?alt=media&token=4c0bf0f2-f131-4f7c-99b7-ff44926ac073",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fbric%2FbricIntro.jpg?alt=media&token=6d96708c-edec-42e1-affe-bf15ce012c9a",
-    pjTitle: "Biological Research Information Center, BRIC",
+    pjTitle: "Biological Research Information Center",
     pjSubTitle: "포항공과대학교 산학협력단 소속(Front-End Web 개발)",
     pjDuration: "DECEMBER 2019 - FEBRUARY 2020",
     pjLecSite: "https://www.ibric.org/",
