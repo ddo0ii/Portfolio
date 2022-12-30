@@ -26,7 +26,7 @@ const rows = [
   //   "Address",
   //   "55-5 Bihwajung-ro 1-gil, Angang-eup, Gyeongju-si, Gyeongsangbuk-do"
   // ),
-  createData("Phone Number", "010 - 2667 - 5857"),
+  createData("Phone Number", "010 - 0000 - 0000"),
   createData("Email", "soyeong5857@gmail.com"),
 ];
 
