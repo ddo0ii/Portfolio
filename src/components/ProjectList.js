@@ -555,7 +555,7 @@ const itemData3 = [
     id: 1,
     pjType: "Design",
     pjSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep0_s.jpg?alt=media&token=5ae637b8-3f22-4970-9d10-8c6b6124cd56",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep1_s.jpg?alt=media&token=a323dacb-0446-4677-84e8-9aefcd70c369",
     pjImage:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fdesign%2Fbestep%2Fbestep1_s.jpg?alt=media&token=a323dacb-0446-4677-84e8-9aefcd70c369",
     pjTitle: "Bestep Center",
