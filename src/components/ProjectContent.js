@@ -174,7 +174,7 @@ function ProjectContent({
       <Paper elevation={10}>
         <Dialog
           //fullWidth={true}
-          maxWidth="xl"
+          maxWidth="md"
           open={open}
           onClose={handleClose}
           scroll={scroll}
