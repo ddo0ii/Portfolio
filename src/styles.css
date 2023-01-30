@@ -269,11 +269,12 @@ a:hover {
   /* background-image: url("/public/images/HomeTop.jpg");
   background-size: cover;
   background-position: center; */
-
+  /*
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  */
+  /* min-height: 100vh; */
 }
 .homeContactIcons {
   width: 35%;
