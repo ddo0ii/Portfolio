@@ -3,7 +3,6 @@
   "version": "0.1.9",
   "private": true,
   "dependencies": {
-    "-": "^0.0.1",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@fontsource/roboto": "^4.5.8",
@@ -23,7 +22,6 @@
     "babel-eslint": "^8.2.6",
     "firebase": "^9.11.0",
     "framer-motion": "^7.6.19",
-    "g": "^2.0.1",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

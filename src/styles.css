@@ -165,7 +165,7 @@ span {
 }
 
 body {
-  background-color: black;
+  /* background-color: black; */
 }
 
 body * {
@@ -231,7 +231,7 @@ a:hover {
 }
 .navbar.colorChange {
   background-color: #222222;
-  box-shadow: 0px 3px 3px black;
+  /* box-shadow: 0px 3px 3px black; */
 }
 
 /* Title */

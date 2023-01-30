@@ -22,6 +22,7 @@ function createData(subject, content) {
 
 const rows = [
   createData("Birth", "1996 . 05 . 13"),
+  createData("Age", "27"),
   // createData(
   //   "Address",
   //   "55-5 Bihwajung-ro 1-gil, Angang-eup, Gyeongju-si, Gyeongsangbuk-do"
