@@ -131,6 +131,7 @@ function Navigation() {
             <Typography
               variant="h6"
               component="div"
+              color="primary"
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
               DDO0II

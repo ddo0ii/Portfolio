@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Toolbar, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import ContactIcons from "../components/ContactIcons";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
 
@@ -11,41 +11,66 @@ function Home() {
     3: useScrollFadeIn("down", 1, 0.4),
   };
   return (
-    <Box className="homePage">
+    <Box
+      className="homePage"
+      sx={{
+        pt: { sm: "50px", xs: "20px" },
+        pb: { sm: "100px", xs: "80px" },
+      }}
+    >
       <Container>
-        <Toolbar />
-
-        <Typography
-          {...animatedItem[1]}
-          align="center"
-          gutterBottom
-          color="primary"
-          sx={{
-            typography: { sm: "h1", xs: "h4" },
-          }}
-        >
-          <span style={{ fontFamily: "lightsFont" }}>SOYEONG KWON</span>
-        </Typography>
-        <Typography
-          {...animatedItem[2]}
-          align="center"
-          gutterBottom
-          color="secondary"
-          sx={{
-            typography: { sm: "h4", xs: "body1" },
-          }}
-        >
-          <span>FRONT-END WEB DEVELOPER</span>
-        </Typography>
-        <Box
-          {...animatedItem[3]}
-          className="homeContactIcons"
-          sx={{
-            fontSize: { sm: "25px", xs: "18px" },
-          }}
-        >
-          <ContactIcons />
-        </Box>
+        <Grid container spacing={1}>
+          <Grid item xs={12} sm={6}>
+            <Box className="homeLetter" p={2}>
+              <Container>
+                <Typography
+                  {...animatedItem[1]}
+                  align="center"
+                  gutterBottom
+                  color="primary"
+                  sx={{
+                    typography: { sm: "h1", xs: "h4" },
+                    // color: "#ffb3b2",
+                  }}
+                >
+                  <span style={{ fontFamily: "lightsFont" }}>SOYEONG KWON</span>
+                </Typography>
+                <Typography
+                  {...animatedItem[2]}
+                  align="center"
+                  gutterBottom
+                  color="secondary"
+                  sx={{
+                    typography: { sm: "h4", xs: "body1" },
+                  }}
+                >
+                  <span>FRONT-END WEB DEVELOPER</span>
+                </Typography>
+                <Box
+                  {...animatedItem[3]}
+                  className="homeContactIcons"
+                  sx={{
+                    fontSize: { sm: "25px", xs: "18px" },
+                  }}
+                >
+                  <ContactIcons />
+                </Box>
+              </Container>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={6}>
+            <Box p={2}>
+              <Typography align="center" p={3} pt={5}>
+                <img
+                  className="homeImg"
+                  src={`${process.env.PUBLIC_URL}/images/homeImg.jpg`}
+                  alt="Profile Image"
+                  style={{ borderRadius: 30 }}
+                />
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );
