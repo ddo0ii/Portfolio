@@ -12,19 +12,15 @@ function TopTitle({ subTitle, realTitle }) {
     >
       <Box className="smallTitle">
         <Divider
-          color="#C27D5B"
           sx={{
             borderBottomWidth: { sm: 3, xs: 1.5 },
             width: { sm: 30, xs: 20 },
             mr: { sm: 3, xs: 2 },
+            backgroundColor: "#6750a4",
           }}
         />
         <Typography
-          color="#C27D5B"
-          sx={{
-            fontSize: 10,
-            letterSpacing: "5px",
-          }}
+          sx={{ color: "primary", fontSize: 10, letterSpacing: "5px" }}
         >
           <span>{subTitle}</span>
         </Typography>
