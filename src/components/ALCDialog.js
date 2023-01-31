@@ -40,7 +40,7 @@ function ALCDialog({
   alcPrototype2,
 }) {
   return (
-    <div style={{ backgroundColor: "#0F0F0F" }}>
+    <div style={{ backgroundColor: "#1c1b1e" }}>
       <Box
         className="dialogTop"
         sx={{
@@ -50,7 +50,7 @@ function ALCDialog({
         <Container>
           <Typography
             align="center"
-            color="#989796"
+            color="secondary"
             sx={{
               fontSize: { sm: "14px", xs: "7px" },
               letterSpacing: "4px",
@@ -61,10 +61,10 @@ function ALCDialog({
           </Typography>
           <Typography
             align="center"
-            color="secondary"
+            color="primary"
             sx={{
               // typography: { sm: "h2", xs: "h5" },
-              fontSize: { sm: "50px", xs: "18px" },
+              fontSize: { sm: "40px", xs: "25px" },
               letterSpacing: { sm: "5px", xs: "2px" },
               mt: { sm: 2, xs: 1 },
             }}
@@ -74,7 +74,7 @@ function ALCDialog({
           {alcSubTitle ? (
             <Typography
               align="center"
-              color="#989796"
+              color="#7a757f"
               sx={{
                 typography: { sm: "h6", xs: "body2" },
                 mt: { sm: 2, xs: 1 },
@@ -88,7 +88,7 @@ function ALCDialog({
           {alcOrganizer ? (
             <Typography
               align="center"
-              color="#989796"
+              color="#7a757f"
               sx={{
                 typography: { sm: "h6", xs: "body2" },
                 mt: { sm: 1, xs: 1 },
@@ -102,7 +102,7 @@ function ALCDialog({
           {alcDate ? (
             <Typography
               align="center"
-              color="#989796"
+              color="#7a757f"
               sx={{
                 typography: { sm: "h6", xs: "overline" },
                 mb: { sm: 4, xs: 0 },
@@ -119,7 +119,7 @@ function ALCDialog({
               sx={{
                 display: "flex",
                 justifyContent: "center",
-                typography: { sm: "h6", xs: "overline" },
+                typography: { sm: "h6", xs: "body1" },
                 mb: { sm: 15, xs: 0 },
               }}
             >

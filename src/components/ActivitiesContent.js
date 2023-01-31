@@ -103,7 +103,7 @@ function ActivitiesContent({
             actPrototype1={actPrototype1}
             actPrototype2={actPrototype2}
           />
-          <DialogActions sx={{ backgroundColor: "#0F0F0F" }}>
+          <DialogActions sx={{ backgroundColor: "#1c1b1e" }}>
             <Button onClick={handleClose}>Close</Button>
           </DialogActions>
         </Dialog>
