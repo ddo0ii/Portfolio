@@ -61,7 +61,7 @@ const careerList2 = [
   {
     id: 2,
     timeDate: "March 2012 - February 2015",
-    timeTitle: "Angang Girls'High School",
+    timeTitle: "Angang Girls' High School",
     timeTitleLink: "http://school.gyo6.net/gj-yale",
     timeSubTitle: "Natural Sciences",
     content1: "",

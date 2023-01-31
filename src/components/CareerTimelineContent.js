@@ -70,7 +70,7 @@ function CareerTimelineContent({
                 </Typography>
                 <Typography
                   sx={{
-                    fontWeight: "100",
+                    fontWeight: "300",
                     fontSize: { sm: "11px", xs: "10px" },
                     mb: 1,
                   }}
@@ -84,7 +84,7 @@ function CareerTimelineContent({
                 </Typography>
                 <Typography
                   sx={{
-                    fontWeight: "100",
+                    fontWeight: "300",
                     fontSize: { sm: "11px", xs: "10px" },
                     mb: 1,
                   }}
