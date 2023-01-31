@@ -165,7 +165,6 @@ span {
 }
 
 body {
-  /* background-color: black; */
 }
 
 body * {
@@ -226,10 +225,9 @@ a:hover {
 
 /* Navigation */
 .navbar {
-  background-color: red;
 }
 .navbar.colorChange {
-  background-color: #222222;
+  background-color: #49454e;
   /* box-shadow: 0px 3px 3px black; */
 }
 
@@ -247,10 +245,9 @@ a:hover {
 .contactIcons {
   display: flex;
   justify-content: space-between;
-  color: #959595;
 }
 .contactIcon > a {
-  color: #959595;
+  color: #1e192b;
 }
 
 /* Home */

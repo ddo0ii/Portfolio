@@ -42,7 +42,7 @@ function Home() {
       <Box
         sx={{
           position: "absolute",
-          backgroundColor: "#FFF3F1",
+          backgroundColor: "#e8def8",
           width: "100%",
           height: "75%",
         }}
@@ -85,7 +85,7 @@ function Home() {
                   </span>
                 </Typography>
                 <Typography
-                  color="#959595"
+                  color="background"
                   sx={{
                     mb: 5,
                     fontSize: "14px",

@@ -33,11 +33,11 @@ function ContactIcons() {
           <FontAwesomeIcon icon={faInstagram} />
         </a>
       </div>
-      <div className="contactIcon">
+      {/* <div className="contactIcon">
         <a href="https://www.linkedin.com/in/ddo0ii/" target="_blank">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-      </div>
+      </div> */}
       <div className="contactIcon">
         <a
           href="https://www.youtube.com/channel/UCVS6YLI6ea8eZ5tOXSnjEVg"
