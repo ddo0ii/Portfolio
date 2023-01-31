@@ -5,7 +5,6 @@ import {
   Button,
   Dialog,
   DialogActions,
-  Divider,
   Grid,
   Paper,
   Stack,
@@ -70,91 +69,82 @@ function ALCContent({
 
   return (
     <Grid
-      className="sa sa-up"
+      // className="sa sa-up"
       item
-      sm={4}
+      sm={6}
       xs={12}
       sx={{
         "&:hover": { backgroundColor: "#E7E0EC", cursor: "pointer" },
       }}
     >
-      <Box
-        className="sizingUpBox"
-        onClick={handleClickOpen("body")}
-        ml={{ sm: 4, xs: 2 }}
-        mt={{ sm: 8, xs: 2 }}
-        sx={{ height: "300px" }}
-      >
-        <Stack direction="row" mb={{ sm: 8, xs: 3 }}>
-          <Avatar
-            sx={{
-              bgcolor: "#e9ddff",
-              width: { sm: 70, xs: 35 },
-              height: { sm: 70, xs: 35 },
-            }}
-          >
-            <Typography sx={{ fontSize: { sm: "30px", xs: "15px" } }}>
-              {alcIcon == "faTrophy" ? (
-                <FontAwesomeIcon icon={faTrophy} style={{ color: "#22005d" }} />
-              ) : alcIcon == "faAward" ? (
-                <FontAwesomeIcon icon={faTrophy} style={{ color: "#22005d" }} />
-              ) : alcIcon == "faMedal" ? (
-                <FontAwesomeIcon icon={faMedal} style={{ color: "#22005d" }} />
-              ) : alcIcon == "faIdCard" ? (
-                <FontAwesomeIcon icon={faIdCard} style={{ color: "#22005d" }} />
-              ) : (
-                ""
-              )}
-            </Typography>
-          </Avatar>
-        </Stack>
-        <Typography
-          color="background"
-          sx={{
-            fontSize: { sm: "20px", xs: "13px" },
-            mb: { sm: 1, xs: 0.5 },
-            fontWeight: "bold",
-          }}
-        >
-          {alcTitle}
-        </Typography>
-        <Box sx={{ mb: 2 }}>
-          <Typography
-            color="secondary"
-            sx={{ fontSize: { sm: "13px", xs: "10px" } }}
-          >
-            {alcSubTitle}
-          </Typography>
-          <Typography
-            color="secondary"
-            sx={{ fontSize: { sm: "13px", xs: "10px" } }}
-          >
-            {alcOrganizer}
-          </Typography>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <Divider
-            color="#625b71"
-            sx={{
-              borderBottomWidth: { sm: 3, xs: 1.5 },
-              width: { sm: 30, xs: 20 },
-              mr: { sm: 3, xs: 1.5 },
-            }}
-          />
-          <Typography
-            color="secondary"
-            sx={{
-              fontSize: { sm: "13px", xs: "10px" },
-            }}
-          >
-            더보기
-          </Typography>
-        </Box>
+      <Box className="sizingUpBox ALCContent" onClick={handleClickOpen("body")}>
+        <Grid container>
+          <Grid className="ALCContentLogo" item sm={3} xs={3}>
+            <Stack direction="row">
+              <Avatar
+                sx={{
+                  bgcolor: "#e9ddff",
+                  width: { sm: 70, xs: 35 },
+                  height: { sm: 70, xs: 35 },
+                }}
+              >
+                <Typography sx={{ fontSize: { sm: "30px", xs: "15px" } }}>
+                  {alcIcon == "faTrophy" ? (
+                    <FontAwesomeIcon
+                      icon={faTrophy}
+                      style={{ color: "#22005d" }}
+                    />
+                  ) : alcIcon == "faAward" ? (
+                    <FontAwesomeIcon
+                      icon={faTrophy}
+                      style={{ color: "#22005d" }}
+                    />
+                  ) : alcIcon == "faMedal" ? (
+                    <FontAwesomeIcon
+                      icon={faMedal}
+                      style={{ color: "#22005d" }}
+                    />
+                  ) : alcIcon == "faIdCard" ? (
+                    <FontAwesomeIcon
+                      icon={faIdCard}
+                      style={{ color: "#22005d" }}
+                    />
+                  ) : (
+                    ""
+                  )}
+                </Typography>
+              </Avatar>
+            </Stack>
+          </Grid>
+          <Grid item sm={9} xs={9}>
+            <Box pr={3}>
+              <Typography
+                color="background"
+                sx={{
+                  fontSize: { sm: "18px", xs: "13px" },
+                  mb: { sm: 1, xs: 0.5 },
+                  fontWeight: "bold",
+                }}
+              >
+                {alcTitle}
+              </Typography>
+              <Box sx={{ mb: 2 }}>
+                <Typography
+                  color="secondary"
+                  sx={{ fontSize: { sm: "13px", xs: "10px" } }}
+                >
+                  {alcSubTitle}
+                </Typography>
+                <Typography
+                  color="secondary"
+                  sx={{ fontSize: { sm: "13px", xs: "10px" } }}
+                >
+                  {alcOrganizer}
+                </Typography>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
       <Paper>
         <Dialog
