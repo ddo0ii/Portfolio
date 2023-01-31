@@ -224,8 +224,6 @@ a:hover {
 }
 
 /* Navigation */
-.navbar {
-}
 .navbar.colorChange {
   background-color: #e8def8;
   /* box-shadow: 0px 3px 3px black; */
@@ -247,7 +245,7 @@ a:hover {
   justify-content: space-between;
 }
 .contactIcon > a {
-  color: #1e192b;
+  color: #e7e0eb;
 }
 
 /* Home */
