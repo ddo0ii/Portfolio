@@ -188,11 +188,16 @@ function Navigation() {
           <Toolbar />
           <ALC />
         </Box>
-        <Box sx={{ display: { sm: "inline", xs: "none" } }}>
+        <Box
+          sx={{
+            display: { sm: "inline", xs: "none" },
+          }}
+        >
           <Box
             sx={{
-              pt: { sm: "100px", xs: "80px" },
+              pt: { sm: "50px", xs: "80px" },
               pb: { sm: "100px", xs: "80px" },
+              backgroundColor: "#e8def8",
             }}
           >
             <Container>
@@ -224,7 +229,7 @@ function Navigation() {
               <Divider color="#DEDEDE" sx={{ mt: 5, mb: 3 }} />
               <Grid container spacing={1}>
                 <Grid item sm={8}>
-                  <Typography color="#959595" sx={{ fontSize: "13px" }}>
+                  <Typography color="#1e192b" sx={{ fontSize: "13px" }}>
                     Copyright @ Soyeong Kwon 2022, All rights reserved
                   </Typography>
                 </Grid>
