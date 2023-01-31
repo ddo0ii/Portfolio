@@ -17,7 +17,6 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Home from "../pages/Home";
-import About from "../pages/About";
 import Career from "../pages/Career";
 import Projects from "../pages/Projects";
 import Activities from "../pages/Activities";
@@ -46,16 +45,12 @@ function Navigation() {
   window.addEventListener("scroll", saFunc);
 
   const homeRef = useRef();
-  const aboutRef = useRef();
   const careerRef = useRef();
   const projectsRef = useRef();
   const activitiesRef = useRef();
   const alcRef = useRef();
   const homeClick = () => {
     window.scrollTo({ behavior: "smooth", top: homeRef.current.offsetTop });
-  };
-  const aboutClick = () => {
-    window.scrollTo({ behavior: "smooth", top: aboutRef.current.offsetTop });
   };
   const careerClick = () => {
     window.scrollTo({ behavior: "smooth", top: careerRef.current.offsetTop });
@@ -95,11 +90,10 @@ function Navigation() {
   const drawerWidth = 240;
   const navItems = [
     { id: 1, name: "Home", to: homeClick },
-    { id: 2, name: "About", to: aboutClick },
-    { id: 3, name: "Career", to: careerClick },
-    { id: 4, name: "Projects", to: projectsClick },
-    { id: 5, name: "Activities", to: activitiesClick },
-    { id: 6, name: "ALC", to: alcClick },
+    { id: 2, name: "Career", to: careerClick },
+    { id: 3, name: "Projects", to: projectsClick },
+    { id: 4, name: "Activities", to: activitiesClick },
+    { id: 5, name: "ALC", to: alcClick },
   ];
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -182,10 +176,7 @@ function Navigation() {
         <Box ref={homeRef}>
           <Home />
         </Box>
-        <Box ref={aboutRef}>
-          <Toolbar />
-          <About />
-        </Box>
+
         <Box ref={careerRef}>
           <Toolbar />
           <Career />
