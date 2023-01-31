@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import CareerTimelineList from "./CareerTimelineList";
 
-const dummyList1 = [
+const careerList1 = [
   {
     id: 1,
     timeDate: "August 1, 2020 - August 31, 2022",
@@ -30,21 +30,21 @@ const dummyList1 = [
     content2Date: "",
     content2Link: "",
   },
-  {
-    id: 3,
-    timeDate: "August 2019 - December 2019",
-    timeTitle: "한동대학교 전산전자 공학부 사무실 근로",
-    timeTitleLink: "https://csee.handong.edu/",
-    timeSubTitle: "사무보조, 보조작업",
-    content1: "",
-    content1Date: "",
-    content1Link: "",
-    content2: "",
-    content2Date: "",
-    content2Link: "",
-  },
+  // {
+  //   id: 3,
+  //   timeDate: "August 2019 - December 2019",
+  //   timeTitle: "한동대학교 전산전자 공학부 사무실 근로",
+  //   timeTitleLink: "https://csee.handong.edu/",
+  //   timeSubTitle: "사무보조, 보조작업",
+  //   content1: "",
+  //   content1Date: "",
+  //   content1Link: "",
+  //   content2: "",
+  //   content2Date: "",
+  //   content2Link: "",
+  // },
 ];
-const dummyList2 = [
+const careerList2 = [
   {
     id: 1,
     timeDate: "March 2015 - February 2020",
@@ -76,24 +76,28 @@ const dummyList2 = [
 function CareerTimeline() {
   return (
     <Grid container spacing={1} sx={{ mt: { sm: "5", xs: "0" } }}>
-      <Grid item xs={12} sm={6}>
+      <Grid className="sa sa-left" item xs={12} sm={6}>
         <Box>
           <Typography
+            color="#1C1B1F"
             sx={{
               typography: { sm: "h6", xs: "subtitle1" },
             }}
           >
             <b>EXPERIENCE</b>
           </Typography>
-          <CareerTimelineList careerList={dummyList1} />
+          <CareerTimelineList careerList={careerList1} />
         </Box>
       </Grid>
-      <Grid item xs={12} sm={6}>
+      <Grid className="sa sa-left" item xs={12} sm={6}>
         <Box>
-          <Typography sx={{ typography: { sm: "h6", xs: "subtitle1" } }}>
+          <Typography
+            color="#1C1B1F"
+            sx={{ typography: { sm: "h6", xs: "subtitle1" } }}
+          >
             <b>EDUCATION</b>
           </Typography>
-          <CareerTimelineList careerList={dummyList2} />
+          <CareerTimelineList careerList={careerList2} />
         </Box>
       </Grid>
     </Grid>

@@ -227,7 +227,7 @@ a:hover {
 .navbar {
 }
 .navbar.colorChange {
-  background-color: #49454e;
+  background-color: #e8def8;
   /* box-shadow: 0px 3px 3px black; */
 }
 
@@ -292,7 +292,7 @@ a:hover {
 /* Career */
 .CareerLink {
   text-decoration: none;
-  color: #959595;
+  color: #49454e;
 }
 
 /* Dialog */

@@ -25,7 +25,11 @@ function TopTitle({ subTitle, realTitle }) {
           <span>{subTitle}</span>
         </Typography>
       </Box>
-      <Typography sx={{ typography: { sm: "h3", xs: "h4" } }} gutterBottom>
+      <Typography
+        color="#1C1B1F"
+        sx={{ typography: { sm: "h3", xs: "h4" } }}
+        gutterBottom
+      >
         <span>{realTitle}</span>
       </Typography>
     </Box>

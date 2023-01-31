@@ -125,18 +125,14 @@ function Navigation() {
             <Typography
               variant="h6"
               component="div"
-              color={colorChange ? "secondaryContainer" : "primary"}
+              color="primary"
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
               DDO0II
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item) => (
-                <Button
-                  onClick={item.to}
-                  key={item.id}
-                  color={colorChange ? "primaryContainer" : "secondary"}
-                >
+                <Button onClick={item.to} key={item.id} color="secondary">
                   {item.name}
                 </Button>
               ))}
@@ -176,7 +172,6 @@ function Navigation() {
         <Box ref={homeRef}>
           <Home />
         </Box>
-
         <Box ref={careerRef}>
           <Toolbar />
           <Career />

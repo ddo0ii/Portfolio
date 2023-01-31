@@ -24,7 +24,6 @@ function CareerTimelineContent({
   return (
     <Timeline
       // className="sa sa-left"
-      className="sa sa-left"
       sx={{
         [`& .${timelineItemClasses.root}:before`]: {
           flex: 0,
@@ -35,18 +34,16 @@ function CareerTimelineContent({
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="primary">
-            <WorkOutline sx={{ p: 0.6, color: "white" }} />
+            <WorkOutline sx={{ p: 0.6 }} />
           </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <TimelineContent sx={{ py: "12px", px: 2, color: "secondary" }}>
           <Box sx={{ mb: 2 }}>
             <Chip
               label={timeDate}
               size="small"
               sx={{
-                backgroundColor: "#252525",
-                color: "#DEDEDE",
                 fontSize: "10px",
                 fontWeight: "bold",
               }}
