@@ -4,18 +4,18 @@ import { styled } from "@mui/system";
 import TabsUnstyled from "@mui/base/TabsUnstyled";
 import TabsListUnstyled from "@mui/base/TabsListUnstyled";
 import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
-import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
+import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import ProjectContent from "./ProjectContent";
 
 const colors = {
-  1: "#C27D5B",
-  2: "#DEDEDE",
+  1: "#FFFFFF",
+  2: "#21005D",
   3: "#959595",
-  4: "#3F3F3F",
-  5: "#f7ad88",
+  4: "#6750A4",
+  5: "#EADDFF",
   100: "#C2E0FF",
   200: "#80BFFF",
   300: "#66B2FF",
@@ -76,18 +76,18 @@ const TabPanel = styled(TabPanelUnstyled)(
   font-family: IBM Plex Sans, sans-serif;
   font-size: 0.875rem;
   padding: 20px 12px;
-//   background: ${theme.palette.mode === "dark" ? grey[900] : "#fff"};
+  // background: ${theme.palette.mode === "dark" ? grey[900] : "#fff"};
   // border: 1px solid ${theme.palette.mode === "dark" ? grey[700] : grey[200]};
-//   border-radius: 12px;
-//   opacity: 0.6;
+  // border-radius: 12px;
+  // opacity: 0.6;
   `
 );
 
 const TabsList = styled(TabsListUnstyled)(
   ({ theme }) => `
-//   min-width: 400px;
-//   background-color: ${colors[500]};
-//   border-radius: 12px;
+  // min-width: 400px;
+  // background-color: ${colors[500]};
+  // border-radius: 12px;
   margin-bottom: 16px;
   display: flex;
   align-items: center;

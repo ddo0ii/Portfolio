@@ -45,8 +45,8 @@ const theme = createTheme({
       contrastText: "#1c1b1e",
     },
     backgroundContainer: {
-      main: "#fffbff",
-      contrastText: "#1c1b1e",
+      main: "#FFFBFE",
+      contrastText: "#1C1B1F",
     },
     outline: {
       main: "#7a757f",

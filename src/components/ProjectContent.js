@@ -71,23 +71,22 @@ function ProjectContent({
   }, [open]);
 
   return (
-    <Box className="sa sa-right">
+    <Box
+    // className="sa sa-right"
+    >
       <Box
         className="sizingUpBox"
         sx={{ display: "flex", justifyContent: "center" }}
       >
         <Card
           className="cardContent"
-          elevation={10}
+          elevation={2}
           onClick={handleClickOpen("body")}
           sx={{
-            //maxWidth: 300,
-            borderRadius: 0,
-            //backgroundColor: "rgba( 255, 255, 255, 0.1 )",
-            backgroundColor: "transparent",
+            borderRadius: 2,
+            backgroundColor: "#EADDFF",
             width: "95%",
             mb: 3,
-            boxShadow: 20,
           }}
         >
           <CardActionArea>
@@ -97,18 +96,16 @@ function ProjectContent({
                 alt={`${pjTitle} Image`}
                 effect="blur"
                 width="100%"
-                height="250"
-                style={{ margin: 0, padding: 0 }}
+                height="200"
+                style={{ margin: 0, padding: 0, borderRadius: 10 }}
               />
             </CardMedia>
-            <CardContent sx={{ height: "200px" }}>
+            <CardContent sx={{ height: "180px" }}>
               <Box
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
-                  color: "#E8E8E8",
-                  mt: 1,
-                  mb: 2,
+                  mb: 1,
                 }}
               >
                 {pjDeContent1_1 ? (
@@ -143,26 +140,28 @@ function ProjectContent({
               <Typography
                 variant="h6"
                 component="div"
+                color="background"
                 sx={{
-                  color: "white",
-
                   fontWeight: "bold",
-                  mb: 3,
                 }}
               >
                 {pjTitle}
               </Typography>
               <Box
                 sx={{
-                  color: "#C27D5B",
                   position: "absolute",
-                  bottom: "30px",
+                  bottom: "20px",
                 }}
               >
-                <Typography sx={{ display: "inline", mr: 2 }}>
+                <Typography
+                  variant="subtitle2"
+                  color="primary"
+                  sx={{ display: "inline", mr: 2 }}
+                >
                   Read More
                 </Typography>
                 <FontAwesomeIcon
+                  color="#6750a4"
                   icon={faArrowRight}
                   sx={{ display: "inline" }}
                 />
