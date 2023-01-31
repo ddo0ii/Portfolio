@@ -1,34 +1,7 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Divider,
-  Grid,
-  Hidden,
-  Table,
-  TableBody,
-  TableCell,
-  tableCellClasses,
-  TableContainer,
-  TableRow,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import ContactIcons from "../components/ContactIcons";
 import useScrollFadeIn from "../hooks/useScrollFadeIn";
-
-// function createData(subject, content) {
-//   return { subject, content };
-// }
-
-// const rows = [
-//   // createData("Birth", "1996 . 05 . 13"),
-//   // createData(
-//   //   "Address",
-//   //   "55-5 Bihwajung-ro 1-gil, Angang-eup, Gyeongju-si, Gyeongsangbuk-do"
-//   // ),
-//   // createData("Phone Number", "010 - 0000 - 0000"),
-//   createData("Email", "soyeong5857@gmail.com"),
-// ];
 
 function Home() {
   const animatedItem = {
@@ -44,27 +17,44 @@ function Home() {
           position: "absolute",
           backgroundColor: "#e8def8",
           width: "100%",
-          height: "75%",
+          height: { md: "75%", sm: "60%", xs: "40%" },
         }}
       ></Box>
       <Box
         sx={{
-          pt: { sm: "50px", xs: "20px" },
-          pb: { sm: "50px", xs: "80px" },
+          pt: { sm: "50px", xs: "30px" },
+          pb: { sm: "50px", xs: "50px" },
           position: "relative",
           width: "100%",
         }}
       >
         <Container>
           <Grid container spacing={1}>
+            <Grid
+              item
+              sm={6}
+              xs={12}
+              sx={{ display: { md: "none", xs: "block" } }}
+            >
+              <Box p={2}>
+                <Typography align="center" p={3} pt={5}>
+                  <img
+                    className="homeImg"
+                    src={`${process.env.PUBLIC_URL}/images/homeImg.jpg`}
+                    alt="Profile Image"
+                    style={{ borderRadius: 30 }}
+                  />
+                </Typography>
+              </Box>
+            </Grid>
             <Grid item xs={12} sm={6}>
               <Box p={2}>
                 <Typography
-                  pt={10}
+                  mb={1}
                   color="secondary"
                   sx={{
-                    typography: { sm: "subtitle1", xs: "h6" },
-                    mb: 2,
+                    pt: { sm: 10, xs: 0 },
+                    typography: "subtitle1",
                   }}
                 >
                   <span style={{ letterSpacing: -0.5 }}>
@@ -72,12 +62,10 @@ function Home() {
                   </span>
                 </Typography>
                 <Typography
-                  mb={1}
                   color="primary"
                   sx={{
                     typography: { sm: "h3", xs: "h4" },
-
-                    mb: 4,
+                    mb: { sm: 4, xs: 3 },
                   }}
                 >
                   <span>
@@ -87,8 +75,8 @@ function Home() {
                 <Typography
                   color="background"
                   sx={{
-                    mb: 5,
-                    fontSize: "14px",
+                    mb: { sm: 5, xs: 4 },
+                    fontSize: { sm: "14.5px", xs: "13.5px" },
                   }}
                 >
                   일단 시작해보는 프론트엔드 웹 개발자입니다.
@@ -102,11 +90,12 @@ function Home() {
                   발걸음을 내딛게 하여 자신의 페이지를 완성해가도록 돕는
                   프론트엔드 웹 개발자가 되고자 합니다.
                 </Typography>
-                <Grid className="aboutContact" container>
-                  <Grid item xs={8} sm={6}>
+                <Grid className="homeContact" container>
+                  <Grid item sm={6} xs={9}>
                     <Box
                       sx={{
-                        fontSize: { sm: "20px", xs: "13px" },
+                        fontSize: { sm: "19px", xs: "13px" },
+                        pl: 1,
                       }}
                     >
                       <ContactIcons />
@@ -115,7 +104,12 @@ function Home() {
                 </Grid>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid
+              item
+              sm={6}
+              xs={12}
+              sx={{ display: { md: "block", xs: "none" } }}
+            >
               <Box p={2}>
                 <Typography align="center" p={3} pt={5}>
                   <img

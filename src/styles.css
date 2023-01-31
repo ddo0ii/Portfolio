@@ -252,14 +252,15 @@ a:hover {
 
 /* Home */
 .homePage {
-  /* height: 100vh;
-  width: 100vw; */
   width: 100vw;
 }
 .homeImg {
   width: 100%;
 }
+
 .homeLetter {
+  /* display: flex;
+  justify-content: flex-end; */
   /* height: 100vh;
   width: 100vw; */
 
@@ -273,20 +274,14 @@ a:hover {
   */
   /* min-height: 100vh; */
 }
-.homeContactIcons {
-  width: 35%;
-  margin: auto;
-}
-
-/* About */
-.profileImg {
-  width: 80%;
-}
-
-.aboutContact {
+.homeContact {
   width: 100%;
   display: flex;
   align-items: center;
+}
+.homeContactIcons {
+  width: 35%;
+  margin: auto;
 }
 
 /* Career */
