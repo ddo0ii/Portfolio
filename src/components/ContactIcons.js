@@ -8,10 +8,16 @@ import {
   faLinkedin,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function ContactIcons() {
   return (
     <Box className="contactIcons">
+      <div className="contactIcon">
+        <a href="mailto:soyeong5857@gmail.com" target="_blank">
+          <FontAwesomeIcon icon={faEnvelope} />
+        </a>
+      </div>
       <div className="contactIcon">
         <a href="https://github.com/ddo0ii" target="_blank">
           <FontAwesomeIcon icon={faGithub} />
