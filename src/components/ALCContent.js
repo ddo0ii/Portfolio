@@ -75,7 +75,7 @@ function ALCContent({
       sm={4}
       xs={12}
       sx={{
-        "&:hover": { backgroundColor: "black", cursor: "pointer" },
+        "&:hover": { backgroundColor: "#7D5260", cursor: "pointer" },
       }}
     >
       <Box
@@ -88,20 +88,20 @@ function ALCContent({
         <Stack direction="row" mb={{ sm: 8, xs: 3 }}>
           <Avatar
             sx={{
-              bgcolor: "#D9D9D9",
+              bgcolor: "#ffd9e3",
               width: { sm: 70, xs: 35 },
               height: { sm: 70, xs: 35 },
             }}
           >
             <Typography sx={{ fontSize: { sm: "30px", xs: "15px" } }}>
               {alcIcon == "faTrophy" ? (
-                <FontAwesomeIcon icon={faTrophy} style={{ color: "black" }} />
+                <FontAwesomeIcon icon={faTrophy} style={{ color: "#31101d" }} />
               ) : alcIcon == "faAward" ? (
-                <FontAwesomeIcon icon={faTrophy} style={{ color: "black" }} />
+                <FontAwesomeIcon icon={faTrophy} style={{ color: "#31101d" }} />
               ) : alcIcon == "faMedal" ? (
-                <FontAwesomeIcon icon={faMedal} style={{ color: "black" }} />
+                <FontAwesomeIcon icon={faMedal} style={{ color: "#31101d" }} />
               ) : alcIcon == "faIdCard" ? (
-                <FontAwesomeIcon icon={faIdCard} style={{ color: "black" }} />
+                <FontAwesomeIcon icon={faIdCard} style={{ color: "#31101d" }} />
               ) : (
                 ""
               )}
@@ -109,20 +109,26 @@ function ALCContent({
           </Avatar>
         </Stack>
         <Typography
+          color="background"
           sx={{
             fontSize: { sm: "20px", xs: "13px" },
             mb: { sm: 1, xs: 0.5 },
-
             fontWeight: "bold",
           }}
         >
           {alcTitle}
         </Typography>
-        <Box color="#959595" sx={{ mb: 2 }}>
-          <Typography sx={{ fontSize: { sm: "13px", xs: "10px" } }}>
+        <Box sx={{ mb: 2 }}>
+          <Typography
+            color="secondary"
+            sx={{ fontSize: { sm: "13px", xs: "10px" } }}
+          >
             {alcSubTitle}
           </Typography>
-          <Typography sx={{ fontSize: { sm: "13px", xs: "10px" } }}>
+          <Typography
+            color="secondary"
+            sx={{ fontSize: { sm: "13px", xs: "10px" } }}
+          >
             {alcOrganizer}
           </Typography>
         </Box>
@@ -133,7 +139,7 @@ function ALCContent({
           }}
         >
           <Divider
-            color="white"
+            color="#625b71"
             sx={{
               borderBottomWidth: { sm: 3, xs: 1.5 },
               width: { sm: 30, xs: 20 },
@@ -141,7 +147,7 @@ function ALCContent({
             }}
           />
           <Typography
-            color="white"
+            color="secondary"
             sx={{
               fontSize: { sm: "13px", xs: "10px" },
             }}
@@ -150,7 +156,7 @@ function ALCContent({
           </Typography>
         </Box>
       </Box>
-      <Paper elevation={10}>
+      <Paper>
         <Dialog
           // fullWidth={true}
           maxWidth="md"
