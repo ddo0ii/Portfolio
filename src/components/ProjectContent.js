@@ -170,7 +170,7 @@ function ProjectContent({
           </CardActionArea>
         </Card>
       </Box>
-      <Paper elevation={10}>
+      <Paper>
         <Dialog
           //fullWidth={true}
           maxWidth="md"
