@@ -75,7 +75,7 @@ function ALCContent({
       sm={4}
       xs={12}
       sx={{
-        "&:hover": { backgroundColor: "#7D5260", cursor: "pointer" },
+        "&:hover": { backgroundColor: "#E7E0EC", cursor: "pointer" },
       }}
     >
       <Box
@@ -88,20 +88,20 @@ function ALCContent({
         <Stack direction="row" mb={{ sm: 8, xs: 3 }}>
           <Avatar
             sx={{
-              bgcolor: "#ffd9e3",
+              bgcolor: "#e9ddff",
               width: { sm: 70, xs: 35 },
               height: { sm: 70, xs: 35 },
             }}
           >
             <Typography sx={{ fontSize: { sm: "30px", xs: "15px" } }}>
               {alcIcon == "faTrophy" ? (
-                <FontAwesomeIcon icon={faTrophy} style={{ color: "#31101d" }} />
+                <FontAwesomeIcon icon={faTrophy} style={{ color: "#22005d" }} />
               ) : alcIcon == "faAward" ? (
-                <FontAwesomeIcon icon={faTrophy} style={{ color: "#31101d" }} />
+                <FontAwesomeIcon icon={faTrophy} style={{ color: "#22005d" }} />
               ) : alcIcon == "faMedal" ? (
-                <FontAwesomeIcon icon={faMedal} style={{ color: "#31101d" }} />
+                <FontAwesomeIcon icon={faMedal} style={{ color: "#22005d" }} />
               ) : alcIcon == "faIdCard" ? (
-                <FontAwesomeIcon icon={faIdCard} style={{ color: "#31101d" }} />
+                <FontAwesomeIcon icon={faIdCard} style={{ color: "#22005d" }} />
               ) : (
                 ""
               )}

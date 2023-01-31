@@ -172,7 +172,7 @@ function ProjectContent({
       </Box>
       <Paper>
         <Dialog
-          //fullWidth={true}
+          // fullScreen
           maxWidth="md"
           open={open}
           onClose={handleClose}
