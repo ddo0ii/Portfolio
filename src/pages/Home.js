@@ -17,7 +17,7 @@ function Home() {
           position: "absolute",
           backgroundColor: "#e8def8",
           width: "100%",
-          height: { md: "75%", sm: "60%", xs: "40%" },
+          height: { md: "75%", sm: "60%", xs: "50%" },
         }}
       ></Box>
       <Box
