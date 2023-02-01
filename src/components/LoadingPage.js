@@ -7,7 +7,7 @@ function LoadingPage() {
       sx={{
         height: "100vh",
         width: "100vw",
-        backgroundColor: "#2B1307",
+        backgroundColor: "#e8def8",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",

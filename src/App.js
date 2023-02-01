@@ -13,7 +13,7 @@ const theme = createTheme({
       contrastText: "#ffffff",
     },
     primaryContainer: {
-      main: "#e9ddff",
+      main: "#EADDFF",
       contrastText: "#22005d",
     },
     secondary: {
@@ -29,32 +29,32 @@ const theme = createTheme({
       contrastText: "#ffffff",
     },
     tertiaryContainer: {
-      main: "#ffd9e3",
+      main: "#FFD8E4",
       contrastText: "#31101d",
     },
     error: {
-      main: "#ba1a1a",
+      main: "#B3261E",
       contrastText: "#ffffff",
     },
     errorContainer: {
-      main: "#ffdad6",
-      contrastText: "#410002",
+      main: "#F9DEDC",
+      contrastText: "#410E0B",
     },
     background: {
-      main: "#fffbff",
-      contrastText: "#1c1b1e",
+      main: "#FFFBFE",
+      contrastText: "#1C1B1F",
     },
     backgroundContainer: {
       main: "#FFFBFE",
       contrastText: "#1C1B1F",
     },
     outline: {
-      main: "#7a757f",
-      contrastText: "#7a757f",
+      main: "#79747E",
+      contrastText: "#79747E",
     },
     outlineContainer: {
-      main: "#e7e0eb",
-      contrastText: "#49454e",
+      main: "#E7E0EC",
+      contrastText: "#49454F",
     },
     contrastThreshold: 3,
     tonalOffset: 0.2,
