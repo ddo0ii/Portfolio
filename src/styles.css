@@ -58,21 +58,37 @@
   /* animation-iteration-count: infinite; */
 }
 
-.letterEffect {
-  animation-name: slidein;
+.letterEffectLeft {
+  animation-name: slideinLeft;
   animation-duration: 1s;
   animation-delay: 0s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-timing-function: linear;
   /* animation-direction: alternate; */
 }
-
-@keyframes slidein {
+@keyframes slideinLeft {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.letterEffectRight {
+  animation-name: slideinRight;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  /* animation-direction: alternate; */
+}
+@keyframes slideinRight {
   from {
     margin-left: 100%;
     width: 300%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
@@ -245,7 +261,7 @@ a:hover {
   justify-content: space-between;
 }
 .contactIcon > a {
-  color: #e7e0eb;
+  color: #1e192b;
 }
 
 /* Home */

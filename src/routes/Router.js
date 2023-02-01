@@ -4,7 +4,7 @@ import LoadingPage from "../components/LoadingPage";
 const Navigation = lazy(() => {
   return Promise.all([
     import("./Navigation"),
-    new Promise((resolve) => setTimeout(resolve, 3000)),
+    new Promise((resolve) => setTimeout(resolve, 10)), //3000
   ]).then(([moduleExports]) => moduleExports);
 });
 

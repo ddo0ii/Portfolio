@@ -36,7 +36,7 @@ function Home() {
               xs={12}
               sx={{ display: { md: "none", xs: "block" } }}
             >
-              <Box p={2}>
+              <Box p={2} className="letterEffectRight">
                 <Typography align="center" p={3} pt={5}>
                   <img
                     className="homeImg"
@@ -47,8 +47,8 @@ function Home() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={6}>
-              <Box p={2}>
+            <Grid item sm={6} xs={12}>
+              <Box className="letterEffectLeft" p={2}>
                 <Typography
                   mb={1}
                   color="secondary"
@@ -110,7 +110,7 @@ function Home() {
               xs={12}
               sx={{ display: { md: "block", xs: "none" } }}
             >
-              <Box p={2}>
+              <Box p={2} className="letterEffectRight">
                 <Typography align="center" p={3} pt={5}>
                   <img
                     className="homeImg"
