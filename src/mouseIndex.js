@@ -1,184 +1,204 @@
 let script = document.currentScript;
 
-window.addEventListener("DOMContentLoaded", () => {
-  let iDiv = document.createElement("div");
-  iDiv.id = "cursor";
-  if (script.getAttribute("difference") == "disable") {
-    iDiv.className = "mscursor-cursor";
+// 디바이스 종류 설정
+var pc_device = "win16|win32|win64|mac|macintel";
+
+// 접속한 디바이스 환경
+var this_device = navigator.platform;
+
+if (this_device) {
+  if (pc_device.indexOf(navigator.platform.toLowerCase()) < 0) {
+    console.log("MOBILE");
   } else {
-    iDiv.className = "mscursor-cursor mscursor-difference";
-  }
-  document.getElementsByTagName("body")[0].appendChild(iDiv);
+    console.log("PC");
 
-  let pauseAnimation = script.getAttribute("pause-animation");
-
-  let innerDiv = document.createElement("div");
-
-  if (script.getAttribute("color") !== null) {
-    iDiv.style.backgroundColor = script.getAttribute("color");
-  } else {
-    if (script.getAttribute("difference") == "disable") {
-      iDiv.style.backgroundColor = "#e9ddff";
-    } else {
-      iDiv.style.backgroundColor = "#6750a4";
-    }
-  }
-
-  if (pauseAnimation !== null && pauseAnimation == "disable") {
-    if (script.getAttribute("circle-outline") == "disable") {
-      innerDiv.className = "mscursor-circle";
-    } else {
-      innerDiv.className = "mscursor-circle new";
-    }
-  } else {
-    if (script.getAttribute("circle-outline") == "disable") {
-      innerDiv.className = "mscursor-circle mscursor-border-transform";
-    } else {
-      innerDiv.className = "mscursor-circle new mscursor-border-transform";
-    }
-  }
-
-  iDiv.appendChild(innerDiv);
-
-  let size = Number(script.getAttribute("size")) || 30;
-
-  for (let i = 0; i < size; i++) {
-    let innerDiv = document.createElement("div");
-    if (pauseAnimation !== null && pauseAnimation == "disable") {
-      innerDiv.className = "mscursor-circle";
-    } else {
-      innerDiv.className = "mscursor-circle mscursor-border-transform";
-    }
-
-    if (script.getAttribute("color") !== null) {
-      innerDiv.style.backgroundColor = script.getAttribute("color");
-    } else {
+    window.addEventListener("DOMContentLoaded", () => {
+      let iDiv = document.createElement("div");
+      iDiv.id = "cursor";
       if (script.getAttribute("difference") == "disable") {
-        innerDiv.style.backgroundColor = "#e9ddff";
+        iDiv.className = "mscursor-cursor";
       } else {
-        innerDiv.style.backgroundColor = "#6750a4";
+        iDiv.className = "mscursor-cursor mscursor-difference";
       }
-    }
-    iDiv.appendChild(innerDiv);
-  }
+      document.getElementsByTagName("body")[0].appendChild(iDiv);
 
-  const coords = { x: 0, y: 0 };
-  let timeout;
-  const circles = document.querySelectorAll(".mscursor-circle");
+      let pauseAnimation = script.getAttribute("pause-animation");
 
-  const cursor = document.querySelector(".mscursor-cursor");
+      let innerDiv = document.createElement("div");
 
-  circles.forEach(function (circle, index) {
-    circle.x = 0;
-    circle.y = 0;
-    if (script.getAttribute("gradient") !== null) {
-      let colors = script.getAttribute("gradient").split(",");
-      circle.style.backgroundColor =
-        colors[Math.floor((index * colors.length) / circles.length)];
-
-      document.querySelector("div.new").border = `0.5px solid ${colors[0]}`;
-    }
-  });
-
-  const addclass = (e) => {
-    if (script.getAttribute("pause-animation") !== "disable") {
-      document.body.classList.remove("mscursor-nocursor");
-      if (script.getAttribute("circle-outline") !== "disable") {
-        document
-          .querySelector("div.new")
-          .classList.remove("mscursor-scale-outline");
-        document.querySelector("div.new").style.border = "";
+      if (script.getAttribute("color") !== null) {
+        iDiv.style.backgroundColor = script.getAttribute("color");
+      } else {
+        if (script.getAttribute("difference") == "disable") {
+          iDiv.style.backgroundColor = "#e9ddff";
+        } else {
+          iDiv.style.backgroundColor = "#6750a4";
+        }
       }
-      document.querySelectorAll("div.mscursor-circle").forEach((element) => {
-        element.classList.remove("mscursor-scale");
-      });
-    }
-    coords.x = e.clientX;
-    coords.y = e.clientY;
-  };
 
-  window.addEventListener("mousemove", (e) => addclass(e));
-  window.addEventListener("touchmove", (e) => addclass(e.touches[0]));
+      if (pauseAnimation !== null && pauseAnimation == "disable") {
+        if (script.getAttribute("circle-outline") == "disable") {
+          innerDiv.className = "mscursor-circle";
+        } else {
+          innerDiv.className = "mscursor-circle new";
+        }
+      } else {
+        if (script.getAttribute("circle-outline") == "disable") {
+          innerDiv.className = "mscursor-circle mscursor-border-transform";
+        } else {
+          innerDiv.className = "mscursor-circle new mscursor-border-transform";
+        }
+      }
 
-  function animateCircles() {
-    let x = coords.x;
-    let y = coords.y;
+      iDiv.appendChild(innerDiv);
 
-    cursor.style.top = x;
-    cursor.style.left = y;
+      let size = Number(script.getAttribute("size")) || 30;
 
-    circles.forEach(function (circle, index) {
-      circle.style.left = x - 12 + "px";
-      circle.style.top = y - 12 + "px";
+      for (let i = 0; i < size; i++) {
+        let innerDiv = document.createElement("div");
+        if (pauseAnimation !== null && pauseAnimation == "disable") {
+          innerDiv.className = "mscursor-circle";
+        } else {
+          innerDiv.className = "mscursor-circle mscursor-border-transform";
+        }
 
-      circle.style.scale = (circles.length - index) / circles.length;
-
-      circle.x = x;
-      circle.y = y;
-
-      const nextCircle = circles[index + 1] || circles[0];
-      x += (nextCircle.x - x) * 0.3;
-      y += (nextCircle.y - y) * 0.3;
-    });
-
-    requestAnimationFrame(animateCircles);
-  }
-
-  animateCircles();
-
-  if (script.getAttribute("cursor") == "disable") {
-    document.body.classList.add("mscursor-nocursor");
-  }
-
-  if (script.getAttribute("pause-animation") !== "disable") {
-    const moove = () => {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => {
-        document.body.classList.add("mscursor-nocursor");
-        if (script.getAttribute("mscursor-circle-outline") !== "disable") {
-          document
-            .querySelector("div.new")
-            .classList.add("mscursor-scale-outline");
-
-          if (script.getAttribute("color") !== null) {
-            if (script.getAttribute("color-outline") !== null) {
-              document.querySelector(
-                "div.new"
-              ).style.border = `0.5px solid ${script.getAttribute(
-                "color-outline"
-              )}`;
-            } else {
-              document.querySelector(
-                "div.new"
-              ).style.border = `0.5px solid ${script.getAttribute("color")}`;
-            }
+        if (script.getAttribute("color") !== null) {
+          innerDiv.style.backgroundColor = script.getAttribute("color");
+        } else {
+          if (script.getAttribute("difference") == "disable") {
+            innerDiv.style.backgroundColor = "#e9ddff";
           } else {
-            if (script.getAttribute("color-outline") !== null) {
-              document.querySelector(
-                "div.new"
-              ).style.border = `0.5px solid ${script.getAttribute(
-                "color-outline"
-              )}`;
-            } else {
-              if (script.getAttribute("difference") == "disable") {
-                document.querySelector(
-                  "div.new"
-                ).style.border = `0.5px solid #e9ddff`;
-              } else {
-                document.querySelector(
-                  "div.new"
-                ).style.border = `0.5px solid #6750a4`;
-              }
-            }
+            innerDiv.style.backgroundColor = "#6750a4";
           }
         }
-        document.querySelectorAll("div.mscursor-circle").forEach((element) => {
-          element.classList.add("mscursor-scale");
-        });
-      }, 100);
-    };
+        iDiv.appendChild(innerDiv);
+      }
 
-    document.onmousemove = moove;
-    document.ontouchmove = moove;
+      const coords = { x: 0, y: 0 };
+      let timeout;
+      const circles = document.querySelectorAll(".mscursor-circle");
+
+      const cursor = document.querySelector(".mscursor-cursor");
+
+      circles.forEach(function (circle, index) {
+        circle.x = 0;
+        circle.y = 0;
+        if (script.getAttribute("gradient") !== null) {
+          let colors = script.getAttribute("gradient").split(",");
+          circle.style.backgroundColor =
+            colors[Math.floor((index * colors.length) / circles.length)];
+
+          document.querySelector("div.new").border = `0.5px solid ${colors[0]}`;
+        }
+      });
+
+      const addclass = (e) => {
+        if (script.getAttribute("pause-animation") !== "disable") {
+          document.body.classList.remove("mscursor-nocursor");
+          if (script.getAttribute("circle-outline") !== "disable") {
+            document
+              .querySelector("div.new")
+              .classList.remove("mscursor-scale-outline");
+            document.querySelector("div.new").style.border = "";
+          }
+          document
+            .querySelectorAll("div.mscursor-circle")
+            .forEach((element) => {
+              element.classList.remove("mscursor-scale");
+            });
+        }
+        coords.x = e.clientX;
+        coords.y = e.clientY;
+      };
+
+      window.addEventListener("mousemove", (e) => addclass(e));
+      window.addEventListener("touchmove", (e) => addclass(e.touches[0]));
+
+      function animateCircles() {
+        let x = coords.x;
+        let y = coords.y;
+
+        cursor.style.top = x;
+        cursor.style.left = y;
+
+        circles.forEach(function (circle, index) {
+          circle.style.left = x - 12 + "px";
+          circle.style.top = y - 12 + "px";
+
+          circle.style.scale = (circles.length - index) / circles.length;
+
+          circle.x = x;
+          circle.y = y;
+
+          const nextCircle = circles[index + 1] || circles[0];
+          x += (nextCircle.x - x) * 0.3;
+          y += (nextCircle.y - y) * 0.3;
+        });
+
+        requestAnimationFrame(animateCircles);
+      }
+
+      animateCircles();
+
+      if (script.getAttribute("cursor") == "disable") {
+        document.body.classList.add("mscursor-nocursor");
+      }
+
+      if (script.getAttribute("pause-animation") !== "disable") {
+        const moove = () => {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => {
+            document.body.classList.add("mscursor-nocursor");
+            if (script.getAttribute("mscursor-circle-outline") !== "disable") {
+              document
+                .querySelector("div.new")
+                .classList.add("mscursor-scale-outline");
+
+              if (script.getAttribute("color") !== null) {
+                if (script.getAttribute("color-outline") !== null) {
+                  document.querySelector(
+                    "div.new"
+                  ).style.border = `0.5px solid ${script.getAttribute(
+                    "color-outline"
+                  )}`;
+                } else {
+                  document.querySelector(
+                    "div.new"
+                  ).style.border = `0.5px solid ${script.getAttribute(
+                    "color"
+                  )}`;
+                }
+              } else {
+                if (script.getAttribute("color-outline") !== null) {
+                  document.querySelector(
+                    "div.new"
+                  ).style.border = `0.5px solid ${script.getAttribute(
+                    "color-outline"
+                  )}`;
+                } else {
+                  if (script.getAttribute("difference") == "disable") {
+                    document.querySelector(
+                      "div.new"
+                    ).style.border = `0.5px solid #e9ddff`;
+                  } else {
+                    document.querySelector(
+                      "div.new"
+                    ).style.border = `0.5px solid #6750a4`;
+                  }
+                }
+              }
+            }
+            document
+              .querySelectorAll("div.mscursor-circle")
+              .forEach((element) => {
+                element.classList.add("mscursor-scale");
+              });
+          }, 100);
+        };
+
+        document.onmousemove = moove;
+        document.ontouchmove = moove;
+      }
+    });
   }
-});
+}
