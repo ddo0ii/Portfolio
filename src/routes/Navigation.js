@@ -101,7 +101,11 @@ function Navigation() {
   ];
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography onClick={homeClick} variant="h6" sx={{ my: 2 }}>
+      <Typography
+        onClick={homeClick}
+        variant="h6"
+        sx={{ my: 2, cursor: "pointer" }}
+      >
         DDO0II
       </Typography>
       <Divider />
@@ -131,7 +135,11 @@ function Navigation() {
               variant="h6"
               component="div"
               color="primary"
-              sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+              sx={{
+                flexGrow: 1,
+                display: { xs: "none", sm: "block" },
+                cursor: "pointer",
+              }}
             >
               DDO0II
             </Typography>
@@ -212,7 +220,7 @@ function Navigation() {
                 component="div"
                 align="center"
                 color="primary"
-                sx={{ mb: 3 }}
+                sx={{ mb: 3, cursor: "pointer" }}
               >
                 DDO0II
               </Typography>
