@@ -69,7 +69,7 @@ function ALCContent({
 
   return (
     <Grid
-      // className="sa sa-up"
+      className="sa sa-up"
       item
       sm={6}
       xs={12}
