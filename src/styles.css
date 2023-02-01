@@ -263,6 +263,9 @@ a:hover {
 .contactIcon > a {
   color: #1e192b;
 }
+.dialogContactIcon > a {
+  color: #79747e;
+}
 
 /* Home */
 .homePage {
@@ -341,4 +344,9 @@ a:hover {
 
 .dialogDetailContent {
   color: #dedede;
+}
+
+.DialogTitleLink {
+  text-decoration: none;
+  color: #6750a4;
 }

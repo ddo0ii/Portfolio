@@ -124,7 +124,7 @@ function ALCDialog({
               }}
             >
               {alcLecSite ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={alcLecSite} target="_blank">
                     <FontAwesomeIcon icon={faSitemap} />
                   </a>
@@ -133,7 +133,7 @@ function ALCDialog({
                 ""
               )}
               {alcSite ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={alcSite} target="_blank">
                     <FontAwesomeIcon icon={faPalette} />
                   </a>
@@ -142,7 +142,7 @@ function ALCDialog({
                 ""
               )}
               {alcGithub ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={alcGithub} target="_blank">
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
@@ -151,7 +151,7 @@ function ALCDialog({
                 ""
               )}
               {alcBlog ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={alcBlog} target="_blank">
                     <FontAwesomeIcon icon={faBloggerB} />
                   </a>
@@ -160,7 +160,7 @@ function ALCDialog({
                 ""
               )}
               {alcYouTube ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={alcYouTube} target="_blank">
                     <FontAwesomeIcon icon={faYoutube} />
                   </a>

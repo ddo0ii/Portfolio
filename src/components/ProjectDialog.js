@@ -107,7 +107,7 @@ function ProjectDialog({
               }}
             >
               {pjLecSite ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={pjLecSite} target="_blank">
                     <FontAwesomeIcon icon={faSitemap} />
                   </a>
@@ -116,7 +116,7 @@ function ProjectDialog({
                 ""
               )}
               {pjSite ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={pjSite} target="_blank">
                     <FontAwesomeIcon icon={faPalette} />
                   </a>
@@ -125,7 +125,7 @@ function ProjectDialog({
                 ""
               )}
               {pjGithub ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={pjGithub} target="_blank">
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
@@ -134,7 +134,7 @@ function ProjectDialog({
                 ""
               )}
               {pjBlog ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={pjBlog} target="_blank">
                     <FontAwesomeIcon icon={faBloggerB} />
                   </a>
@@ -143,7 +143,7 @@ function ProjectDialog({
                 ""
               )}
               {pjYouTube ? (
-                <Box className="contactIcon" sx={{ mr: 3, ml: 3 }}>
+                <Box className="dialogContactIcon" sx={{ mr: 3, ml: 3 }}>
                   <a href={pjYouTube} target="_blank">
                     <FontAwesomeIcon icon={faYoutube} />
                   </a>

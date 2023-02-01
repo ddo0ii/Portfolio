@@ -55,7 +55,7 @@ function ActivitiesDialog({
               mt: { sm: 2, xs: 1 },
             }}
           >
-            <a className="CareerLink" href={atcSite} target="_blank">
+            <a className="DialogTitleLink" href={atcSite} target="_blank">
               {actTitle}
             </a>
           </Typography>
