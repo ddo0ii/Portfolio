@@ -201,7 +201,7 @@ const alcData = [
   {
     id: 7,
     alcSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flicdr2.jpg?alt=media&token=d362a39c-a829-40cf-b2a5-ff32dd5bc7bd",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flicdr1.jpg?alt=media&token=a5888575-0370-40b0-ae81-44145e75d37f",
     alcImage: "/images/projectImg/project1.jpg",
     alcIcon: "faIdCard",
     alcTitle: "자동차 운전면허",
@@ -227,7 +227,7 @@ const alcData = [
     alcDef: "",
     alcPrototypeVideo: "",
     alcPrototype1:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flicdr2.jpg?alt=media&token=1d0b8119-6b8f-4d8f-9b76-5613223c74a8",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flicdr2.jpg?alt=media&token=d362a39c-a829-40cf-b2a5-ff32dd5bc7bd",
     alcPrototype2: "",
   },
   {
