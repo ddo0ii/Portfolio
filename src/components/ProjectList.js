@@ -180,9 +180,9 @@ const itemData1 = [
     id: 1,
     pjType: "Web Develop",
     pjSImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FporfolioIntro.jpg?alt=media&token=395ef9c1-eb61-4784-bd84-2cc69ecbb49e",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FpotfoliofirstScreen.jpg?alt=media&token=461eaab7-4009-4260-8445-73154d5519ab",
     pjImage:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FporfolioIntro.jpg?alt=media&token=395ef9c1-eb61-4784-bd84-2cc69ecbb49e",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FpotfoliofirstScreen.jpg?alt=media&token=461eaab7-4009-4260-8445-73154d5519ab",
     pjTitle: "Portfolio",
     pjSubTitle: "",
     pjDuration: "OCTOBER 2022 - DECEMBER 2022",
@@ -205,7 +205,7 @@ const itemData1 = [
     pjDef:
       "React.js를 이용하여 제작했던 프로젝트, 활동 내역, 수상 내역, 자격 내역 등을 한눈에 보기 쉽게 포트폴리오로 작성하였다.",
     pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FpotfolioAll.jpg?alt=media&token=0ef7d393-c1a5-4020-850d-1666fd45cfcf",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FpotfolioScreen.jpg?alt=media&token=a086bd0a-6c92-45d2-98cf-5cd5e85bf6fb",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/O43uHwiimIk",
   },
