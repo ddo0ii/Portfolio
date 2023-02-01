@@ -6,6 +6,7 @@ import {
   Container,
   Divider,
   Drawer,
+  Fab,
   Grid,
   IconButton,
   List,
@@ -22,6 +23,9 @@ import Projects from "../pages/Projects";
 import Activities from "../pages/Activities";
 import ALC from "../pages/ALC";
 import ContactIcons from "../components/ContactIcons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 function Navigation() {
   // Scroll Animation (sa, 스크롤 애니메이션)
@@ -97,7 +101,7 @@ function Navigation() {
   ];
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography onClick={homeClick} variant="h6" sx={{ my: 2 }}>
         DDO0II
       </Typography>
       <Divider />
@@ -123,6 +127,7 @@ function Navigation() {
         <Container>
           <Toolbar>
             <Typography
+              onClick={homeClick}
               variant="h6"
               component="div"
               color="primary"
@@ -202,6 +207,7 @@ function Navigation() {
           >
             <Container>
               <Typography
+                onClick={homeClick}
                 variant="h6"
                 component="div"
                 align="center"
@@ -241,6 +247,14 @@ function Navigation() {
           </Box>
         </Box>
       </Box>
+      <Fab
+        onClick={homeClick}
+        color="primary"
+        aria-label="arrowUp"
+        sx={{ position: "fixed", bottom: 20, right: 20 }}
+      >
+        <FontAwesomeIcon icon={faArrowUp} />
+      </Fab>
     </Box>
   );
 }
