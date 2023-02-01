@@ -76,7 +76,7 @@ function Home() {
                   color="background"
                   sx={{
                     mb: { sm: 5, xs: 4 },
-                    fontSize: { sm: "14.5px", xs: "13.5px" },
+                    fontSize: { sm: "14.5px", xs: "12px" },
                   }}
                 >
                   일단 시작해보는 프론트엔드 웹 개발자입니다.
@@ -91,11 +91,12 @@ function Home() {
                   프론트엔드 웹 개발자가 되고자 합니다.
                 </Typography>
                 <Grid className="homeContact" container>
-                  <Grid item sm={6} xs={9}>
+                  <Grid item sm={6} xs={12}>
                     <Box
                       sx={{
-                        fontSize: { sm: "19px", xs: "13px" },
+                        fontSize: { sm: "19px", xs: "15px" },
                         pl: 1,
+                        pr: 1,
                       }}
                     >
                       <ContactIcons />
