@@ -205,7 +205,7 @@ const itemData1 = [
     pjDef:
       "React.js를 이용하여 제작했던 프로젝트, 활동 내역, 수상 내역, 자격 내역 등을 한눈에 보기 쉽게 포트폴리오로 작성하였다.",
     pjPrototype:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FpotfolioScreen.jpg?alt=media&token=a086bd0a-6c92-45d2-98cf-5cd5e85bf6fb",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FPotfolioAdded.jpg?alt=media&token=bae2e9f9-83e3-4b30-8b0b-d2f458a40337",
     pjPrototypeAlt: "",
     pjVideo: "https://www.youtube.com/embed/oVPS0S9j-_s",
   },
