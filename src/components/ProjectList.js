@@ -190,7 +190,7 @@ const itemData1 = [
     pjSite: "https://ddo0ii.github.io/Portfolio/",
     pjGithub: "https://github.com/ddo0ii/Portfolio",
     pjBlog: "",
-    pjYouTube: "https://youtu.be/oVPS0S9j-_s",
+    pjYouTube: "https://youtu.be/exJGS8vXoH8",
     pjDeTitle1: "LANGUAGE & TOOL",
     pjDeContent1_1: "React.js",
     pjDeContent1_2: "MUI System",
@@ -207,7 +207,7 @@ const itemData1 = [
     pjPrototype:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/project%2Fweb%2Fportfolio%2FPotfolioAdded.jpg?alt=media&token=bae2e9f9-83e3-4b30-8b0b-d2f458a40337",
     pjPrototypeAlt: "",
-    pjVideo: "https://www.youtube.com/embed/oVPS0S9j-_s",
+    pjVideo: "https://www.youtube.com/embed/exJGS8vXoH8",
   },
   {
     id: 2,
