@@ -163,7 +163,7 @@ const alcData = [
     alcDef: "",
     alcPrototypeVideo: "",
     alcPrototype1:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2Flico2.jpg?alt=media&token=960adbfb-00c0-4096-96b1-e2a87d9a6dfb",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-23686.appspot.com/o/alc%2Flicense%2FlicOpic.JPG?alt=media&token=6036e5fb-47d4-4685-8d13-a701e0f3fb32",
     alcPrototype2: "",
   },
   {
