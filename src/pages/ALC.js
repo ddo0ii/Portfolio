@@ -143,7 +143,7 @@ const alcData = [
     alcTitle: "OPIc",
     alcSubTitle: "Intermediate Mid 2",
     alcOrganizer: "MultiCampus",
-    alcDate: "DECEMBER 28, 2019",
+    alcDate: "FEBRUARY 11, 2023",
     alcLecSite: "https://m.opic.or.kr/opics/jsp/senior/indexMobile.jsp",
     alcSite: "",
     alcGithub: "",
